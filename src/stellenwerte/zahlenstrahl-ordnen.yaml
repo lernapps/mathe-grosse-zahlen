@@ -70,7 +70,7 @@ blocks:
       - type: generated
         id: strahl-mitte-hunderter
         given:
-          lo: { int: [1, 9], step: 1 }
+          lo: { int: [1, 9] }
         task:
           text: "Auf einem Zahlenstrahl mit Strichen im Abstand 100 liegt ein Pfeil genau in der Mitte zwischen {{lo}}00 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?"
         answer: { value: "lo * 100 + 50", compare: { number: { format: integer } } }
@@ -101,7 +101,7 @@ blocks:
             info: "Falsch: Das Zeichen zeigt mit der Spitze auf die kleinere Zahl. Hier ist die linke Zahl kleiner."
           - text: "4087 = 4780"
             correct: false
-            info: "Die Zahlen haben unterschiedliche Ziffern in der Hunderter- und Zehnerspalte."
+            info: "Die Zahlen haben unterschiedliche Ziffern in der Hunderter- und Einerspalte."
         explanation: "Du vergleichst von links: Das erste Paar verschiedener Ziffern entscheidet."
         links:
           - title: Zahlen vergleichen und ordnen (Lernlandkarte)

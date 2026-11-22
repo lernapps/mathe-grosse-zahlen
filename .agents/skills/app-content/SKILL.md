@@ -9,7 +9,7 @@ Explainer „Große Zahlen und Rechnen“ (lernapps/apps#385), Stufen 5–6, Str
 
 ## Curriculum
 
-Land Hessen (Annahme), Gymnasium, Jahrgang 5–6. Orientierung ist die Lernlandkarte Mathematik (lernapps.net/apps/map/mathematik/), Band 5-6. Kein Lehrplan zitiert; die Karte gibt die Reihenfolge. Zahlen bis zur Milliarde (12 Stellen).
+Land Hessen (Annahme), Gymnasium, Jahrgang 5–6. Orientierung ist die Lernlandkarte Mathematik (lernapps.net/apps/map/mathematik/), Band 5-6. Kein Lehrplan zitiert; die Karte gibt die Reihenfolge. Zahlen bis zu den Milliarden (12 Stellen).
 
 ## Competencies
 

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
-title: Zahlen bis zur Milliarde
-description: "Große Zahlen in der Stellenwerttafel lesen und schreiben: Dreierblöcke bis zur Milliarde."
+title: Zahlen bis zu den Milliarden
+description: "Große Zahlen in der Stellenwerttafel lesen und schreiben: Dreierblöcke bis zu den Milliarden."
 competencies: [natuerliche-zahlen]
 blocks:
   - type: section
@@ -23,9 +23,9 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 10
-            message: "Zehn Plättchen bündelst du zum Nachbarn. Von Tausend bis zur Million sind es drei Spalten, also dreimal mal zehn."
+            message: "Zehn Plättchen bündelst du zum Nachbarn. Von Tausend bis zur Million sind es drei Spalten, jedes Mal mal zehn."
           - answer: 100
-            message: "Hundert Tausender sind erst Hunderttausend. Für eine Million fehlen noch Spalten."
+            message: "Hundert Tausender sind erst Hunderttausend. Für eine Million fehlt noch eine Spalte: Zehn Hunderttausender werden zu einer Million."
         hint: "Wie viele Tausender passen in 1 000 000?"
   - type: section
     id: darstellung
@@ -41,7 +41,7 @@ blocks:
         source: eigene Zeichnung
         licence: CC0-1.0
         alt: "Stellenwerttafel mit zwölf Spalten in vier Dreierblöcken: Milliarden, Millionen, Tausender, Einer. Eingetragen ist 2 Milliarden 51 Millionen 3 Tausend 400, also 2 051 003 400."
-        caption: "Die Zahl in der Tafel: 2 Milliarden 51 Millionen 3 Tausend 400. Leere Spalten haben eine Null."
+        caption: "Die Zahl in der Tafel: 2 Milliarden 51 Millionen 3 Tausend 400. Vorn schreibst du keine Nullen: Die Zahl beginnt bei der ersten Ziffer, die nicht 0 ist. Leere Spalten dahinter haben eine Null."
       - type: definition
         term: Milliarde
         explanation: Eine Milliarde sind tausend Millionen. Sie wird mit 1 000 000 000 geschrieben, also mit neun Nullen.

@@ -44,7 +44,7 @@ blocks:
       - type: text
         text: |
           Beim **Dividieren** fragst du: Wie oft passt der Teiler in die Zahl? Du teilst Stelle für Stelle von links
-          und notierst, was übrig bleibt. Ein Rest geht als Bündel in die nächste Stelle.
+          und notierst, was übrig bleibt. Ein Rest wird entbündelt: 1 Hunderter sind 10 Zehner und kommen zur nächsten Stelle dazu.
   - type: section
     id: beispiel
     title: Beispiel

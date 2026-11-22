@@ -13,7 +13,7 @@ blocks:
           eine Zahl auf eine Stelle runden und entscheiden, wie genau eine Zahl sein muss.
       - type: number
         id: runden-einstieg
-        text: "Eine Strecke ist 347 km lang. Auf welchen vollen Zehner liegt sie am nächsten?"
+        text: "Eine Strecke ist 347 km lang. Welchem vollen Zehner liegt sie am nächsten?"
         answer: 350
         tolerance: 0
         explanation: "347 liegt zwischen 340 und 350. Bis 350 sind es 3, bis 340 sind es 7. Also ist 350 näher."
@@ -99,12 +99,12 @@ blocks:
           - text: "auf 190 km"
             correct: true
             info: "Für die Planung reicht ein voller Zehner."
-          - text: "auf 1000 km"
+          - text: "auf 200 km"
             correct: false
-            info: "Das ist viel zu grob: 187 km und 1000 km liegen weit auseinander."
+            info: "Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Du verschenkst 13 km, die für die Planung wichtig sein können."
           - text: "auf 0 km"
             correct: false
-            info: "Das ist zu grob: Mit 0 km lässt sich keine Fahrt planen."
+            info: "Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen."
         explanation: "Du rundest so, dass die Zahl noch zum Zweck passt: nicht ungenauer als nötig, nicht genauer als sinnvoll."
         links:
           - title: Runden (Lernlandkarte)

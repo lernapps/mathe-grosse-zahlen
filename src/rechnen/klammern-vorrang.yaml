@@ -51,8 +51,8 @@ blocks:
             formula: '(3 + 4) \cdot 5 = 7 \cdot 5 = 35'
           - type: text
             text: |
-              Die Klammer ändert die Reihenfolge, deshalb ändert sich das Ergebnis. Beide Kinder haben richtig
-              gerechnet, aber verschiedene Aufgaben.
+              Das Kind mit 23 hat recht. Das Kind mit 35 hat von links nach rechts gerechnet, also (3 + 4) · 5.
+              Das ist eine andere Aufgabe: Die Klammer ändert die Reihenfolge.
   - type: section
     id: uebung
     title: Übung

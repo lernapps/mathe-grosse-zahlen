@@ -10,7 +10,7 @@ blocks:
       - type: text
         text: |
           Nach dieser Seite kannst du eine Zahl in die Stellenwerttafel legen und eine Zahl aus der Tafel ablesen.
-          Du brauchst nur das, was du aus der Grundschule kennst: Zahlen bis 1000.
+          Du brauchst nur das, was du aus der Grundschule kennst: Zahlen bis 1000 und ein bisschen darüber.
       - type: figure
         image: images/stellenwerttafel-1234.svg
         source: eigene Zeichnung

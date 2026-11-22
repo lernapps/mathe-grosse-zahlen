@@ -44,7 +44,7 @@ blocks:
       - type: text
         text: |
           Das **Verbindungsgesetz** sagt: Bei Plus und bei Mal darfst du zusammenfassen, wie du willst: (8 + 6) + 4 = 8 + (6 + 4).
-          Das **Verteilungsgesetz** sagt: Du darfst eine Zahl auf eine Summe verteilen.
+          Das **Verteilungsgesetz** sagt: Du darfst eine Zahl auf eine Summe oder eine Differenz verteilen: 6 · (100 − 1) = 6 · 100 − 6 · 1.
       - type: figure
         image: images/plaettchen-verteilen.svg
         source: eigene Zeichnung
@@ -107,7 +107,7 @@ blocks:
         id: minus-tauschen
         text: "Beim Minus darf man die Zahlen genauso tauschen wie beim Plus: 9 − 4 = 4 − 9."
         answer: false
-        explanation: "Das Vertauschungsgesetz gilt nur für Plus und Mal. 9 − 4 = 5, aber 4 − 9 geht in den natürlichen Zahlen nicht auf."
+        explanation: "Das Vertauschungsgesetz gilt nur für Plus und Mal. 9 − 4 = 5, aber 4 − 9 kannst du mit diesen Zahlen nicht rechnen: 4 ist kleiner als 9."
         links:
           - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"
