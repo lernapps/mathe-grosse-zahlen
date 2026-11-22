@@ -27,8 +27,10 @@ Aufgaben-IDs: `<seite>-<nr>` (z. B. `buendeln-und-lesen-1`).
 
 ## Content structure
 
-Jede Seite: Abschnitte `einstieg` (Ziel in Lernerworten + erste leichte Aufgabe), `darstellung` (Bild/Komponente mit Erklärung), `beispiel`, `uebung` (≥ 3 Aufgaben, steigend). Höchstens 350 Wörter Text. Kapitel beginnt ohne Recap.
-Kapitelfrage „Kann das stimmen?“ kehrt wieder.
+Zwei Kapitel, neun Seiten, in `src/app.yaml` (`chapters`) und `chapter.yaml` (`pages`) in dieser Reihenfolge:
+- `stellenwerte/`: `buendeln-und-lesen` (Komponente `Stellenwerttafel`), `zahlen-bis-milliarden` (Bild `tafel-milliarden.svg`), `zahlenstrahl-ordnen` (Komponente `Zahlenstrahl`), `runden` (Bild `runden-strahl.svg`).
+- `rechnen/`: `addieren-subtrahieren` (`addition-schriftlich.svg`), `multiplizieren-dividieren` (`rechteck-23-mal-14.svg`), `klammern-vorrang`, `rechengesetze` (`plaettchen-tauschen.svg`, `plaettchen-verteilen.svg`), `ueberschlag` (`ueberschlag-strahl.svg`).
+Jede Seite: Abschnitte `einstieg` (Ziel in Lernerworten + erste leichte Aufgabe), `darstellung` bzw. `regel`, `beispiel`, `uebung` (mindestens drei Aufgaben, steigend). Höchstens 350 Wörter Text. Kein Recap. Der `einstieg` jeder Seite beginnt mit einer `number`-Aufgabe, die ohne Vorwissen aus dem Kapitel lösbar ist. Überschriften (Titel von `example`) enthalten keine Zahlen mit Gruppierung (der End-zu-Ende-Test des Laufzeit-Pakets vergleicht Überschriften ohne schmales Leerzeichen).
 
 ## Terminology
 
@@ -36,21 +38,25 @@ Stellenwerttafel, Zahlenstrahl (bis zur ersten Zahl links der Null; danach Zahle
 
 ## Exercise patterns
 
-- *Tafel ablesen* (`generated`, Seiten 1–2): Plättchenverteilung → Zahl; Fehler: Spalten vertauscht, Null ausgelassen.
-- *Ordnen* (`ordering`), *Strahl ablesen* (`generated`/Komponente), *Runden* (`generated`; Fehler: bei 5 abgerundet, falsche Stelle).
-- *Schriftlich rechnen* (`generated`; Fehler: Übertrag vergessen/falsche Spalte, Nullen beim Multiplizieren).
-- *Vorrang* (`generated`; Fehler: Punkt vor Strich ignoriert).
-- *Überschlag* (`generated`/`true-false`: „Kann das stimmen?“).
-Daten: `src/data/zahlen.yaml` (erfundene Orte, Größenordnungen, keine Marken).
+Alle Aufgaben haben Rechenprobe über `generated` (der Build prüft 200 Seeds) oder feste Werte; `mistakes` benennen den Fehlertyp.
+- *Tafel lesen* (`generated`, `buendeln-und-lesen`: `tafel-lesen`, `tafel-mit-null`; Fehler: Reihenfolge umgedreht, Plättchen gezählt, Null ausgelassen).
+- *Schreiben nach Blöcken* (`zahlen-bis-milliarden`: `zahl-schreiben`; Fehler: Blöcke ohne Nullen hintereinander), `matching` Zahlwort ↔ Ziffern, `ordering` großer Zahlen.
+- *Strahl* (`zahlenstrahl-ordnen`: `strahl-mitte-hunderter`, `strahl-mitte-tausender`), `single-choice` Zeichen < >, `ordering`.
+- *Runden* (`runden`: `runden-auf`, `runden-ab`; Fehler: falsche Richtung bei Einerziffer), `number` für die 5, `single-choice` Genauigkeit.
+- *Schriftlich* (`addieren-subtrahieren`: `add-schriftlich`, `sub-schriftlich`; Fehler: Übertrag vergessen, Ziffern vertauscht; `multiplizieren-dividieren`: `mal-schriftlich`, `geteilt-schriftlich`; Fehler: nur Einer malgenommen, multipliziert statt geteilt). Probe durch Umkehraufgabe (`true-false`).
+- *Vorrang* (`klammern-vorrang`: `punkt-vor-strich`, `klammer-zuerst`, `minus-links-nach-rechts`).
+- *Rechengesetze* (`rechengesetze`: `geschickt-vertauschen`, `geschickt-verteilen`, `matching` Gesetz ↔ Beispiel).
+- *Überschlag* (`ueberschlag`: `ueberschlag-summe`, `kann-das-stimmen`, `ueberschlag-mal`, `ueberschlag-rueckblick`).
+Weiterlesen-Link jeder Aufgabe: die Kartenseite des Bausteins (siehe Regeln unten). Daten: keine Datendatei (alle Werte in `given`).
 
 ## Figures
 
 Darstellungs-Konventionen (für Folge-Explainer #386, #389):
 - Stellenwerttafel: Spalten von rechts E, Z, H, T (Seite 1: vier Spalten; ab Seite 2 weitere in Dreierblöcken: Tausender, Million, Milliarde), Blockkopf beschriftet; Spaltenköpfe als Text (nicht nur Farbe).
 - Plättchen: runde Marke je Einheit der Spalte; zehn Plättchen einer Spalte werden „gebündelt“ zu einem Plättchen der nächsten Spalte (Komponente `Stellenwerttafel`: je Spalte Schaltflächen „+“/„−“, „Bündeln“, „Zurücksetzen“; Tastatur: Tab, Enter/Leertaste). Unterscheidung nicht nur durch Farbe: Ziffer im Plättchen.
-- Zahlenstrahl: Skala mit gleich langen Abschnitten, beschriftete Hauptstriche, Lupe vergrößert einen Abschnitt um Faktor 10.
+- Zahlenstrahl (Komponente `Zahlenstrahl`): Skala mit zehn gleich langen Abschnitten, beschriftete Striche, Lupe: Abschnittsknopf zeigt den Abschnitt zehnmal feiner, „Wieder von 0 bis 1000“ setzt zurück.
 - Alle Bilder: Textalternative, Kontrast WCAG AA, bedienbar mit Tastatur.
-Eigene SVGs/Komponenten, keine fremden Bilder.
+Eigene SVGs (`src/images/`, Quelle „eigene Zeichnung“, CC0-1.0) und die Komponenten `Stellenwerttafel` und `Zahlenstrahl` (je `.vue`, `.ts`, `.test.ts`, mit `nojs`-Text). Keine fremden Bilder.
 
 ## Sources
 

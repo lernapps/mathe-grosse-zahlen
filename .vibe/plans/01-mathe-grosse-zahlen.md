@@ -220,7 +220,7 @@ page, which a link. -->
 - [x] Seite klammern-vorrang: Vorrangregeln, ≥3 Aufgaben
 - [x] Seite rechengesetze: Plättchenbilder, vorteilhaftes Rechnen, ≥3 Aufgaben
 - [x] Seite ueberschlag: Überschlag und Kapitelrückblick, ≥3 Aufgaben
-- [ ] Start- und Kapitelseiten, Karte/Baustein-Zuordnung, lernapps check ohne Fehler
+- [x] Start- und Kapitelseiten, Karte/Baustein-Zuordnung, lernapps check ohne Fehler
 <!-- tasks: pages (9 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
