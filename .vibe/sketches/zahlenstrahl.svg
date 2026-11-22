@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" role="img" aria-label="Zahlenstrahl von 0 bis 1000 mit Lupe auf 300 bis 400">
+<rect width="360" height="100" fill="#fff"/>
+<g font-family="sans-serif" font-size="12" text-anchor="middle" fill="#111"><path d="M20 50h320" stroke="#111"/>
+<text x="20" y="75">0</text><text x="180" y="75">500</text><text x="340" y="75">1 000</text><text x="180" y="20">Lupe: 300 bis 400</text></g></svg>

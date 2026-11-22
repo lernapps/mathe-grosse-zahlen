@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -96,9 +96,10 @@ Lernende der Stufen 5–6 verstehen, wie das Zehnersystem große Zahlen ordnet, 
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Orchestrator (Vertretung): Recherche freigegeben; 2 Kapitel, ca. 9 Seiten, kein recap, nur Deutsch; Zahlenstrahl bis zur ersten Zahl links der Null, danach Zahlengerade; Musterseite = erste Seite; Darstellungs-Konventionen in Content-Guide aufnehmen.
 
 ### Answers
 
@@ -130,10 +131,10 @@ Lernende der Stufen 5–6 verstehen, wie das Zehnersystem große Zahlen ordnet, 
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
 - [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
@@ -152,6 +153,32 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Zuschnitt.** Strang-App `mathematik/arithmetik`, 2 Kapitel, 9 Seiten, kein recap (alle Voraussetzungen im Explainer). Nur Deutsch (guess). Seiten-IDs gleich: `einstieg`, `darstellung`, `beispiel`, `uebung`.
+
+| Seite | Baustein | Muster / Übungen (Art) | Engagement: Einstieg · Wechsel · Belohnung · Geschichte |
+|---|---|---|---|
+| stellenwerte/buendeln-und-lesen (Muster) | natuerliche-zahlen | Tafel-Komponente „Bündeln“; `generated` Zahl→Tafel ablesen (Fehler: Nullen/Spalten vertauscht), `number`, `ordering` | 27 Plättchen legen · sehen, tun, lesen · „Ich lese 3 405 021“ · Schulklasse sammelt Zahlen aus Zeitung |
+| stellenwerte/zahlen-bis-milliarden | natuerliche-zahlen | Tafel erweitert (Tausender-, Million-, Milliardenblock); `generated` schreiben/lesen in Worten | Einwohnerzahl in Tafel · Dreierblöcke ablesen · Zahl in Worten sagen |
+| stellenwerte/zahlenstrahl-ordnen | zahlen-vergleichen-ordnen | Zahlenstrahl-Komponente mit Lupe; `ordering`, `generated` ablesen/einordnen (Fehler: Skala falsch gelesen) | Ort schätzen · Lupe zoomt · Vergleich mit <, > |
+| stellenwerte/runden | runden | Zahlenstrahl-Bild (Mitte, Nachbarn); `generated` runden auf Stelle (Fehler: bei 5 abgerundet, falsche Stelle) | „Wie genau muss es sein?“ Entfernung · Strahl · Entscheidung nach Zweck |
+| rechnen/addieren-subtrahieren | schriftliche-verfahren | Tafel neben Verfahren (Bild-Reihe SVG); `generated` mit Fehlern (Übertrag vergessen/falsche Spalte) | Plättchen addieren, Bündel wandert · Verfahren Schritt für Schritt · Rechenprobe |
+| rechnen/multiplizieren-dividieren | schriftliche-verfahren | Rechteckmodell (SVG), Verfahren; `generated` (Fehler: Nullen, Rest) | Rechteck mit Maßen · zerlegen · Probe durch Umkehr |
+| rechnen/klammern-vorrang | grundrechenarten-rechengesetze | Terme zeilenweise; `generated` (Fehler: Punkt vor Strich ignoriert), `single-choice` | Zwei Rechenwege, zwei Ergebnisse · Klammer setzen · Regel selbst formulieren |
+| rechnen/rechengesetze | grundrechenarten-rechengesetze | Plättchenbilder (SVG) für Tauschen/Zusammenfassen/Verteilen; `generated` vorteilhaft rechnen | Umlegen zeigt gleiche Summe · Bild↔Term · geschickt rechnen |
+| rechnen/ueberschlag | ueberschlagen | Zahlenstrahl-Ort + Runden; `generated` Überschlag, „Kann das stimmen?“ (Fehler: Nullen/Faktor 10) | Aufgabe zuerst schätzen · Strahl · Vergleich mit Ergebnis; Kapitelrückblick |
+
+**Pro Baustein ≥ 3 Aufgaben** steigend; die erste ohne Vorwissen. Rückmeldung inhaltlich mit Fehlertyp (`mistakes`); nach 2 Fehlversuchen Weg (Regel 3.3), neue Zahlen per Seed.
+
+**Darstellungen und Komponenten.**
+- *Stellenwerttafel* (Komponente `Stellenwerttafel`, statische Form: SVG-Tabelle + Text): Spalten rechts Einer, nach links Zehner, Hunderter, Tausender … in Dreierblöcken (T, M, Md); Plättchen je Spalte; zehn Plättchen werden zu einem in die nächste Spalte gebündelt. Lernaktion: Lernende legen/bündeln und lesen die Zahl ab. Textalternative: Zahl und Ziffernliste. Prüft: Zahl stimmt mit Plättchenverteilung überein; kann nicht: Dezimalstellen.
+- *Zahlenstrahl* (Komponente `Zahlenstrahl`, statische Form: SVG): Skala mit beschrifteten Strichen, Lupe zoomt um Faktor 10. Lernaktion: Ort setzen/ablesen. Prüft Toleranz = halber Strich.
+- *Rechteckmodell*, *Plättchenbilder*: SVG (`image`) mit Textalternative.
+- Warum Komponenten: kein Block kann Bündeln oder Zoomen (`prefer-built-in-block`); zuerst statische Form, Logikmodul + Test.
+
+**Datenbereich:** Zahlen bis 12 Stellen; Datei `src/data/zahlen.yaml` (Einwohner, Entfernungen, frei erfundene Orte, Werte als Größenordnung, ohne Marken).
+**Spätere Kapitel:** Seite = Datei in Kapitelordner, Baustein auf Karte, ≥3 Aufgaben, gleiche Abschnitts-IDs; Tafel/Strahl-Konventionen aus diesem Guide.
+
 
 ## Code
 
@@ -176,11 +203,21 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite stellenwerte/buendeln-und-lesen komplett: Einstieg, Komponente Stellenwerttafel mit statischer Form, Beispiel, ≥3 Aufgaben mit Rückmeldung, Textalternative, Tastaturbedienung; Darstellungs-Konventionen im Content-Guide
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Seite zahlen-bis-milliarden: Tafel bis Milliarden, Lesen und Schreiben in Worten, ≥3 Aufgaben
+- [ ] Seite zahlenstrahl-ordnen: Komponente Zahlenstrahl mit Lupe, Vergleichen und Ordnen, ≥3 Aufgaben
+- [ ] Seite runden: Runden auf Stellen am Zahlenstrahl, ≥3 Aufgaben mit Fehlertypen
+- [ ] Seite addieren-subtrahieren: schriftliche Verfahren neben der Tafel, ≥3 Aufgaben
+- [ ] Seite multiplizieren-dividieren: Rechteckmodell und Verfahren, ≥3 Aufgaben
+- [ ] Seite klammern-vorrang: Vorrangregeln, ≥3 Aufgaben
+- [ ] Seite rechengesetze: Plättchenbilder, vorteilhaftes Rechnen, ≥3 Aufgaben
+- [ ] Seite ueberschlag: Überschlag und Kapitelrückblick, ≥3 Aufgaben
+- [ ] Start- und Kapitelseiten, Karte/Baustein-Zuordnung, lernapps check ohne Fehler
+<!-- tasks: pages (9 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
