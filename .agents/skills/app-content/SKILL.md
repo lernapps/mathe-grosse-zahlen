@@ -5,59 +5,61 @@ description: Use for any content work in this app - researching, writing, extend
 
 # Content guide of this app
 
-<!--
-Skeleton. Delete this comment when you fill the guide.
-- When: after the plan is confirmed, before any content. Replace every placeholder comment below; none may remain
-  (`lernapps check`, rule app-content-guide, fails once the plan is in Commit).
-- Keep the headings.
-- Concrete, for an agent without your conversation: files, ids, data files, one example.
-  - No: "Use varied exercises with figures where they help."
-  - Yes: "Every page ends with section `uebung`: one `generated` exercise of pattern 'Ohmsches Gesetz' from
-    `src/data/widerstaende.yaml`, one `matching` of symbols and parts."
-- Content decision changes → update this file in the same commit.
-- Public: no personal data, no goals of one learner.
--->
+Explainer „Große Zahlen und Rechnen“ (lernapps/apps#385), Stufen 5–6, Strang `mathematik/arithmetik`, nur Deutsch.
 
 ## Curriculum
 
-<!-- FILL IN: Land, Schulform, Jahrgang; orientation (Lehrplan: document, issuer, year, address, page and unit per
-part; welcome, not required); where the creator's material differs, and which one the app follows. -->
+Land Hessen (Annahme), Gymnasium, Jahrgang 5–6. Orientierung ist die Lernlandkarte Mathematik (lernapps.net/apps/map/mathematik/), Band 5-6. Kein Lehrplan zitiert; die Karte gibt die Reihenfolge. Zahlen bis zur Milliarde (12 Stellen).
 
 ## Competencies
 
-<!-- FILL IN: every competency as "Ich kann …", grouped by chapter; per competency: page or round (file, id),
-exercise ids. -->
+Kapitel `stellenwerte` (Große Zahlen in der Stellenwerttafel):
+- natuerliche-zahlen: „Ich kann natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen.“ – Seiten `buendeln-und-lesen`, `zahlen-bis-milliarden`.
+- zahlen-vergleichen-ordnen: „… vergleichen, am Zahlenstrahl ablesen und der Größe nach ordnen.“ – `zahlenstrahl-ordnen`.
+- runden: „… sinnvoll runden …“ – `runden`.
+
+Kapitel `rechnen` (Schriftlich rechnen, geschickt rechnen, überschlagen):
+- schriftliche-verfahren – `addieren-subtrahieren`, `multiplizieren-dividieren`.
+- grundrechenarten-rechengesetze – `klammern-vorrang`, `rechengesetze`.
+- ueberschlagen – `ueberschlag`.
+
+Aufgaben-IDs: `<seite>-<nr>` (z. B. `buendeln-und-lesen-1`).
 
 ## Content structure
 
-<!-- FILL IN: how a chapter, page or round is built: sections or question groups in order, ids or titles, what
-each holds; length. -->
+Jede Seite: Abschnitte `einstieg` (Ziel in Lernerworten + erste leichte Aufgabe), `darstellung` (Bild/Komponente mit Erklärung), `beispiel`, `uebung` (≥ 3 Aufgaben, steigend). Höchstens 350 Wörter Text. Kapitel beginnt ohne Recap.
+Kapitelfrage „Kann das stimmen?“ kehrt wieder.
 
 ## Terminology
 
-<!-- FILL IN: terms used and avoided (why); units, notation; how learners are addressed; glossary terms with
-wording. -->
+Stellenwerttafel, Zahlenstrahl (bis zur ersten Zahl links der Null; danach Zahlengerade), Bündeln, Überschlag, Rechenprobe. Anrede „du“. Schreibweisen nach `regeln.md` Abschnitt 2: Dreiergruppen mit schmalem geschütztem Leerzeichen (`12 345`), vierstellig ohne Lücke; `−`, `·`, `:`; kein Punkt als Tausendertrennung. Eingabefelder nehmen Leerzeichen und Punkt als Gruppierung an.
 
 ## Exercise patterns
 
-<!-- FILL IN: per pattern: name, competency, archetype form (block or question type, fixed parts, what varies),
-one example (file, id), data file. -->
+- *Tafel ablesen* (`generated`, Seiten 1–2): Plättchenverteilung → Zahl; Fehler: Spalten vertauscht, Null ausgelassen.
+- *Ordnen* (`ordering`), *Strahl ablesen* (`generated`/Komponente), *Runden* (`generated`; Fehler: bei 5 abgerundet, falsche Stelle).
+- *Schriftlich rechnen* (`generated`; Fehler: Übertrag vergessen/falsche Spalte, Nullen beim Multiplizieren).
+- *Vorrang* (`generated`; Fehler: Punkt vor Strich ignoriert).
+- *Überschlag* (`generated`/`true-false`: „Kann das stimmen?“).
+Daten: `src/data/zahlen.yaml` (erfundene Orte, Größenordnungen, keine Marken).
 
 ## Figures
 
-<!-- FILL IN: figure kinds and images, for what; conventions (colours, labels, units, orientation, sizes); alt
-texts and captions; image origin and licence. -->
+Darstellungs-Konventionen (für Folge-Explainer #386, #389):
+- Stellenwerttafel: Spalten von rechts E, Z, H, dann Tausenderblock T-E, T-Z, T-H, Million, Milliarde in Dreierblöcken, Blockkopf beschriftet; Spaltenköpfe als Text (nicht nur Farbe).
+- Plättchen: runde Marke je Einheit der Spalte; zehn Plättchen einer Spalte werden „gebündelt“ zu einem Plättchen der nächsten Spalte (Bündeln-Schaltfläche, Tastatur: Pfeiltasten wählen Spalte, `+`/`−` setzen, Enter bündelt). Unterscheidung nicht nur durch Farbe: Ziffer im Plättchen.
+- Zahlenstrahl: Skala mit gleich langen Abschnitten, beschriftete Hauptstriche, Lupe vergrößert einen Abschnitt um Faktor 10.
+- Alle Bilder: Textalternative, Kontrast WCAG AA, bedienbar mit Tastatur.
+Eigene SVGs/Komponenten, keine fremden Bilder.
 
 ## Sources
 
-<!-- FILL IN: sources linked or relied on (Lehrplan, second explanations, videos, articles), how verified, what
-is left out; the creator's material stays local, never committed. -->
+Lernlandkarte Mathematik, Issue #385, gemeinsame Regeln des Epics #402. Keine Schulbuchtexte. Zahlenbeispiele selbst erfunden.
 
 ## Adding a chapter or round
 
-<!-- FILL IN: the steps for a new chapter (explainer) or round (quiz), in order, with the files: competencies,
-content, exercises from the patterns, entry topics, check, commit. -->
+1. Baustein auf der Karte wählen, Seite anlegen (`src/<kapitel>/<seite>.yaml`), in `chapter.yaml` und `app.yaml` eintragen. 2. Abschnitte wie oben, ≥ 3 Aufgaben je Baustein aus den Mustern. 3. Rechenprobe der Musterlösungen. 4. `npx --no -- lernapps check`, committen.
 
 ## Rules learned from mistakes
 
-<!-- FILL IN: one line per rule with the mistake it came from. "None yet." until the first. -->
+None yet.
