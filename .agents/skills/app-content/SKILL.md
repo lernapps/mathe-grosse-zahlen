@@ -46,8 +46,8 @@ Daten: `src/data/zahlen.yaml` (erfundene Orte, Größenordnungen, keine Marken).
 ## Figures
 
 Darstellungs-Konventionen (für Folge-Explainer #386, #389):
-- Stellenwerttafel: Spalten von rechts E, Z, H, dann Tausenderblock T-E, T-Z, T-H, Million, Milliarde in Dreierblöcken, Blockkopf beschriftet; Spaltenköpfe als Text (nicht nur Farbe).
-- Plättchen: runde Marke je Einheit der Spalte; zehn Plättchen einer Spalte werden „gebündelt“ zu einem Plättchen der nächsten Spalte (Bündeln-Schaltfläche, Tastatur: Pfeiltasten wählen Spalte, `+`/`−` setzen, Enter bündelt). Unterscheidung nicht nur durch Farbe: Ziffer im Plättchen.
+- Stellenwerttafel: Spalten von rechts E, Z, H, T (Seite 1: vier Spalten; ab Seite 2 weitere in Dreierblöcken: Tausender, Million, Milliarde), Blockkopf beschriftet; Spaltenköpfe als Text (nicht nur Farbe).
+- Plättchen: runde Marke je Einheit der Spalte; zehn Plättchen einer Spalte werden „gebündelt“ zu einem Plättchen der nächsten Spalte (Komponente `Stellenwerttafel`: je Spalte Schaltflächen „+“/„−“, „Bündeln“, „Zurücksetzen“; Tastatur: Tab, Enter/Leertaste). Unterscheidung nicht nur durch Farbe: Ziffer im Plättchen.
 - Zahlenstrahl: Skala mit gleich langen Abschnitten, beschriftete Hauptstriche, Lupe vergrößert einen Abschnitt um Faktor 10.
 - Alle Bilder: Textalternative, Kontrast WCAG AA, bedienbar mit Tastatur.
 Eigene SVGs/Komponenten, keine fremden Bilder.
@@ -63,3 +63,5 @@ Lernlandkarte Mathematik, Issue #385, gemeinsame Regeln des Epics #402. Keine Sc
 ## Rules learned from mistakes
 
 None yet.
+
+- Seite `stellenwerte/buendeln-und-lesen` ist die Musterseite: Einstieg mit Ziel, Bild und leichter Aufgabe, `darstellung` mit Komponente, `beispiel`, `uebung` mit `generated` (Fehlertypen), `number`, `true-false`, `ordering`.

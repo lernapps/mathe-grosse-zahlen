@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Große Zahlen in der Stellenwerttafel
+summary: Du liest, schreibst, ordnest und rundest große Zahlen mit der Stellenwerttafel und dem Zahlenstrahl.
+pages: [buendeln-und-lesen]

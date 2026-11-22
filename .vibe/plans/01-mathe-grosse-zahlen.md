@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { checks-pass: 1 }
 ---
 
 # Plan: mathe-grosse-zahlen, first version
@@ -39,7 +39,7 @@ Lernende der Stufen 5–6 verstehen, wie das Zehnersystem große Zahlen ordnet, 
 - Sprache: nur Deutsch (guess: Issue nennt nur Deutsch; Regeln: nie nur Englisch).
 - Darstellungen: Stellenwerttafel + Zahlenstrahl (aus Issue); Namen „Stellenwerttafel“, „Zahlenstrahl“ (Karte: Zahlenstrahl, Regeln nennen „Zahlengerade“ – Fund für Orchestrator).
 - Wiederkehrende Frage „Kann das stimmen?“ (Issue).
-
+- Kein `scope`: kein `open-task`, kein eigenes Material des Erstellers (Referenz structure.md).
 
 ## Notes
 
@@ -199,12 +199,12 @@ page, which a link. -->
       `npx --no -- lernapps create --archetype explainer`.
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [ ] Musterseite stellenwerte/buendeln-und-lesen komplett: Einstieg, Komponente Stellenwerttafel mit statischer Form, Beispiel, ≥3 Aufgaben mit Rückmeldung, Textalternative, Tastaturbedienung; Darstellungs-Konventionen im Content-Guide
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
