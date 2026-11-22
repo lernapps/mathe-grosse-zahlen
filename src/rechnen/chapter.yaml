@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Schriftlich rechnen, geschickt rechnen, überschlagen
+summary: Du rechnest schriftlich mit der Stellenwerttafel im Kopf, nutzt Rechengesetze und prüfst Ergebnisse mit einem Überschlag.
+pages: [addieren-subtrahieren, multiplizieren-dividieren, klammern-vorrang, rechengesetze, ueberschlag]

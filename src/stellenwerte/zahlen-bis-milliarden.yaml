@@ -50,7 +50,7 @@ blocks:
     title: Beispiel
     blocks:
       - type: example
-        title: 2 051 003 400 lesen
+        title: Eine Zahl mit zehn Stellen lesen
         blocks:
           - type: text
             text: |

@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Überschlagsrechnung
+description: "Ergebnisse mit einem Überschlag prüfen: Zahlen runden, grob rechnen, vergleichen. Kann das stimmen?"
+competencies: [ueberschlagen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier kannst
+    blocks:
+      - type: text
+        text: |
+          Ein Taschenrechner zeigt 4987 + 3012 = 17 999. Kann das stimmen? Nach dieser Seite prüfst du das mit einem
+          Überschlag, bevor du dem Ergebnis glaubst. Du brauchst das Runden und die Rechenverfahren der Seiten davor.
+      - type: number
+        id: ueberschlag-einstieg
+        text: "Runde 4987 und 3012 auf Tausender und addiere die gerundeten Zahlen. Welche Summe bekommst du?"
+        answer: 8000
+        tolerance: 0
+        explanation: "4987 wird zu 5000, 3012 wird zu 3000. Zusammen: 8000."
+        links:
+          - title: Überschlagsrechnung (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
+        mistakes:
+          - answer: 7999
+            message: "Das ist die genaue Summe von 4987 und 3012. Du sollst erst runden und dann addieren."
+        hint: "4987 liegt nahe bei 5000. Was ist mit 3012?"
+  - type: section
+    id: darstellung
+    title: Erst grob, dann genau
+    blocks:
+      - type: text
+        text: |
+          Beim **Überschlag** rundest du die Zahlen so, dass du im Kopf rechnen kannst, und rechnest mit den
+          gerundeten Zahlen. Das Ergebnis ist nicht genau, aber es zeigt dir die Größenordnung. Liegt dein genaues Ergebnis weit
+          davon entfernt, hast du dich verrechnet.
+      - type: figure
+        image: images/ueberschlag-strahl.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Zahlenstrahl von 3000 bis 5000. Die Zahl 3012 liegt direkt bei 3000, die Zahl 4987 direkt bei 5000."
+        caption: "4987 liegt dicht bei 5000, 3012 dicht bei 3000. Der Überschlag rechnet mit 5000 und 3000."
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Kann 612 − 389 = 1001 stimmen?
+        blocks:
+          - type: text
+            text: |
+              Runde auf Hunderter: 600 − 400 = 200. Dein Ergebnis 1001 ist fünfmal so groß. Das kann nicht stimmen.
+              Richtig ist 223.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: ueberschlag-summe
+        given:
+          a: { int: [1, 8] }
+          c: { int: [0, 4] }
+          d: { int: [1, 9] }
+          b: { int: [1, 8] }
+          e: { int: [5, 9] }
+          f: { int: [1, 9] }
+        where: ["10 * c + d + 10 * e + f != 100"]
+        task:
+          text: "Überschlage {{a}}{{c}}{{d}} + {{b}}{{e}}{{f}}: Runde beide Zahlen auf Hunderter und addiere."
+        answer: { value: "100 * a + 100 * (b + 1)", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "100 * a + 100 * b"
+            message: "Du hast die zweite Zahl abgerundet. Ihre Zehnerziffer ist 5 oder mehr, du rundest auf."
+          - value: "100 * a + 10 * c + d + 100 * b + 10 * e + f"
+            message: "Das ist die genaue Summe. Beim Überschlag rundest du erst und rechnest dann."
+        hint: "Runde beide Zahlen auf Hunderter und addiere die Hunderter."
+      - type: single-choice
+        id: kann-das-stimmen
+        text: "Jemand rechnet 612 − 389 und bekommt 1001. Kann das stimmen?"
+        options:
+          - text: "Nein: Der Überschlag 600 − 400 ergibt etwa 200."
+            correct: true
+            info: "Richtig: Das Ergebnis müsste etwa 200 sein, nicht 1001."
+          - text: "Ja: Der Überschlag 600 + 400 ergibt etwa 1000."
+            correct: false
+            info: "Falsch: Hier steht minus, nicht plus. Du hast addiert."
+          - text: "Ja: Bei großen Zahlen ist das Ergebnis immer groß."
+            correct: false
+            info: "Beim Subtrahieren wird das Ergebnis kleiner als die erste Zahl."
+        explanation: "Ein Überschlag zeigt die Größenordnung. 1001 ist größer als 612, das geht bei einer Minusaufgabe nicht."
+        links:
+          - title: Überschlagsrechnung (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
+      - type: true-false
+        id: ueberschlag-mal
+        text: "Der Überschlag für 398 · 5 ist 400 · 5 = 2000. Das Ergebnis 1990 kann also stimmen."
+        answer: true
+        explanation: "1990 liegt nahe bei 2000. Der Überschlag bestätigt es, ersetzt aber keine genaue Rechnung."
+        links:
+          - title: Überschlagsrechnung (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
+      - type: number
+        id: ueberschlag-rueckblick
+        text: "Kapitelrückblick: Überschlage 4980 : 5. Runde 4980 auf Tausender und teile. Was bekommst du?"
+        answer: 1000
+        tolerance: 0
+        explanation: "4980 wird zu 5000, 5000 : 5 = 1000. Genau ist das Ergebnis 996, also nahe bei 1000."
+        links:
+          - title: Überschlagsrechnung (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
+        mistakes:
+          - answer: 996
+            message: "Das ist das genaue Ergebnis. Du sollst erst runden und dann teilen."
+          - answer: 25000
+            message: "Du hast 5000 mal 5 gerechnet. Es steht ein Geteiltzeichen da."
+        hint: "4980 liegt nahe bei 5000."

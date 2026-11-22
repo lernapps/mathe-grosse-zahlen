@@ -1,0 +1,122 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Schriftlich addieren und subtrahieren
+description: "Natürliche Zahlen schriftlich addieren und subtrahieren: Jeder Übertrag ist ein Bündel, das in die nächste Spalte zieht."
+competencies: [schriftliche-verfahren]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier kannst
+    blocks:
+      - type: text
+        text: |
+          Nach dieser Seite kannst du Zahlen untereinander schreiben, spaltenweise addieren und subtrahieren und
+          dein Ergebnis mit einer Probe prüfen. Du brauchst die Stellenwerttafel: Zehn Plättchen einer Spalte sind
+          ein Plättchen der Spalte links.
+      - type: number
+        id: spalte-einer
+        text: "In der Einerspalte liegen 8 Plättchen und 7 Plättchen. Zusammen sind das 15 Einer. Wie viele Zehner-Plättchen entstehen, wenn du bündelst?"
+        answer: 1
+        tolerance: 0
+        explanation: "Zehn Einer werden zu einem Zehner. Fünf Einer bleiben in der Spalte."
+        links:
+          - title: Schriftliche Rechenverfahren (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
+        mistakes:
+          - answer: 15
+            message: "So viele Einer sind es zusammen. Gefragt sind die neuen Zehner-Plättchen."
+          - answer: 5
+            message: "Fünf Einer bleiben liegen. Die Zehner sind das, was du bündelst."
+        hint: "Wie viele Einer brauchst du für einen Zehner?"
+  - type: section
+    id: darstellung
+    title: Tafel und Verfahren nebeneinander
+    blocks:
+      - type: text
+        text: |
+          Beim **schriftlichen Addieren** schreibst du die Zahlen so untereinander, dass Einer unter Einer steht, Zehner
+          unter Zehner. Du rechnest von rechts nach links. Ein Übertrag ist ein Bündel: Zehn Plättchen werden zu einem
+          Plättchen der Spalte links und werden dort mitgerechnet.
+      - type: figure
+        image: images/addition-schriftlich.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Schriftliche Addition 358 plus 467. Unter dem Strich stehen die Überträge 1 bei den Zehnern und 1 bei den Hundertern. Das Ergebnis ist 825."
+        caption: "358 + 467: Einer 8 + 7 = 15, schreibe 5, übertrage 1. Zehner 5 + 6 + 1 = 12, schreibe 2, übertrage 1. Hunderter 3 + 4 + 1 = 8."
+      - type: text
+        text: |
+          Beim **schriftlichen Subtrahieren** geht ein Bündel in die andere Richtung: Wenn in einer Spalte zu wenig
+          liegt, entbündelst du ein Plättchen der Spalte links in zehn Plättchen.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: 503 − 278
+        blocks:
+          - type: text
+            text: |
+              Einer: 3 − 8 geht nicht. In der Zehnerspalte liegt 0, also entbündelst du erst 1 Hunderter zu 10 Zehnern,
+              dann 1 Zehner zu 10 Einern. Einer: 13 − 8 = 5. Zehner: 9 − 7 = 2. Hunderter: 4 − 2 = 2. Ergebnis: 225.
+          - type: formula
+            formula: "503 - 278 = 225"
+          - type: text
+            text: "Probe mit der Umkehraufgabe:"
+          - type: formula
+            formula: "225 + 278 = 503"
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: add-schriftlich
+        given:
+          a1: { int: [1, 4] }
+          a2: { int: [1, 9] }
+          a3: { int: [1, 9] }
+          b1: { int: [1, 4] }
+          b2: { int: [1, 9] }
+          b3: { int: [1, 9] }
+        where: ["a3 + b3 >= 10"]
+        task:
+          text: "Rechne schriftlich: {{a1}}{{a2}}{{a3}} + {{b1}}{{b2}}{{b3}}"
+        answer: { value: "100 * (a1 + b1) + 10 * (a2 + b2) + a3 + b3", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "100 * (a1 + b1) + 10 * (a2 + b2) + a3 + b3 - 10"
+            message: "Du hast den Übertrag vergessen. Die Einer ergeben mehr als 9: Ein Zehner muss in die Zehnerspalte."
+        hint: "Rechne von rechts. Wenn eine Spalte 10 oder mehr ergibt, schreibe die Einerziffer und übertrage 1 nach links."
+      - type: generated
+        id: sub-schriftlich
+        given:
+          a1: { int: [5, 9] }
+          a2: { int: [1, 9] }
+          a3: { int: [0, 4] }
+          b1: { int: [1, 4] }
+          b2: { int: [1, 9] }
+          b3: { int: [5, 9] }
+        task:
+          text: "Rechne schriftlich: {{a1}}{{a2}}{{a3}} − {{b1}}{{b2}}{{b3}}"
+        answer: { value: "100 * a1 + 10 * a2 + a3 - 100 * b1 - 10 * b2 - b3", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "100 * (a1 - b1) + 10 * (a2 - b2) + b3 - a3"
+            message: "Du hast in der Einerspalte die kleinere Ziffer von der größeren abgezogen. Wenn oben zu wenig liegt, entbündelst du einen Zehner zu zehn Einern."
+        hint: "In der Einerspalte ist die obere Ziffer kleiner. Entbündle einen Zehner zu zehn Einern."
+      - type: ordering
+        id: add-schritte
+        text: "Ordne die Schritte beim schriftlichen Addieren von 358 + 467."
+        items:
+          - "Einer: 8 + 7 = 15, schreibe 5, übertrage 1"
+          - "Zehner: 5 + 6 + 1 = 12, schreibe 2, übertrage 1"
+          - "Hunderter: 3 + 4 + 1 = 8, schreibe 8"
+          - "Probe: 825 − 467 = 358"
+        explanation: "Du rechnest von rechts nach links, weil jeder Übertrag nach links wandert. Die Probe kommt zuletzt."
+        links:
+          - title: Schriftliche Rechenverfahren (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
+      - type: true-false
+        id: sub-probe
+        text: "Du rechnest 503 − 278 = 225. Die Probe 225 + 278 ergibt wieder 503. Dann stimmt dein Ergebnis."
+        answer: true
+        explanation: "Addieren und Subtrahieren sind Umkehrungen voneinander. Kommt bei der Probe die erste Zahl heraus, stimmt die Rechnung."
+        links:
+          - title: Schriftliche Rechenverfahren (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"

@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { checks-pass: 1 }
+failedChecks: { accessible: 1, checks-pass: 2 }
 ---
 
 # Plan: mathe-grosse-zahlen, first version
@@ -212,9 +212,9 @@ page, which a link. -->
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
       Creator: Orchestrator (Vertretung): Musterseite angenommen; übrige 8 Seiten nach Muster; Wikipedia-Links entfernen (erledigt, Kartenlink); Prüfer vor Veröffentlichen.
-- [ ] Seite zahlen-bis-milliarden: Tafel bis Milliarden, Lesen und Schreiben in Worten, ≥3 Aufgaben
-- [ ] Seite zahlenstrahl-ordnen: Komponente Zahlenstrahl mit Lupe, Vergleichen und Ordnen, ≥3 Aufgaben
-- [ ] Seite runden: Runden auf Stellen am Zahlenstrahl, ≥3 Aufgaben mit Fehlertypen
+- [x] Seite zahlen-bis-milliarden: Tafel bis Milliarden, Lesen und Schreiben in Worten, ≥3 Aufgaben
+- [x] Seite zahlenstrahl-ordnen: Komponente Zahlenstrahl mit Lupe, Vergleichen und Ordnen, ≥3 Aufgaben
+- [x] Seite runden: Runden auf Stellen am Zahlenstrahl, ≥3 Aufgaben mit Fehlertypen
 - [ ] Seite addieren-subtrahieren: schriftliche Verfahren neben der Tafel, ≥3 Aufgaben
 - [ ] Seite multiplizieren-dividieren: Rechteckmodell und Verfahren, ≥3 Aufgaben
 - [ ] Seite klammern-vorrang: Vorrangregeln, ≥3 Aufgaben
