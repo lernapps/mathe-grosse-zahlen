@@ -215,11 +215,11 @@ page, which a link. -->
 - [x] Seite zahlen-bis-milliarden: Tafel bis Milliarden, Lesen und Schreiben in Worten, ≥3 Aufgaben
 - [x] Seite zahlenstrahl-ordnen: Komponente Zahlenstrahl mit Lupe, Vergleichen und Ordnen, ≥3 Aufgaben
 - [x] Seite runden: Runden auf Stellen am Zahlenstrahl, ≥3 Aufgaben mit Fehlertypen
-- [ ] Seite addieren-subtrahieren: schriftliche Verfahren neben der Tafel, ≥3 Aufgaben
-- [ ] Seite multiplizieren-dividieren: Rechteckmodell und Verfahren, ≥3 Aufgaben
-- [ ] Seite klammern-vorrang: Vorrangregeln, ≥3 Aufgaben
-- [ ] Seite rechengesetze: Plättchenbilder, vorteilhaftes Rechnen, ≥3 Aufgaben
-- [ ] Seite ueberschlag: Überschlag und Kapitelrückblick, ≥3 Aufgaben
+- [x] Seite addieren-subtrahieren: schriftliche Verfahren neben der Tafel, ≥3 Aufgaben
+- [x] Seite multiplizieren-dividieren: Rechteckmodell und Verfahren, ≥3 Aufgaben
+- [x] Seite klammern-vorrang: Vorrangregeln, ≥3 Aufgaben
+- [x] Seite rechengesetze: Plättchenbilder, vorteilhaftes Rechnen, ≥3 Aufgaben
+- [x] Seite ueberschlag: Überschlag und Kapitelrückblick, ≥3 Aufgaben
 - [ ] Start- und Kapitelseiten, Karte/Baustein-Zuordnung, lernapps check ohne Fehler
 <!-- tasks: pages (9 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
