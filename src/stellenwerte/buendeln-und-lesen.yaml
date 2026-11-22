@@ -24,8 +24,8 @@ blocks:
         tolerance: 0
         explanation: "Zwei Zehner sind 20, dazu kommen 7 Einer. Zusammen ergibt das 27."
         links:
-          - title: Stellenwertsystem (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Stellenwertsystem"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 9
             message: "Du hast die Plättchen gezählt oder 2 und 7 addiert. Ein Zehner-Plättchen zählt aber 10."
@@ -128,8 +128,8 @@ blocks:
         tolerance: 0
         explanation: "Zehn Einer werden zu 1 Zehner. Vier Einer bleiben übrig. Die Zahl bleibt 14."
         links:
-          - title: Zehnersystem (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Zehnersystem"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 14
             message: "So viele Einer liegen am Anfang. Gefragt sind die Zehner nach dem Bündeln."
@@ -142,8 +142,8 @@ blocks:
         answer: false
         explanation: "Die Null hält die Hunderter-Spalte frei. Ohne sie rutschen die Ziffern nach rechts und die Zahl wird viel kleiner: 275 ist nicht 2075."
         links:
-          - title: Stellenwertsystem (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Stellenwertsystem"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: ordering
         id: tafel-ordnen
         text: "Ordne die Zahlen, die in der Tafel liegen, von der kleinsten zur größten."
@@ -154,5 +154,5 @@ blocks:
           - "8190"
         explanation: "Vergleiche zuerst die Tausender, dann die Hunderter: 998 hat keinen Tausender, 1089 hat 0 Hunderter, 1809 hat 8 Hunderter, 8190 hat 8 Tausender."
         links:
-          - title: Stellenwertsystem (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Stellenwertsystem"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"

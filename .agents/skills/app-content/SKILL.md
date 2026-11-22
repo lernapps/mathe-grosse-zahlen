@@ -62,6 +62,6 @@ Lernlandkarte Mathematik, Issue #385, gemeinsame Regeln des Epics #402. Keine Sc
 
 ## Rules learned from mistakes
 
-None yet.
+- Keine Wikipedia- oder anderen Fremdlinks (regeln.md Abschnitt 4): „Weiterlesen“-Link jeder Aufgabe zeigt auf die Kartenseite des Bausteins `https://lernapps.net/apps/map/mathematik/c/<baustein-id>/` (Fehler der Musterseite).
 
 - Seite `stellenwerte/buendeln-und-lesen` ist die Musterseite: Einstieg mit Ziel, Bild und leichter Aufgabe, `darstellung` mit Komponente, `beispiel`, `uebung` mit `generated` (Fehlertypen), `number`, `true-false`, `ordering`.
