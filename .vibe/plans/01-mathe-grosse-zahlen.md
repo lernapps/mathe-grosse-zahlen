@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: plan
+phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -143,8 +143,9 @@ Lernende der Stufen 5–6 verstehen, wie das Zehnersystem große Zahlen ordnet, 
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Orchestrator (Vertretung): Plan bestätigt, ja; Push von work erlaubt; Selbsteinschätzung nach Skill; 12 Stellen, Tastatur, Textalternative nennen.
 
 ### Content method
 
@@ -176,6 +177,8 @@ page, which a link. -->
 - *Rechteckmodell*, *Plättchenbilder*: SVG (`image`) mit Textalternative.
 - Warum Komponenten: kein Block kann Bündeln oder Zoomen (`prefer-built-in-block`); zuerst statische Form, Logikmodul + Test.
 
+**Barrierefreiheit (Regeln 3.7):** Tafel- und Zahlenstrahl-Komponente per Tastatur bedienbar (Pfeiltasten/Enter für Plättchen setzen, bündeln, Lupe) und mit Textalternative; Zahlen bis zur Milliarde, bis 12 Stellen.
+**Selbsteinschätzung:** folgt Skill `lernapps-explainer-self-assessment` (je Kapitel `selfAssessment`).
 **Datenbereich:** Zahlen bis 12 Stellen; Datei `src/data/zahlen.yaml` (Einwohner, Entfernungen, frei erfundene Orte, Werte als Größenordnung, ohne Marken).
 **Spätere Kapitel:** Seite = Datei in Kapitelordner, Baustein auf Karte, ≥3 Aufgaben, gleiche Abschnitts-IDs; Tafel/Strahl-Konventionen aus diesem Guide.
 
