@@ -1,0 +1,121 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Zahlen am Zahlenstrahl ordnen
+description: "Natürliche Zahlen am Zahlenstrahl ablesen, vergleichen und der Größe nach ordnen."
+competencies: [zahlen-vergleichen-ordnen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier kannst
+    blocks:
+      - type: text
+        text: |
+          Nach dieser Seite kannst du Zahlen am Zahlenstrahl ablesen, mit den Zeichen < und > vergleichen und der
+          Größe nach ordnen. Du brauchst die Stellenwerttafel von den Seiten davor.
+      - type: number
+        id: strahl-einstieg
+        text: "Auf dem Zahlenstrahl von 0 bis 1000 sind die Striche 100 voneinander entfernt. Ein Pfeil steht genau auf dem Strich nach 300. Welche Zahl ist das?"
+        answer: 400
+        tolerance: 0
+        explanation: "Die Striche zählen 0, 100, 200, 300, 400. Der Strich nach 300 gehört zu 400."
+        links:
+          - title: Zahlen vergleichen und ordnen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"
+        mistakes:
+          - answer: 301
+            message: "Die Striche sind nicht um 1 voneinander entfernt, sondern um 100."
+          - answer: 310
+            message: "Die Striche sind nicht um 10 voneinander entfernt, sondern um 100."
+        hint: "Zähle von Strich zu Strich: Wie viel kommt bei jedem Schritt dazu?"
+  - type: section
+    id: darstellung
+    title: Mit der Lupe genauer schauen
+    blocks:
+      - type: text
+        text: |
+          Am **Zahlenstrahl** hat jede Zahl ihren Ort. Je weiter rechts, desto größer. Mit der Lupe machst du aus einem
+          Abschnitt einen neuen Zahlenstrahl, zehnmal so fein. Wähle einen Abschnitt und schau, wie die Striche
+          sich ändern.
+      - type: vue-component
+        id: strahl-lupe
+        component: Zahlenstrahl
+        props:
+          from: 0
+          to: 1000
+          scale: "Ein Zahlenstrahl von {from} bis {to} mit zehn gleich langen Abschnitten."
+          section: "Abschnitt von {from} bis {to} mit der Lupe ansehen"
+          resetLabel: "Wieder von 0 bis 1000"
+          hint: "Wähle einen Abschnitt. Die Lupe zeigt ihn zehnmal so fein."
+        nojs: |
+          Ein Zahlenstrahl von 0 bis 1000 mit zehn Abschnitten zu je 100. Die Lupe zeigt einen Abschnitt zehnmal so
+          fein: Aus 300 bis 400 wird ein Zahlenstrahl mit den Strichen 300, 310, 320 und so weiter bis 400. Noch
+          eine Lupe zeigt 340 bis 350 mit Einerschritten.
+      - type: definition
+        term: Zahlenstrahl
+        explanation: Der Zahlenstrahl beginnt bei 0. Gleiche Abstände bedeuten gleiche Unterschiede. Rechts liegt die größere Zahl.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: 4087 und 4780 vergleichen
+        blocks:
+          - type: text
+            text: |
+              Beide Zahlen haben vier Stellen. Vergleiche von links: Die Tausender sind gleich (4). Bei den Hundertern
+              steht 0 gegen 7. Also gilt 4087 < 4780 und am Zahlenstrahl liegt 4087 links von 4780.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: strahl-mitte-hunderter
+        given:
+          lo: { int: [1, 9], step: 1 }
+        task:
+          text: "Auf einem Zahlenstrahl mit Strichen im Abstand 100 liegt ein Pfeil genau in der Mitte zwischen {{lo}}00 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?"
+        answer: { value: "lo * 100 + 50", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "lo * 100 + 5"
+            message: "Die Mitte von 100 ist 50, nicht 5."
+        hint: "Wie groß ist der Abstand zwischen den Strichen? Die Hälfte davon kommt zu {{lo}}00 dazu."
+      - type: generated
+        id: strahl-mitte-tausender
+        given:
+          lo: { int: [1, 9] }
+        task:
+          text: "Auf einem Zahlenstrahl mit Strichen im Abstand 1000 liegt ein Pfeil genau in der Mitte zwischen {{lo}}000 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?"
+        answer: { value: "lo * 1000 + 500", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "lo * 1000 + 50"
+            message: "Die Mitte von 1000 ist 500, nicht 50."
+        hint: "Der Abstand zwischen den Strichen ist 1000. Die Hälfte davon kommt dazu."
+      - type: single-choice
+        id: zeichen-vergleichen
+        text: "Welches Zeichen gehört zwischen 4087 und 4780?"
+        options:
+          - text: "4087 < 4780"
+            correct: true
+            info: "Richtig: Bei den Hundertern ist 0 kleiner als 7."
+          - text: "4087 > 4780"
+            correct: false
+            info: "Falsch: Das Zeichen zeigt mit der Spitze auf die kleinere Zahl. Hier ist die linke Zahl kleiner."
+          - text: "4087 = 4780"
+            correct: false
+            info: "Die Zahlen haben unterschiedliche Ziffern in der Hunderter- und Zehnerspalte."
+        explanation: "Du vergleichst von links: Das erste Paar verschiedener Ziffern entscheidet."
+        links:
+          - title: Zahlen vergleichen und ordnen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"
+      - type: ordering
+        id: zahlen-ordnen
+        text: "Ordne die Zahlen am Zahlenstrahl von links nach rechts: von der kleinsten zur größten."
+        items:
+          - "999"
+          - "1009"
+          - "1090"
+          - "1900"
+          - "9100"
+        explanation: "Mehr Stellen heißt größer: 999 hat nur drei Stellen. Bei vier Stellen entscheidet zuerst der Tausender, dann der Hunderter."
+        links:
+          - title: Zahlen vergleichen und ordnen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"

@@ -208,9 +208,10 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite stellenwerte/buendeln-und-lesen komplett: Einstieg, Komponente Stellenwerttafel mit statischer Form, Beispiel, ≥3 Aufgaben mit Rückmeldung, Textalternative, Tastaturbedienung; Darstellungs-Konventionen im Content-Guide
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
+      Creator: Orchestrator (Vertretung): Musterseite angenommen; übrige 8 Seiten nach Muster; Wikipedia-Links entfernen (erledigt, Kartenlink); Prüfer vor Veröffentlichen.
 - [ ] Seite zahlen-bis-milliarden: Tafel bis Milliarden, Lesen und Schreiben in Worten, ≥3 Aufgaben
 - [ ] Seite zahlenstrahl-ordnen: Komponente Zahlenstrahl mit Lupe, Vergleichen und Ordnen, ≥3 Aufgaben
 - [ ] Seite runden: Runden auf Stellen am Zahlenstrahl, ≥3 Aufgaben mit Fehlertypen
