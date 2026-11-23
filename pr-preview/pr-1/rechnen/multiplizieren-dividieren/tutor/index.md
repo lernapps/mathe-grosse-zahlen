@@ -41,10 +41,14 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Natürliche Zahlen schriftlich multiplizieren und dividieren, mit dem Rechteckmodell und der Probe.
 
-### Was du hier kannst
+### Was du hier lernst
 
 Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
 prüfen. Du brauchst das kleine Einmaleins und das Bündeln aus der Stellenwerttafel.
+
+Eine Malaufgabe wie 4 · 12 kannst du dir als Rechteck aus Plättchen vorstellen: **Anzahl der Reihen mal
+Anzahl der Plättchen in einer Reihe**. Das Rechteck hat dann 4 Reihen mit je 12 Plättchen. Alle Plättchen
+zusammen sind das Ergebnis.
 
 - Aufgabe `mal-einstieg` (unten)
 

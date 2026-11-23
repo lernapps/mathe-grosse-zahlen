@@ -50,7 +50,7 @@ richtig hast. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwe
 
 - Aufgabe `vorwissen-einmaleins` (unten)
 
-### Was du hier kannst
+### Was du hier lernst
 
 Nach dieser Seite kannst du eine Zahl in die Stellenwerttafel legen und eine Zahl aus der Tafel ablesen.
 Du brauchst nur das, was du aus der Grundschule kennst: Zahlen bis 1000 und ein bisschen darüber.
@@ -112,13 +112,13 @@ $2 \cdot 1000 + 0 \cdot 100 + 7 \cdot 10 + 5 \cdot 1 = 2075$
 
 ### Aufgabe vorwissen-einmaleins
 
-- Aufgabe: Wie viel ist 7 · 8?
+- Aufgabe: Wie viel ist 9 · 12?
 - Antwortformat: eine Zahl eintippen
-- Lösung: 56
-- Erklärung: 7 · 8 = 56. Du kannst es auch so rechnen: 7 · 8 = 7 · 10 − 7 · 2 = 70 − 14 = 56.
-- Tipp der App: Das kleine Einmaleins: 7 · 8.
+- Lösung: 108
+- Erklärung: 9 · 12 = 108. Du kannst es so rechnen: 9 · 10 = 90, 9 · 2 = 18 und 90 + 18 = 108.
+- Tipp der App: Zerlege 12 in 10 und 2.
 - Typische Fehler und was die App sagt:
-  - 15: Du hast addiert: 7 + 8. Hier steht mal.
+  - 21: Du hast addiert: 9 + 12. Hier steht mal.
 - Link: [../?via=tutor#vorwissen-einmaleins](../?via=tutor#vorwissen-einmaleins)
 
 ### Aufgabe tafel-einstieg

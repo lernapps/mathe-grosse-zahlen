@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Ergebnisse mit einem Überschlag prüfen: Zahlen runden, grob rechnen, vergleichen. Kann das stimmen?
 
-### Was du hier kannst
+### Was du hier lernst
 
 Ein Taschenrechner zeigt 4987 + 3012 = 17 999. Kann das stimmen? Nach dieser Seite prüfst du das mit einem
 Überschlag, bevor du dem Ergebnis glaubst. Du brauchst das Runden und die Rechenverfahren der Seiten davor.

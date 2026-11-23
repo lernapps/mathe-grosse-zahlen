@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Große Zahlen in der Stellenwerttafel lesen und schreiben: Dreierblöcke bis zu den Milliarden.
 
-### Was du hier kannst
+### Was du hier lernst
 
 Zeitungen nennen große Zahlen: Einwohner, Entfernungen, Preise. Nach dieser Seite kannst du solche Zahlen
 lesen, schreiben und in die Stellenwerttafel eintragen. Du baust auf der Seite davor auf: Zehn Plättchen
@@ -63,7 +63,7 @@ Bild: Stellenwerttafel mit zwölf Spalten in vier Dreierblöcken: Milliarden, Mi
 
 **Beispiel: Eine Zahl mit zehn Stellen lesen**
 
-Lies Block für Block von links: „zwei Milliarden, einundfünfzig Millionen, dreitausendvierhundert“.
+Die Zahl aus dem Schaubild oben ist 2 051 003 400. Lies sie Block für Block von links: „zwei Milliarden, einundfünfzig Millionen, dreitausendvierhundert“.
 Der Block der Tausender ist **003**: nur 3 Tausender. Die beiden Nullen davor halten die Plätze frei.
 
 ### Übung

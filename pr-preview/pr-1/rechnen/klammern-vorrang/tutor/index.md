@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Klammern und die Vorrangregeln beachten: Punkt vor Strich, Klammern zuerst.
 
-### Was du hier kannst
+### Was du hier lernst
 
 Zwei Kinder rechnen 3 + 4 · 5. Das eine bekommt 35, das andere 23. Nach dieser Seite weißt du, wer recht hat,
 und kannst Terme mit Klammern und Vorrangregeln richtig ausrechnen. Du kennst schon Plus, Minus und Mal.

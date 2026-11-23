@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Vertauschen, Zusammenfassen und Verteilen: Rechengesetze an Plättchenbildern und für vorteilhaftes Rechnen.
 
-### Was du hier kannst
+### Was du hier lernst
 
 Manche Aufgaben kannst du im Kopf lösen, wenn du die Reihenfolge geschickt änderst. Nach dieser Seite
 kennst du drei Rechengesetze und nutzt sie für vorteilhaftes Rechnen. Du brauchst die Vorrangregeln von

@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Zahlen sinnvoll runden und die Genauigkeit passend zur Aufgabe wählen.
 
-### Was du hier kannst
+### Was du hier lernst
 
 Eine Zeitung schreibt: „Die Strecke ist etwa 350 km lang.“ Genau sind es 347 km. Du baust auf der Stellenwerttafel auf. Nach dieser Seite kannst du
 eine Zahl auf eine Stelle runden und entscheiden, wie genau eine Zahl sein muss.

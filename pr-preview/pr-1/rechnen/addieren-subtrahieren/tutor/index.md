@@ -48,7 +48,7 @@ richtig hast und die Seiten davor kennst. Sonst übe zuerst den [Baustein „Nat
 
 - Aufgabe `vorwissen-kopf` (unten)
 
-### Was du hier kannst
+### Was du hier lernst
 
 Nach dieser Seite kannst du Zahlen untereinander schreiben, spaltenweise addieren und subtrahieren und
 dein Ergebnis mit einer Probe prüfen. Du brauchst die Stellenwerttafel: Zehn Plättchen einer Spalte sind
@@ -100,13 +100,13 @@ $225 + 278 = 503$
 
 ### Aufgabe vorwissen-kopf
 
-- Aufgabe: Rechne im Kopf: 8 + 7
+- Aufgabe: Rechne im Kopf: 48 + 37
 - Antwortformat: eine Zahl eintippen
-- Lösung: 15
-- Erklärung: 8 + 7 = 15: Mit 2 kommst du auf 10, dann fehlen noch 5.
-- Tipp der App: Ergänze erst bis zur 10.
+- Lösung: 85
+- Erklärung: 48 + 37 = 85: Rechne 48 + 30 = 78, dann 78 + 7 = 85. Oder: Mit 2 kommst du auf 50, dann fehlen noch 35.
+- Tipp der App: Addiere erst die Zehner, dann die Einer.
 - Typische Fehler und was die App sagt:
-  - 56: Du hast 8 · 7 gerechnet. Hier steht plus.
+  - 75: Du hast die 10 vergessen, die beim Addieren der Einer (8 + 7 = 15) in die Zehnerspalte wandert.
 - Link: [../?via=tutor#vorwissen-kopf](../?via=tutor#vorwissen-kopf)
 
 ### Aufgabe spalte-einer

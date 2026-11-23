@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Natürliche Zahlen am Zahlenstrahl ablesen, vergleichen und der Größe nach ordnen.
 
-### Was du hier kannst
+### Was du hier lernst
 
 Nach dieser Seite kannst du Zahlen am Zahlenstrahl ablesen, mit den Zeichen &lt; und > vergleichen und der
 Größe nach ordnen. Du brauchst die Stellenwerttafel von den Seiten davor.
@@ -51,8 +51,8 @@ Größe nach ordnen. Du brauchst die Stellenwerttafel von den Seiten davor.
 ### Mit der Lupe genauer schauen
 
 Am **Zahlenstrahl** hat jede Zahl ihren Ort. Je weiter rechts, desto größer. Mit der Lupe machst du aus einem
-Abschnitt einen neuen Zahlenstrahl, zehnmal so fein. Wähle einen Abschnitt und schau, wie die Striche
-sich ändern.
+Abschnitt einen neuen Zahlenstrahl, zehnmal so fein. Drücke auf eine Zahl: Dann zeigt die Lupe den Abschnitt,
+der dort beginnt, und unten siehst du ihn vergrößert.
 
 Interaktiv: Ein Zahlenstrahl von 0 bis 1000 mit zehn Abschnitten zu je 100. Die Lupe zeigt einen Abschnitt zehnmal so fein: Aus 300 bis 400 wird ein Zahlenstrahl mit den Strichen 300, 310, 320 und so weiter bis 400. Noch eine Lupe zeigt 340 bis 350 mit Einerschritten.
 
@@ -77,7 +77,7 @@ steht 0 gegen 7. Also gilt 4087 &lt; 4780 und am Zahlenstrahl liegt 4087 links v
 
 ### Aufgabe strahl-einstieg
 
-- Aufgabe: Auf einem Zahlenstrahl heißen die Striche 0, 100, 200, 300 und so weiter. Ein Pfeil steht auf dem nächsten Strich nach dem Strich bei 300. Welche Zahl gehört zu diesem Strich?
+- Aufgabe: Auf einem Zahlenstrahl heißen die Striche 0, 100, 200, 300 und so weiter. Welche Zahl gehört zum nächsten Strich nach dem Strich bei 300?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 400
 - Erklärung: Die Striche zählen 0, 100, 200, 300, 400. Der Strich nach 300 gehört zu 400.
@@ -89,7 +89,7 @@ steht 0 gegen 7. Also gilt 4087 &lt; 4780 und am Zahlenstrahl liegt 4087 links v
 
 ### Aufgabe strahl-mitte-hunderter
 
-- Aufgabe: „Auf einem Zahlenstrahl mit Strichen im Abstand 100 liegt ein Pfeil genau in der Mitte zwischen {lo}00 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?“
+- Aufgabe: „Auf einem Zahlenstrahl mit Strichen im Abstand 100 liegt eine Zahl genau in der Mitte zwischen {lo}00 und dem nächsten Strich. Welche Zahl ist das?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Wie groß ist der Abstand zwischen den Strichen? Die Hälfte davon kommt zu {lo}00 dazu.“
 - Typische Fehler und was die App sagt:
@@ -112,7 +112,7 @@ Nr. | lo | Lösung | F1
 
 ### Aufgabe strahl-mitte-tausender
 
-- Aufgabe: „Auf einem Zahlenstrahl mit Strichen im Abstand 1000 liegt ein Pfeil genau in der Mitte zwischen {lo}000 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?“
+- Aufgabe: „Auf einem Zahlenstrahl mit Strichen im Abstand 1000 liegt eine Zahl genau in der Mitte zwischen {lo}000 und dem nächsten Strich. Welche Zahl ist das?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Abstand zwischen den Strichen ist 1000. Die Hälfte davon kommt dazu.“
 - Typische Fehler und was die App sagt:
