@@ -18,9 +18,6 @@ blocks:
         answer: 1000
         tolerance: 0
         explanation: "Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 10
             message: "Zehn Plättchen bündelst du zum Nachbarn. Von Tausend bis zur Million sind es drei Spalten, jedes Mal mal zehn."
@@ -86,17 +83,11 @@ blocks:
         distractors:
           - "100 000 000"
         explanation: "Eine Million hat sechs Nullen, eine Milliarde neun. Zehn Millionen hat sieben Nullen."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: true-false
         id: milliarde-tausend-millionen
         text: "Eine Milliarde sind hundert Millionen."
         answer: false
         explanation: "Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: ordering
         id: einwohner-ordnen
         text: "Ordne die Einwohnerzahlen der erfundenen Orte von der kleinsten zur größten."
@@ -106,6 +97,3 @@ blocks:
           - "1\u202f250\u202f000"
           - "8\u202f200\u202f000"
         explanation: "Vergleiche zuerst die Anzahl der Stellen: Mehr Stellen heißt größere Zahl. Bei gleich vielen Stellen vergleichst du von links."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"

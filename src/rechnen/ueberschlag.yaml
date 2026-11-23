@@ -17,9 +17,6 @@ blocks:
         answer: 8000
         tolerance: 0
         explanation: "4987 wird zu 5000, 3012 wird zu 3000. Zusammen: 8000."
-        links:
-          - title: Überschlagsrechnung (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
         mistakes:
           - answer: 7999
             message: "Das ist die genaue Summe von 4987 und 3012. Du sollst erst runden und dann addieren."
@@ -90,26 +87,17 @@ blocks:
             correct: false
             info: "Beim Subtrahieren wird das Ergebnis kleiner als die erste Zahl."
         explanation: "Ein Überschlag zeigt die Größenordnung. 1001 ist größer als 612, das geht bei einer Minusaufgabe nicht."
-        links:
-          - title: Überschlagsrechnung (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
       - type: true-false
         id: ueberschlag-mal
         text: "Der Überschlag für 398 · 5 ist 400 · 5 = 2000. Das Ergebnis 1990 kann also stimmen."
         answer: true
         explanation: "1990 liegt nahe bei 2000. Der Überschlag bestätigt es, ersetzt aber keine genaue Rechnung."
-        links:
-          - title: Überschlagsrechnung (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
       - type: number
         id: ueberschlag-rueckblick
         text: "Überschlage 4980 : 5. Runde 4980 auf Tausender und teile. Was bekommst du?"
         answer: 1000
         tolerance: 0
         explanation: "4980 wird zu 5000, 5000 : 5 = 1000. Genau ist das Ergebnis 996, also nahe bei 1000."
-        links:
-          - title: Überschlagsrechnung (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
         mistakes:
           - answer: 996
             message: "Das ist das genaue Ergebnis. Du sollst erst runden und dann teilen."

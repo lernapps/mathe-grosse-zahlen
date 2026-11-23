@@ -17,9 +17,6 @@ blocks:
         answer: 350
         tolerance: 0
         explanation: "347 liegt zwischen 340 und 350. Bis 350 sind es 3, bis 340 sind es 7. Also ist 350 näher."
-        links:
-          - title: Runden (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/runden/"
         mistakes:
           - answer: 340
             message: "340 ist zwar ein voller Zehner, aber 7 weit weg. Bis 350 sind es nur 3."
@@ -86,9 +83,6 @@ blocks:
         answer: 2500
         tolerance: 0
         explanation: "Die Ziffer rechts von der Hunderterstelle ist 5. Bei 5 rundest du auf: 2500."
-        links:
-          - title: Runden (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/runden/"
         mistakes:
           - answer: 2400
             message: "Du hast abgerundet. Bei einer 5 rechts von der Stelle rundest du auf."
@@ -109,6 +103,3 @@ blocks:
             correct: false
             info: "Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen."
         explanation: "Du rundest so, dass die Zahl noch zum Zweck passt: nicht ungenauer als nötig, nicht genauer als sinnvoll."
-        links:
-          - title: Runden (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/runden/"

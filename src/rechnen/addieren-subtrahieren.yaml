@@ -17,9 +17,6 @@ blocks:
         answer: 85
         tolerance: 0
         explanation: "48 + 37 = 85: Rechne 48 + 30 = 78, dann 78 + 7 = 85. Oder: Mit 2 kommst du auf 50, dann fehlen noch 35."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 75
             message: "Du hast die 10 vergessen, die beim Addieren der Einer (8 + 7 = 15) in die Zehnerspalte wandert."
@@ -39,9 +36,6 @@ blocks:
         answer: 1
         tolerance: 0
         explanation: "Zehn Einer werden zu einem Zehner. Fünf Einer bleiben in der Spalte."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 15
             message: "So viele Einer sind es zusammen. Gefragt sind die neuen Zehner-Plättchen."
@@ -142,14 +136,8 @@ blocks:
           - "Hunderter: 3 + 4 + 1 = 8, schreibe 8"
           - "Probe: 825 − 467 = 358"
         explanation: "Du rechnest von rechts nach links, weil jeder Übertrag nach links wandert. Die Probe kommt zuletzt."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: true-false
         id: sub-probe
         text: "Du rechnest 503 − 278 = 225. Die Probe 225 + 278 ergibt wieder 503. Dann stimmt dein Ergebnis."
         answer: true
         explanation: "Addieren und Subtrahieren sind Umkehrungen voneinander. Kommt bei der Probe die erste Zahl heraus, stimmt die Rechnung."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"

@@ -17,9 +17,6 @@ blocks:
         answer: 400
         tolerance: 0
         explanation: "Nach 399 kommt 400: 9 Einer und 1 weiterer Einer sind ein Zehner, dann sind 10 Zehner ein Hunderter."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 3100
             message: "Du hast 3, 10 und 0 hintereinander geschrieben. Beim Weiterzählen werden aus 10 Einern 1 Zehner."
@@ -30,9 +27,6 @@ blocks:
         answer: 108
         tolerance: 0
         explanation: "9 · 12 = 108. Du kannst es so rechnen: 9 · 10 = 90, 9 · 2 = 18 und 90 + 18 = 108."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 21
             message: "Du hast addiert: 9 + 12. Hier steht mal."
@@ -57,9 +51,6 @@ blocks:
         answer: 27
         tolerance: 0
         explanation: "Zwei Zehner sind 20, dazu kommen 7 Einer. Zusammen ergibt das 27."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 9
             message: "Du hast die Plättchen gezählt oder 2 und 7 addiert. Ein Zehner-Plättchen zählt aber 10."
@@ -166,9 +157,6 @@ blocks:
         answer: 1
         tolerance: 0
         explanation: "Zehn Einer werden zu 1 Zehner. Vier Einer bleiben übrig. Die Zahl bleibt 14."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 14
             message: "So viele Einer liegen am Anfang. Gefragt sind die Zehner nach dem Bündeln."
@@ -180,9 +168,6 @@ blocks:
         text: "Die Zahlen 2075 und 275 unterscheiden sich nur durch die Null. Die Null kann man deshalb weglassen."
         answer: false
         explanation: "Die Null hält die Hunderter-Spalte frei. Ohne sie rutschen die Ziffern nach rechts und die Zahl wird viel kleiner: 275 ist nicht 2075."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: ordering
         id: tafel-ordnen
         text: "Ordne die Zahlen der Größe nach: von der kleinsten zur größten."
@@ -192,6 +177,3 @@ blocks:
           - "1809"
           - "8190"
         explanation: "Vergleiche zuerst die Tausender, dann die Hunderter: 998 hat keinen Tausender, 1089 hat 0 Hunderter, 1809 hat 8 Hunderter, 8190 hat 8 Tausender."
-        links:
-          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"

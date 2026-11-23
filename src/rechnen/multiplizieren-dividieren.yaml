@@ -22,9 +22,6 @@ blocks:
         answer: 48
         tolerance: 0
         explanation: "4 · 10 = 40 und 4 · 2 = 8. Zusammen sind das 48 Plättchen."
-        links:
-          - title: Schriftliche Rechenverfahren (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
         mistakes:
           - answer: 16
             message: "Du hast addiert: 4 + 12. Mit 4 Reihen zu je 12 Plättchen rechnest du mal."
@@ -116,18 +113,12 @@ blocks:
         text: "Du rechnest 756 : 6 = 126. Die Probe 126 · 6 ergibt 756. Das Ergebnis stimmt."
         answer: true
         explanation: "Malnehmen und Teilen sind Umkehrungen voneinander. Kommt bei der Probe die Ausgangszahl heraus, stimmt die Rechnung."
-        links:
-          - title: Schriftliche Rechenverfahren (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
       - type: number
         id: mal-rechteck
         text: "Rechne mit dem Rechteckmodell: 23 · 14. Wie viel ergeben die vier Teile zusammen?"
         answer: 322
         tolerance: 0
         explanation: "200 + 30 + 80 + 12 = 322."
-        links:
-          - title: Schriftliche Rechenverfahren (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
         mistakes:
           - answer: 37
             message: "Du hast 23 + 14 gerechnet. Gefragt ist das Produkt."

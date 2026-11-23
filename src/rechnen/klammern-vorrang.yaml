@@ -17,9 +17,6 @@ blocks:
         answer: 14
         tolerance: 0
         explanation: "Die Tickets kosten 3 · 4 = 12 €. Dazu kommen 2 € für das Getränk: 14 €."
-        links:
-          - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"
         mistakes:
           - answer: 20
             message: "Du hast von links nach rechts gerechnet: (2 + 3) · 4. Aber nur die Tickets kosten 4 € das Stück. Malnehmen kommt vor Addieren."
@@ -111,6 +108,3 @@ blocks:
         text: "3 + 4 · 5 = 35"
         answer: false
         explanation: "Punkt vor Strich: erst 4 · 5 = 20, dann 3 + 20 = 23. 35 ergibt nur (3 + 4) · 5."
-        links:
-          - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"

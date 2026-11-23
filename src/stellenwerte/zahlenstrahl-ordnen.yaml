@@ -17,9 +17,6 @@ blocks:
         answer: 400
         tolerance: 0
         explanation: "Die Striche zählen 0, 100, 200, 300, 400. Der Strich nach 300 gehört zu 400."
-        links:
-          - title: Zahlen vergleichen und ordnen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"
         mistakes:
           - answer: 301
             message: "Die Striche sind nicht um 1 voneinander entfernt, sondern um 100."
@@ -105,9 +102,6 @@ blocks:
             correct: false
             info: "Die Zahlen haben unterschiedliche Ziffern in der Hunderter- und Einerspalte."
         explanation: "Du vergleichst von links: Das erste Paar verschiedener Ziffern entscheidet."
-        links:
-          - title: Zahlen vergleichen und ordnen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"
       - type: ordering
         id: zahlen-ordnen
         text: "Ordne die Zahlen der Größe nach: von der kleinsten zur größten."
@@ -118,6 +112,3 @@ blocks:
           - "1900"
           - "9100"
         explanation: "Mehr Stellen heißt größer: 999 hat nur drei Stellen. Bei vier Stellen entscheidet zuerst der Tausender, dann der Hunderter."
-        links:
-          - title: Zahlen vergleichen und ordnen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"

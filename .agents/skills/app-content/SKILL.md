@@ -68,6 +68,6 @@ Lernlandkarte Mathematik, Issue #385, gemeinsame Regeln des Epics #402. Keine Sc
 
 ## Rules learned from mistakes
 
-- Keine Wikipedia- oder anderen Fremdlinks (regeln.md Abschnitt 4): „Weiterlesen“-Link jeder Aufgabe zeigt auf die Kartenseite des Bausteins `https://lernapps.net/apps/map/mathematik/c/<baustein-id>/` (Fehler der Musterseite). Das Schema erlaubt in `links` nur https-Adressen, keine App-internen Links; der Mensch fand den Kartenlink wenig hilfreich (offen: besserer Weiterlesen-Weg im Werkzeug). Überschrift „Was du hier lernst“ (nicht „kann“) auf jeder Seite; Aufgaben ohne Bild sagen nie „ein Pfeil“ o. ä., sondern beschreiben alles im Text.
+- Keine Weiterlesen-Links (`links:`) an den Aufgaben: Das Schema verlangt sie nicht, `lernapps check` besteht ohne; Wikipedia und andere Fremdseiten verbietet regeln.md Abschnitt 4, der Kartenlink war dem Menschen nicht hilfreich. Nur die Abschnitte `vorwissen` verweisen im Text auf die Kartenseite des Bausteins. Überschrift „Was du hier lernst“ (nicht „kann“) auf jeder Seite; Aufgaben ohne Bild sagen nie „ein Pfeil“ o. ä., sondern beschreiben alles im Text.
 
 - Seite `stellenwerte/buendeln-und-lesen` ist die Musterseite: Einstieg mit Ziel, Bild und leichter Aufgabe, `darstellung` mit Komponente, `beispiel`, `uebung` mit `generated` (Fehlertypen), `number`, `true-false`, `ordering`.

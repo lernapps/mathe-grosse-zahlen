@@ -18,9 +18,6 @@ blocks:
         answer: 700
         tolerance: 0
         explanation: "Du darfst die Faktoren tauschen: 25 · 4 = 100, dann 100 · 7 = 700."
-        links:
-          - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"
         mistakes:
           - answer: 175
             message: "Das ist nur 25 · 7. Der Faktor 4 fehlt noch."
@@ -107,14 +104,8 @@ blocks:
           - left: Verteilungsgesetz
             right: "3 · (10 + 2) = 3 · 10 + 3 · 2"
         explanation: "Beim Vertauschen ändert sich die Reihenfolge, beim Verbinden die Klammer, beim Verteilen wird ein Faktor auf eine Summe verteilt."
-        links:
-          - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"
       - type: true-false
         id: minus-tauschen
         text: "Beim Minus darf man die Zahlen genauso tauschen wie beim Plus: 9 − 4 = 4 − 9."
         answer: false
         explanation: "Das Vertauschungsgesetz gilt nur für Plus und Mal. 9 − 4 = 5, aber 4 − 9 kannst du mit diesen Zahlen nicht rechnen: 4 ist kleiner als 9."
-        links:
-          - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"
