@@ -64,7 +64,7 @@ Lernlandkarte Mathematik, Issue #385, gemeinsame Regeln des Epics #402. Keine Sc
 
 ## Adding a chapter or round
 
-1. Baustein auf der Karte wählen, Seite anlegen (`src/<kapitel>/<seite>.yaml`), in `chapter.yaml` und `app.yaml` eintragen. 2. Abschnitte wie oben, ≥ 3 Aufgaben je Baustein aus den Mustern. 3. Rechenprobe der Musterlösungen. 4. `npx --no -- lernapps check`, committen.
+1. Baustein auf der Karte wählen, Seite anlegen (`src/<kapitel>/<seite>.yaml`), in `chapter.yaml` und `app.yaml` eintragen. 2. Abschnitte wie oben, ≥ 3 Aufgaben je Baustein aus den Mustern. 3. Rechenprobe der Musterlösungen. 1 bis 3 ihrer Übungen in `selfAssessment` (`chapter.yaml`) aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt. 4. `npx --no -- lernapps check`, committen.
 
 ## Rules learned from mistakes
 
