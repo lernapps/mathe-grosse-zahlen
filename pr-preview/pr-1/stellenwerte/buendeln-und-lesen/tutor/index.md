@@ -102,10 +102,10 @@ $2 \cdot 1000 + 0 \cdot 100 + 7 \cdot 10 + 5 \cdot 1 = 2075$
 - Aufgabe: Welche Zahl kommt direkt nach 399?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 400
-- Erklärung: Nach 399 kommt 400: Die 9 Einer werden mit einem weiteren Einer zu einem Zehner, die Zehner zu einem Hunderter.
+- Erklärung: Nach 399 kommt 400: 9 Einer und 1 weiterer Einer sind ein Zehner, dann sind 10 Zehner ein Hunderter.
 - Tipp der App: Zähle um eins weiter.
 - Typische Fehler und was die App sagt:
-  - 3100: Du hast 1 an 399 angehängt. Zähle weiter: 399, 400.
+  - 3100: Du hast 3, 10 und 0 hintereinander geschrieben. Beim Weiterzählen werden aus 10 Einern 1 Zehner.
 - Link: [../?via=tutor#vorwissen-nachfolger](../?via=tutor#vorwissen-nachfolger)
 
 ### Aufgabe vorwissen-einmaleins

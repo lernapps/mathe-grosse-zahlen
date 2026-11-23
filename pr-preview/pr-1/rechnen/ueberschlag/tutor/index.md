@@ -62,7 +62,7 @@ Bild: Zahlenstrahl von 3000 bis 5000. Die Zahl 3012 liegt direkt bei 3000, die Z
 
 **Beispiel: Kann 612 − 389 = 1001 stimmen?**
 
-Runde auf Hunderter: 600 − 400 = 200. Dein Ergebnis 1001 ist fünfmal so groß. Das kann nicht stimmen.
+Runde auf Hunderter: 600 − 400 = 200. Dein Ergebnis 1001 ist etwa fünfmal so groß. Das kann nicht stimmen.
 Richtig ist 223.
 
 ### Übung

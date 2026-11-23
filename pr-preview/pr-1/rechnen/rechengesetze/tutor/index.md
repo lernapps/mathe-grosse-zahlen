@@ -61,7 +61,7 @@ Bild: Ein Plättchenbild mit 7 Reihen zu je 12 Plättchen. Eine gestrichelte Lin
 
 - **Vertauschungsgesetz (Kommutativgesetz)**: Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3.
 
-- **Verbindungsgesetz (Assoziativgesetz)**: Bei Plus und bei Mal darfst du zusammenfassen, wie du willst. Beispiel: (8 + 6) + 4 = 8 + (6 + 4) = 18.
+- **Verbindungsgesetz (Assoziativgesetz)**: Bei Plus und bei Mal darfst du die Klammern anders setzen. Die Reihenfolge der Zahlen bleibt. Beispiele: (8 + 6) + 4 = 8 + (6 + 4) = 18 und (2 · 5) · 7 = 2 · (5 · 7) = 70.
 
 - **Verteilungsgesetz (Distributivgesetz)**: Ein Faktor darf auf eine Summe oder Differenz verteilt werden. Beispiel: 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
 
@@ -152,7 +152,7 @@ Nr. | a | Lösung | F1
 - Aufgabe: Ordne jedem Gesetz ein Beispiel zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: Vertauschungsgesetz – 7 + 5 = 5 + 7; Verbindungsgesetz – (8 + 6) + 4 = 8 + (6 + 4); Verteilungsgesetz – 3 · (10 + 2) = 3 · 10 + 3 · 2
-- Erklärung: Tauschen ändert die Reihenfolge, Zusammenfassen die Klammer, Verteilen verteilt einen Faktor auf eine Summe.
+- Erklärung: Beim Vertauschen ändert sich die Reihenfolge, beim Verbinden die Klammer, beim Verteilen wird ein Faktor auf eine Summe verteilt.
 - Link: [../?via=tutor#gesetze-zuordnen](../?via=tutor#gesetze-zuordnen)
 
 ### Aufgabe minus-tauschen

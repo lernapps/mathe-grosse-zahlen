@@ -55,7 +55,7 @@ von der Stelle, auf die du rundest: Bei 0, 1, 2, 3, 4 rundest du **ab**, bei 5, 
 
 Bild: Zahlenstrahl von 340 bis 350. Die Mitte ist 345. Die Zahl 347 liegt rechts von der Mitte, also näher an 350 als an 340. Bildunterschrift: 347 liegt rechts von der Mitte 345. Deshalb rundest du auf 350.
 
-- **Runden**: Runden heißt, eine Zahl durch die nächste volle Zahl einer Stelle zu ersetzen, zum Beispiel den nächsten Zehner.
+- **Runden**: Runden heißt, eine Zahl durch die nächstgelegene runde Zahl zu ersetzen, zum Beispiel durch den nächsten vollen Zehner. Liegt sie genau in der Mitte, rundest du auf.
 
 ### Beispiel
 
@@ -265,7 +265,7 @@ Nr. | t | e | Lösung | F1
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ auf 190 km – Für die Planung reicht ein voller Zehner.
-  - ✗ auf 200 km – Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Du verschenkst 13 km, die für die Planung wichtig sein können.
+  - ✗ auf 200 km – Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Das ist 13 km mehr als nötig.
   - ✗ auf 0 km – Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen.
 - Lösung: auf 190 km
 - Erklärung: Du rundest so, dass die Zahl noch zum Zweck passt: nicht ungenauer als nötig, nicht genauer als sinnvoll.

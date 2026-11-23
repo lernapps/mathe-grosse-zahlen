@@ -55,7 +55,7 @@ Die Tafel wächst nach links. Die Spalten sind in **Dreierblöcken** geordnet: E
 Milliarden. In jedem Block stehen Hunderter, Zehner und Einer. Beim Schreiben lässt du zwischen den
 Blöcken eine kleine Lücke. Beim Vergleichen gilt: Mehr Stellen heißt größere Zahl.
 
-Bild: Stellenwerttafel mit zwölf Spalten in vier Dreierblöcken: Milliarden, Millionen, Tausender, Einer. Eingetragen ist 2 Milliarden 51 Millionen 3 Tausend 400, also 2 051 003 400. Bildunterschrift: Die Zahl in der Tafel: 2 Milliarden 51 Millionen 3 Tausend 400. Vorn schreibst du keine Nullen: Die Zahl beginnt bei der ersten Ziffer, die nicht 0 ist. Leere Spalten dahinter haben eine Null.
+Bild: Stellenwerttafel mit zwölf Spalten in vier Dreierblöcken: Milliarden, Millionen, Tausender, Einer. Eingetragen ist 2 Milliarden 51 Millionen 3 Tausend 400, also 2 051 003 400. Bildunterschrift: Die Zahl in der Tafel: 2 Milliarden 51 Millionen 3 Tausend 400. Vorn schreibst du keine Nullen: Die Zahl beginnt bei der ersten Ziffer, die nicht 0 ist. Leere Spalten nach der ersten Ziffer bekommen eine 0.
 
 - **Milliarde**: Eine Milliarde sind tausend Millionen. Sie wird mit 1 000 000 000 geschrieben, also mit neun Nullen.
 

@@ -61,7 +61,7 @@ $3 + 4 \cdot 5 = 3 + 20 = 23$
 
 - **Klammer**: Eine Klammer zeigt, was du zuerst rechnest. In (3 + 4) · 5 rechnest du erst 3 + 4 = 7, dann 7 · 5 = 35.
 
-- **Vorrangregeln**: Die Vorrangregeln sagen, in welcher Reihenfolge du einen Term ausrechnest: erst Klammern, dann Punkt vor Strich, dann von links nach rechts. Bei 2 + 3 · 4 rechnest du also erst 3 · 4 = 12 und dann 2 + 12 = 14.
+- **Vorrangregeln**: Die Vorrangregeln sagen, in welcher Reihenfolge du einen Term ausrechnest: erst Klammern, dann Punkt vor Strich. Stehen gleichwertige Rechenarten nebeneinander, rechnest du von links nach rechts. Bei 2 + 3 · 4 rechnest du also erst 3 · 4 = 12 und dann 2 + 12 = 14.
 
 - **Punkt vor Strich**: Mal- und Geteiltzeichen („Punktrechnung“) binden stärker als Plus und Minus („Strichrechnung“). Klammern gehen vor.
 

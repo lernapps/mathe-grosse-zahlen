@@ -56,14 +56,14 @@ sich ändern.
 
 Interaktiv: Ein Zahlenstrahl von 0 bis 1000 mit zehn Abschnitten zu je 100. Die Lupe zeigt einen Abschnitt zehnmal so fein: Aus 300 bis 400 wird ein Zahlenstrahl mit den Strichen 300, 310, 320 und so weiter bis 400. Noch eine Lupe zeigt 340 bis 350 mit Einerschritten.
 
-- **Zahlenstrahl**: Der Zahlenstrahl beginnt bei 0. Gleiche Abstände bedeuten gleiche Unterschiede. Rechts liegt die größere Zahl.
+- **Zahlenstrahl**: Der Zahlenstrahl beginnt bei 0 und geht nach rechts weiter. Die Lupe zeigt nur einen Abschnitt davon. Gleiche Abstände bedeuten gleiche Unterschiede. Rechts liegt die größere Zahl.
 
 ### Beispiel
 
 **Beispiel: 4087 und 4780 vergleichen**
 
 Beide Zahlen haben vier Stellen. Vergleiche von links: Die Tausender sind gleich (4). Bei den Hundertern
-steht 0 gegen 7. Also gilt 4087 &lt; 4780 und am Zahlenstrahl liegt 4087 links von 4780. Das Zeichen &lt; ist ein Wort-Zeichen für „kleiner als“: Die Spitze zeigt auf die kleinere Zahl. Das Zeichen > heißt „größer als“.
+steht 0 gegen 7. Also gilt 4087 &lt; 4780 und am Zahlenstrahl liegt 4087 links von 4780. Das Zeichen &lt; heißt „kleiner als“: Die Spitze zeigt auf die kleinere Zahl. Das Zeichen > heißt „größer als“.
 
 ### Übung
 
