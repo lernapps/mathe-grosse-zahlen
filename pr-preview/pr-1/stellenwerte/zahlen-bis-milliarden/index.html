@@ -40,7 +40,7 @@
 lesen, schreiben und in die Stellenwerttafel eintragen. Du baust auf der Seite davor auf: Zehn Plättchen
 einer Spalte sind ein Plättchen der nächsten.</p></div>
 </div>
-<div class="explainer-block" data-block="einstieg/2" data-block-id="af76e21c" data-block-type="number" data-block-order="2">
+<div class="explainer-block" data-block="einstieg/2" data-block-id="e2865aea" data-block-type="number" data-block-order="2">
 <div class="explainer-exercise explainer-question" id="tausender-in-million">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-tausender-in-million" data-id="tausender-in-million" data-type="number">
@@ -53,7 +53,6 @@ einer Spalte sind ein Plättchen der nächsten.</p></div>
 <div class="question-reveal" hidden>
 <p><strong>Richtige Antwort:</strong> 1.000</p>
 <p class="question-explanation">Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
@@ -61,9 +60,8 @@ einer Spalte sind ein Plättchen der nächsten.</p></div>
 <details class="explainer-solution"><summary>Lösung</summary>
 <p><strong>Richtige Antwort:</strong> 1.000</p>
 <p class="question-explanation">Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"tausender-in-million","text":"Wie viele Tausender-Plättchen brauchst du, um sie zu einem Millionen-Plättchen zu bündeln?","explanation":"Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million.","links":[{"title":"Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)","url":"https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"}],"hint":"Wie viele Tausender passen in 1 000 000?","type":"number","answer":1000,"tolerance":0,"mistakes":[{"answer":10,"message":"Zehn Plättchen bündelst du zum Nachbarn. Von Tausend bis zur Million sind es drei Spalten, jedes Mal mal zehn."},{"answer":100,"message":"Hundert Tausender sind erst Hunderttausend. Für eine Million fehlt noch eine Spalte: Zehn Hunderttausender werden zu einer Million."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"tausender-in-million","text":"Wie viele Tausender-Plättchen brauchst du, um sie zu einem Millionen-Plättchen zu bündeln?","explanation":"Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million.","links":[],"hint":"Wie viele Tausender passen in 1 000 000?","type":"number","answer":1000,"tolerance":0,"mistakes":[{"answer":10,"message":"Zehn Plättchen bündelst du zum Nachbarn. Von Tausend bis zur Million sind es drei Spalten, jedes Mal mal zehn."},{"answer":100,"message":"Hundert Tausender sind erst Hunderttausend. Für eine Million fehlt noch eine Spalte: Zehn Hunderttausender werden zu einer Million."}]},"rendered":{}}</script>
 </div>
 </div>
 </section>
@@ -106,7 +104,7 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"zahl-schreiben","given":{"a":{"int":[2,9]},"b":{"int":[11,98]},"c":{"int":[1,9]}},"task":{"text":"Schreibe als Zahl: {{a}} Millionen, {{b}} Tausender und {{c}} Einer."},"answer":{"value":"a * 1000000 + b * 1000 + c","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"a * 1000 + b * 10 + c","message":"Du hast die Zahlen nur hintereinander geschrieben. Jeder Block hat drei Stellen: Fehlende Stellen füllst du mit Nullen auf."}],"hint":"Schreibe erst die Blöcke: Millionen, Tausender, Einer. Jeder Block nach den Millionen hat drei Stellen."},"templates":{"de":{"task":"Schreibe als Zahl: ⟦a⟧ Millionen, ⟦b⟧ Tausender und ⟦c⟧ Einer.","steps":[],"hint":"Schreibe erst die Blöcke: Millionen, Tausender, Einer. Jeder Block nach den Millionen hat drei Stellen.","messages":["Du hast die Zahlen nur hintereinander geschrieben. Jeder Block hat drei Stellen: Fehlende Stellen füllst du mit Nullen auf."]}},"data":{},"seeds":[1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,66,67,68,69],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/2" data-block-id="45936961" data-block-type="matching" data-block-order="9">
+<div class="explainer-block" data-block="uebung/2" data-block-id="27e983cc" data-block-type="matching" data-block-order="9">
 <div class="explainer-exercise explainer-question" id="zahlwoerter">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-zahlwoerter" data-id="zahlwoerter" data-type="matching">
@@ -124,7 +122,6 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <div class="question-reveal" hidden>
 <p><strong>Richtige Antwort:</strong> eine Million – 1 000 000; zehn Millionen – 10 000 000; eine Milliarde – 1 000 000 000</p>
 <p class="question-explanation">Eine Million hat sechs Nullen, eine Milliarde neun. Zehn Millionen hat sieben Nullen.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
@@ -132,12 +129,11 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <details class="explainer-solution"><summary>Lösung</summary>
 <p><strong>Richtige Antwort:</strong> eine Million – 1 000 000; zehn Millionen – 10 000 000; eine Milliarde – 1 000 000 000</p>
 <p class="question-explanation">Eine Million hat sechs Nullen, eine Milliarde neun. Zehn Millionen hat sieben Nullen.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"zahlwoerter","text":"Ordne zu: Zahl in Worten und Zahl in Ziffern.","explanation":"Eine Million hat sechs Nullen, eine Milliarde neun. Zehn Millionen hat sieben Nullen.","links":[{"title":"Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)","url":"https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"}],"type":"matching","pairs":[{"left":"eine Million","right":"1 000 000"},{"left":"zehn Millionen","right":"10 000 000"},{"left":"eine Milliarde","right":"1 000 000 000"}],"distractors":["100 000 000"]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"zahlwoerter","text":"Ordne zu: Zahl in Worten und Zahl in Ziffern.","explanation":"Eine Million hat sechs Nullen, eine Milliarde neun. Zehn Millionen hat sieben Nullen.","links":[],"type":"matching","pairs":[{"left":"eine Million","right":"1 000 000"},{"left":"zehn Millionen","right":"10 000 000"},{"left":"eine Milliarde","right":"1 000 000 000"}],"distractors":["100 000 000"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="5dd6b435" data-block-type="true-false" data-block-order="10">
+<div class="explainer-block" data-block="uebung/3" data-block-id="d305a83e" data-block-type="true-false" data-block-order="10">
 <div class="explainer-exercise explainer-question" id="milliarde-tausend-millionen">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-milliarde-tausend-millionen" data-id="milliarde-tausend-millionen" data-type="true-false">
@@ -151,7 +147,6 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <div class="question-reveal" hidden>
 <p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
 <p class="question-explanation">Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
@@ -159,12 +154,11 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <details class="explainer-solution"><summary>Lösung</summary>
 <p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
 <p class="question-explanation">Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"milliarde-tausend-millionen","text":"Eine Milliarde sind hundert Millionen.","explanation":"Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen.","links":[{"title":"Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)","url":"https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"}],"type":"true-false","answer":false},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"milliarde-tausend-millionen","text":"Eine Milliarde sind hundert Millionen.","explanation":"Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="2b36d327" data-block-type="ordering" data-block-order="11">
+<div class="explainer-block" data-block="uebung/4" data-block-id="aaa6096f" data-block-type="ordering" data-block-order="11">
 <div class="explainer-exercise explainer-question" id="einwohner-ordnen">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-einwohner-ordnen" data-id="einwohner-ordnen" data-type="ordering">
@@ -183,7 +177,6 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <div class="question-reveal" hidden>
 <p><strong>Richtige Antwort:</strong> 1. 48 200, 2. 995 000, 3. 1 250 000, 4. 8 200 000</p>
 <p class="question-explanation">Vergleiche zuerst die Anzahl der Stellen: Mehr Stellen heißt größere Zahl. Bei gleich vielen Stellen vergleichst du von links.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
@@ -191,9 +184,8 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <details class="explainer-solution"><summary>Lösung</summary>
 <p><strong>Richtige Antwort:</strong> 1. 48 200, 2. 995 000, 3. 1 250 000, 4. 8 200 000</p>
 <p class="question-explanation">Vergleiche zuerst die Anzahl der Stellen: Mehr Stellen heißt größere Zahl. Bei gleich vielen Stellen vergleichst du von links.</p>
-<p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/" rel="noopener" title="Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)</span></a></p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"einwohner-ordnen","text":"Ordne die Einwohnerzahlen der erfundenen Orte von der kleinsten zur größten.","explanation":"Vergleiche zuerst die Anzahl der Stellen: Mehr Stellen heißt größere Zahl. Bei gleich vielen Stellen vergleichst du von links.","links":[{"title":"Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)","url":"https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"}],"type":"ordering","items":["48 200","995 000","1 250 000","8 200 000"]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"einwohner-ordnen","text":"Ordne die Einwohnerzahlen der erfundenen Orte von der kleinsten zur größten.","explanation":"Vergleiche zuerst die Anzahl der Stellen: Mehr Stellen heißt größere Zahl. Bei gleich vielen Stellen vergleichst du von links.","links":[],"type":"ordering","items":["48 200","995 000","1 250 000","8 200 000"]},"rendered":{}}</script>
 </div>
 </div>
 </section>
@@ -235,7 +227,7 @@ Der Block der Tausender ist <strong>003</strong>: nur 3 Tausender. Die beiden Nu
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-grosse-zahlen","app":"Große Zahlen und Rechnen","root":"../../","repository":"lernapps/mathe-grosse-zahlen","revision":"ded9696","page":{"title":"Zahlen bis zu den Milliarden","order":1}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-grosse-zahlen","app":"Große Zahlen und Rechnen","root":"../../","repository":"lernapps/mathe-grosse-zahlen","revision":"7900209","page":{"title":"Zahlen bis zu den Milliarden","order":1}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../stellenwerte/buendeln-und-lesen/">Zurück: Bündeln und Zahlen lesen</a><a rel="next" href="../../stellenwerte/zahlenstrahl-ordnen/">Weiter: Zahlen am Zahlenstrahl ordnen</a></nav>
