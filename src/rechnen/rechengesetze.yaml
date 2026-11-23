@@ -51,7 +51,7 @@ blocks:
         caption: "7 · 12 = 7 · 10 + 7 · 2 = 70 + 14 = 84."
       - type: definition
         term: Vertauschungsgesetz (Kommutativgesetz)
-        explanation: "Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3."
+        explanation: "Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3. Bei Minus und Geteilt gilt das nicht."
       - type: definition
         term: Verbindungsgesetz (Assoziativgesetz)
         explanation: "Bei Plus und bei Mal darfst du die Klammern anders setzen. Die Reihenfolge der Zahlen bleibt. Beispiele: (8 + 6) + 4 = 8 + (6 + 4) = 18 und (2 · 5) · 7 = 2 · (5 · 7) = 70."

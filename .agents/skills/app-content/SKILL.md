@@ -34,7 +34,7 @@ Jede Seite: Abschnitte `einstieg` (Ziel in Lernerworten + erste leichte Aufgabe)
 
 ## Terminology
 
-Stellenwerttafel, Zahlenstrahl (bis zur ersten Zahl links der Null; danach Zahlengerade), Bündeln, Überschlag, Rechenprobe. Glossar (Blöcke `definition`, mit Zahlenbeispiel): Stellenwert, Stellenwerttafel, Zahlenstrahl, Milliarde, Runden, Überschlag, Summe, Produkt, Term, Klammer, Vorrangregeln, Punkt vor Strich, Vertauschungsgesetz (Kommutativgesetz), Verbindungsgesetz (Assoziativgesetz), Verteilungsgesetz (Distributivgesetz). „Teiler“ wird nicht benutzt (in #386 heißt es etwas anderes). Anrede „du“. Schreibweisen nach `regeln.md` Abschnitt 2: Dreiergruppen mit schmalem geschütztem Leerzeichen (`12 345`), vierstellig ohne Lücke; `−`, `·`, `:`; kein Punkt als Tausendertrennung. Eingabefelder nehmen Leerzeichen und Punkt als Gruppierung an.
+Stellenwerttafel, Zahlenstrahl (bis zur ersten Zahl links der Null; danach Zahlengerade), Bündeln, Überschlag, Rechenprobe. Glossar (Blöcke `definition`, mit Zahlenbeispiel): Stellenwert, Bündeln, Differenz, Übertrag, Umkehraufgabe, Stellenwerttafel, Zahlenstrahl, Milliarde, Runden, Überschlag, Summe, Produkt, Term, Klammer, Vorrangregeln, Punkt vor Strich, Vertauschungsgesetz (Kommutativgesetz), Verbindungsgesetz (Assoziativgesetz), Verteilungsgesetz (Distributivgesetz). „Teiler“ wird nicht benutzt (in #386 heißt es etwas anderes). Anrede „du“. Schreibweisen nach `regeln.md` Abschnitt 2: Dreiergruppen mit schmalem geschütztem Leerzeichen (`12 345`), vierstellig ohne Lücke; `−`, `·`, `:`; kein Punkt als Tausendertrennung. Eingabefelder nehmen Leerzeichen und Punkt als Gruppierung an.
 
 ## Exercise patterns
 
