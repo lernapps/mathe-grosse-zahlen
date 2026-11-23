@@ -278,10 +278,24 @@ page, which a link. -->
 
 <!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
 
+Commit bis zum Checkpoint „Veröffentlichen“: Explore, Plan, Code, Commit durchlaufen; Recherche, Plan und Musterseite vom Orchestrator (in Vertretung) bestätigt, Vorschau-PR #1 grün und nicht gemergt; Veröffentlichung und Katalogeintrag stehen noch aus.
+
+
 ### Creator turns after the plan
 
 <!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
 
+Nach der Planbestätigung: 2 Nachrichten des Orchestrators (Musterseite: Wikipedia-Links entfernen, weiter mit den übrigen Seiten; Veröffentlichen: PR angenommen, nichts ändern). Keine Nachricht des Menschen.
+
+
 ### Where I had to guess
 
 <!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+
+- Interview-Themen Fokus, Hürden, Begriffe, Suchbegriffe: nicht beantwortet, Annahmen aus Issue und Karte.
+- Nur Deutsch, ohne Recap, Seitenschnitt (9 Seiten): Annahmen, vom Orchestrator bestätigt.
+- Aufgaben mit km/€ als Alltagskontext trotz Abgrenzung zu Größen: bewusst behalten.
+- Weiterlesen-Links: Tool verlangt einen je Frage; Regel verbietet Fremdlinks; Kartenlink gewählt, vom Orchestrator bestätigt.
+- Pages-Einstellung nicht prüfbar (gh api auf Pages durch Proxy gesperrt); aus Anweisung übernommen, Vorschau lief.
+- Überschriften ohne gruppierte Zahlen, weil der Laufzeit-Test das schmale Leerzeichen nicht gleich vergleicht (Fund).
+
