@@ -59,7 +59,7 @@ Das **Verbindungsgesetz** erlaubt, Klammern anders zu setzen. Das **Verteilungsg
 
 Bild: Ein Plättchenbild mit 7 Reihen zu je 12 Plättchen. Eine gestrichelte Linie trennt 10 Plättchen je Reihe links von 2 Plättchen je Reihe rechts: 7 mal 12 ist 7 mal 10 plus 7 mal 2, also 70 plus 14 gleich 84. Bildunterschrift: 7 · 12 = 7 · 10 + 7 · 2 = 70 + 14 = 84.
 
-- **Vertauschungsgesetz (Kommutativgesetz)**: Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3.
+- **Vertauschungsgesetz (Kommutativgesetz)**: Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3. Bei Minus und Geteilt gilt das nicht.
 
 - **Verbindungsgesetz (Assoziativgesetz)**: Bei Plus und bei Mal darfst du die Klammern anders setzen. Die Reihenfolge der Zahlen bleibt. Beispiele: (8 + 6) + 4 = 8 + (6 + 4) = 18 und (2 · 5) · 7 = 2 · (5 · 7) = 70.
 

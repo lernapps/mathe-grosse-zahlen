@@ -43,8 +43,8 @@ Mit Plättchen in der Stellenwerttafel bündeln und natürliche Zahlen lesen, sc
 
 ### Kannst du das schon?
 
-Dieses Kapitel baut auf der Grundschule auf. Teste dich kurz. Wenn du unsicher bist, lies zuerst den Baustein
-„Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte, den du über die Links unter den Aufgaben findest.
+Dieses Kapitel baut auf der Grundschule auf. Teste dich kurz. Du bist bereit, wenn du beide Aufgaben
+richtig hast. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/) oder frag deine Lehrerin oder deinen Lehrer.
 
 - Aufgabe `vorwissen-nachfolger` (unten)
 
@@ -62,13 +62,15 @@ Bild: Eine Stellenwerttafel mit vier Spalten: Tausender, Hunderter, Zehner, Eine
 ### Plättchen legen und bündeln
 
 Jede Spalte der **Stellenwerttafel** hat einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
-links wird der Wert jedes Mal zehnmal so groß. Zehn Plättchen einer Spalte **bündelst** du zu einem Plättchen in der nächsten Spalte links. In der fertigen Zahl steht dann in jeder Spalte eine Ziffer von 0 bis 9.
+links wird der Wert jedes Mal zehnmal so groß. Am Anfang liegen 12 Zehner: Das sind zu viele für eine Spalte. Drücke „Bündeln“. Zehn Plättchen einer Spalte **bündelst** du zu einem Plättchen in der nächsten Spalte links. In der fertigen Zahl steht dann in jeder Spalte eine Ziffer von 0 bis 9.
 
 Interaktiv: Eine Stellenwerttafel mit den Spalten Tausender, Hunderter, Zehner und Einer. Am Anfang liegen 1 Hunderter, 12 Zehner und 5 Einer. Mit „Bündeln“ werden zehn Plättchen einer Spalte zu einem Plättchen der Spalte links: 12 Zehner werden zu 1 Hunderter und 2 Zehnern. Danach liegen 2 Hunderter, 2 Zehner und 5 Einer in der Tafel. Die Zahl ändert sich dabei nicht: Sie ist 225.
 
 - **Stellenwerttafel**: In der Stellenwerttafel hat jede Spalte einen Stellenwert. In jeder Spalte liegen Plättchen mit diesem Wert.
 
 - **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer in ihrer Spalte wert ist. In 2075 steht die 7 bei den Zehnern: Ihr Stellenwert ist 10, also bedeutet sie 7 · 10 = 70.
+
+- **Bündeln**: Bündeln heißt, zehn Plättchen einer Spalte durch ein Plättchen der Spalte links zu ersetzen. Aus 12 Zehnern werden 1 Hunderter und 2 Zehner.
 
 **Merke: Probiere es aus**
 

@@ -43,8 +43,8 @@ Natürliche Zahlen schriftlich addieren und subtrahieren: Jeder Übertrag ist ei
 
 ### Kannst du das schon?
 
-Dieses Kapitel setzt die Stellenwerttafel und Rechnen im Kopf voraus. Teste dich kurz. Wenn du unsicher bist,
-lies zuerst den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte.
+Dieses Kapitel setzt die Stellenwerttafel und Rechnen im Kopf voraus. Teste dich kurz. Du bist bereit, wenn du die Aufgabe
+richtig hast und die Seiten davor kennst. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/) oder frag deine Lehrerin oder deinen Lehrer.
 
 - Aufgabe `vorwissen-kopf` (unten)
 
@@ -68,6 +68,12 @@ Beim **schriftlichen Subtrahieren** geht ein Bündel in die andere Richtung: Wen
 liegt, entbündelst du ein Plättchen der Spalte links in zehn Plättchen.
 
 - **Summe**: Die Summe ist das Ergebnis einer Addition. In 358 + 467 = 825 sind 358 und 467 die Summanden und 825 ist die Summe.
+
+- **Differenz**: Die Differenz ist das Ergebnis einer Subtraktion. In 503 − 278 = 225 ist 225 die Differenz.
+
+- **Übertrag**: Ein Übertrag ist das Plättchen, das beim Bündeln in die nächste Spalte links wandert. In 8 + 7 = 15 schreibst du 5 und überträgst 1 Zehner.
+
+- **Umkehraufgabe**: Die Umkehraufgabe macht eine Rechnung rückwärts. Zu 503 − 278 = 225 gehört 225 + 278 = 503. Damit prüfst du das Ergebnis.
 
 ### Beispiel
 
@@ -105,7 +111,7 @@ $225 + 278 = 503$
 
 ### Aufgabe spalte-einer
 
-- Aufgabe: In der Einerspalte liegen 8 Plättchen und 7 Plättchen. Zusammen sind das 15 Einer. Wie viele Zehner-Plättchen entstehen, wenn du bündelst?
+- Aufgabe: In der Einerspalte liegen 8 Plättchen und 7 Plättchen. Zusammen sind das 15 Einer. Wie viele Zehner-Plättchen bekommst du dazu, wenn du bündelst?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 1
 - Erklärung: Zehn Einer werden zu einem Zehner. Fünf Einer bleiben in der Spalte.
