@@ -51,15 +51,19 @@ der Seite davor.
 
 ### Plättchen umlegen
 
-Das **Vertauschungsgesetz** sagt: Bei Plus und bei Mal darfst du die Zahlen tauschen. Das Bild zeigt es: 3 Reihen
-mit je 4 Plättchen sind genauso viele wie 4 Reihen mit je 3.
+Das **Vertauschungsgesetz** zeigt das Bild: 3 Reihen mit je 4 Plättchen sind genauso viele wie 4 Reihen mit je 3.
 
 Bild: Zwei Plättchenbilder: links 3 Reihen mit je 4 Plättchen, rechts 4 Reihen mit je 3 Plättchen. Beide zeigen 12 Plättchen: 3 mal 4 ist gleich 4 mal 3. Bildunterschrift: Dreht man das Plättchenbild, bleibt die Zahl der Plättchen gleich: 3 · 4 = 4 · 3.
 
-Das **Verbindungsgesetz** sagt: Bei Plus und bei Mal darfst du zusammenfassen, wie du willst: (8 + 6) + 4 = 8 + (6 + 4).
-Das **Verteilungsgesetz** sagt: Du darfst eine Zahl auf eine Summe oder eine Differenz verteilen: 6 · (100 − 1) = 6 · 100 − 6 · 1.
+Das **Verbindungsgesetz** erlaubt, Klammern anders zu setzen. Das **Verteilungsgesetz** erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
 
 Bild: Ein Plättchenbild mit 7 Reihen zu je 12 Plättchen. Eine gestrichelte Linie trennt 10 Plättchen je Reihe links von 2 Plättchen je Reihe rechts: 7 mal 12 ist 7 mal 10 plus 7 mal 2, also 70 plus 14 gleich 84. Bildunterschrift: 7 · 12 = 7 · 10 + 7 · 2 = 70 + 14 = 84.
+
+- **Vertauschungsgesetz (Kommutativgesetz)**: Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3.
+
+- **Verbindungsgesetz (Assoziativgesetz)**: Bei Plus und bei Mal darfst du zusammenfassen, wie du willst. Beispiel: (8 + 6) + 4 = 8 + (6 + 4) = 18.
+
+- **Verteilungsgesetz (Distributivgesetz)**: Ein Faktor darf auf eine Summe oder Differenz verteilt werden. Beispiel: 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
 
 ### Beispiel
 

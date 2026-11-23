@@ -56,8 +56,10 @@ in Spalten.
 
 Bild: Ein Rechteck mit den Seiten 23 und 14, zerlegt in vier Teile: 20 mal 10 gleich 200, 3 mal 10 gleich 30, 20 mal 4 gleich 80 und 3 mal 4 gleich 12. Zusammen 322. Bildunterschrift: 23 · 14 = 200 + 30 + 80 + 12 = 322.
 
-Beim **Dividieren** fragst du: Wie oft passt der Teiler in die Zahl? Du teilst Stelle für Stelle von links
+Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
 und notierst, was übrig bleibt. Ein Rest wird entbündelt: 1 Hunderter sind 10 Zehner und kommen zur nächsten Stelle dazu.
+
+- **Produkt**: Das Produkt ist das Ergebnis einer Multiplikation. In 23 · 14 = 322 sind 23 und 14 die Faktoren und 322 ist das Produkt.
 
 ### Beispiel
 

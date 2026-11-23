@@ -41,6 +41,13 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Natürliche Zahlen schriftlich addieren und subtrahieren: Jeder Übertrag ist ein Bündel, das in die nächste Spalte zieht.
 
+### Kannst du das schon?
+
+Dieses Kapitel setzt die Stellenwerttafel und Rechnen im Kopf voraus. Teste dich kurz. Wenn du unsicher bist,
+lies zuerst den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte.
+
+- Aufgabe `vorwissen-kopf` (unten)
+
 ### Was du hier kannst
 
 Nach dieser Seite kannst du Zahlen untereinander schreiben, spaltenweise addieren und subtrahieren und
@@ -59,6 +66,8 @@ Bild: Schriftliche Addition 358 plus 467. Unter dem Strich stehen die Überträg
 
 Beim **schriftlichen Subtrahieren** geht ein Bündel in die andere Richtung: Wenn in einer Spalte zu wenig
 liegt, entbündelst du ein Plättchen der Spalte links in zehn Plättchen.
+
+- **Summe**: Die Summe ist das Ergebnis einer Addition. In 358 + 467 = 825 sind 358 und 467 die Summanden und 825 ist die Summe.
 
 ### Beispiel
 
@@ -82,6 +91,17 @@ $225 + 278 = 503$
 - Aufgabe `add-schritte` (unten)
 
 - Aufgabe `sub-probe` (unten)
+
+### Aufgabe vorwissen-kopf
+
+- Aufgabe: Rechne im Kopf: 8 + 7
+- Antwortformat: eine Zahl eintippen
+- Lösung: 15
+- Erklärung: 8 + 7 = 15: Mit 2 kommst du auf 10, dann fehlen noch 5.
+- Tipp der App: Ergänze erst bis zur 10.
+- Typische Fehler und was die App sagt:
+  - 56: Du hast 8 · 7 gerechnet. Hier steht plus.
+- Link: [../?via=tutor#vorwissen-kopf](../?via=tutor#vorwissen-kopf)
 
 ### Aufgabe spalte-einer
 

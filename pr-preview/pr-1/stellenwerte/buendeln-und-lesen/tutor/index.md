@@ -41,6 +41,15 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Mit Plättchen in der Stellenwerttafel bündeln und natürliche Zahlen lesen, schreiben und darstellen.
 
+### Kannst du das schon?
+
+Dieses Kapitel baut auf der Grundschule auf. Teste dich kurz. Wenn du unsicher bist, lies zuerst den Baustein
+„Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte, den du über die Links unter den Aufgaben findest.
+
+- Aufgabe `vorwissen-nachfolger` (unten)
+
+- Aufgabe `vorwissen-einmaleins` (unten)
+
 ### Was du hier kannst
 
 Nach dieser Seite kannst du eine Zahl in die Stellenwerttafel legen und eine Zahl aus der Tafel ablesen.
@@ -58,6 +67,8 @@ links wird der Wert jedes Mal zehnmal so groß. Zehn Plättchen einer Spalte **b
 Interaktiv: Eine Stellenwerttafel mit den Spalten Tausender, Hunderter, Zehner und Einer. Am Anfang liegen 1 Hunderter, 12 Zehner und 5 Einer. Mit „Bündeln“ werden zehn Plättchen einer Spalte zu einem Plättchen der Spalte links: 12 Zehner werden zu 1 Hunderter und 2 Zehnern. Danach liegen 2 Hunderter, 2 Zehner und 5 Einer in der Tafel. Die Zahl ändert sich dabei nicht: Sie ist 225.
 
 - **Stellenwerttafel**: In der Stellenwerttafel hat jede Spalte einen Stellenwert. In jeder Spalte liegen Plättchen mit diesem Wert.
+
+- **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer in ihrer Spalte wert ist. In 2075 steht die 7 bei den Zehnern: Ihr Stellenwert ist 10, also bedeutet sie 7 · 10 = 70.
 
 **Merke: Probiere es aus**
 
@@ -85,6 +96,28 @@ $2 \cdot 1000 + 0 \cdot 100 + 7 \cdot 10 + 5 \cdot 1 = 2075$
 - Aufgabe `tafel-null` (unten)
 
 - Aufgabe `tafel-ordnen` (unten)
+
+### Aufgabe vorwissen-nachfolger
+
+- Aufgabe: Welche Zahl kommt direkt nach 399?
+- Antwortformat: eine Zahl eintippen
+- Lösung: 400
+- Erklärung: Nach 399 kommt 400: Die 9 Einer werden mit einem weiteren Einer zu einem Zehner, die Zehner zu einem Hunderter.
+- Tipp der App: Zähle um eins weiter.
+- Typische Fehler und was die App sagt:
+  - 3100: Du hast 1 an 399 angehängt. Zähle weiter: 399, 400.
+- Link: [../?via=tutor#vorwissen-nachfolger](../?via=tutor#vorwissen-nachfolger)
+
+### Aufgabe vorwissen-einmaleins
+
+- Aufgabe: Wie viel ist 7 · 8?
+- Antwortformat: eine Zahl eintippen
+- Lösung: 56
+- Erklärung: 7 · 8 = 56. Du kannst es auch so rechnen: 7 · 8 = 7 · 10 − 7 · 2 = 70 − 14 = 56.
+- Tipp der App: Das kleine Einmaleins: 7 · 8.
+- Typische Fehler und was die App sagt:
+  - 15: Du hast addiert: 7 + 8. Hier steht mal.
+- Link: [../?via=tutor#vorwissen-einmaleins](../?via=tutor#vorwissen-einmaleins)
 
 ### Aufgabe tafel-einstieg
 
