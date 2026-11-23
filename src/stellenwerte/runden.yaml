@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Eine Zeitung schreibt: „Die Strecke ist etwa 350 km lang.“ Genau sind es 347 km. Nach dieser Seite kannst du
+          Eine Zeitung schreibt: „Die Strecke ist etwa 350 km lang.“ Genau sind es 347 km. Du baust auf der Stellenwerttafel auf. Nach dieser Seite kannst du
           eine Zahl auf eine Stelle runden und entscheiden, wie genau eine Zahl sein muss.
       - type: number
         id: runden-einstieg
@@ -38,6 +38,9 @@ blocks:
         licence: CC0-1.0
         alt: "Zahlenstrahl von 340 bis 350. Die Mitte ist 345. Die Zahl 347 liegt rechts von der Mitte, also näher an 350 als an 340."
         caption: "347 liegt rechts von der Mitte 345. Deshalb rundest du auf 350."
+      - type: definition
+        term: Runden
+        explanation: Runden heißt, eine Zahl durch die nächste volle Zahl einer Stelle zu ersetzen, zum Beispiel den nächsten Zehner.
   - type: section
     id: beispiel
     title: Beispiel

@@ -35,7 +35,7 @@ blocks:
         text: |
           Beim **schriftlichen Addieren** schreibst du die Zahlen so untereinander, dass Einer unter Einer steht, Zehner
           unter Zehner. Du rechnest von rechts nach links. Ein Übertrag ist ein Bündel: Zehn Plättchen werden zu einem
-          Plättchen der Spalte links und werden dort mitgerechnet.
+          Plättchen der Spalte links und werden dort mitgerechnet. Die Probe machst du mit der Umkehraufgabe: 825 − 467 muss wieder 358 ergeben.
       - type: figure
         image: images/addition-schriftlich.svg
         source: eigene Zeichnung

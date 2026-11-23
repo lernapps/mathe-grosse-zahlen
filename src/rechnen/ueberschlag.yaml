@@ -39,6 +39,9 @@ blocks:
         licence: CC0-1.0
         alt: "Zahlenstrahl von 3000 bis 5000. Die Zahl 3012 liegt direkt bei 3000, die Zahl 4987 direkt bei 5000."
         caption: "4987 liegt dicht bei 5000, 3012 dicht bei 3000. Der Überschlag rechnet mit 5000 und 3000."
+      - type: definition
+        term: Überschlag
+        explanation: Ein Überschlag ist eine grobe Rechnung mit gerundeten Zahlen. Er zeigt, wie groß das Ergebnis ungefähr sein muss.
   - type: section
     id: beispiel
     title: Beispiel
@@ -100,7 +103,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/ueberschlagen/"
       - type: number
         id: ueberschlag-rueckblick
-        text: "Kapitelrückblick: Überschlage 4980 : 5. Runde 4980 auf Tausender und teile. Was bekommst du?"
+        text: "Überschlage 4980 : 5. Runde 4980 auf Tausender und teile. Was bekommst du?"
         answer: 1000
         tolerance: 0
         explanation: "4980 wird zu 5000, 5000 : 5 = 1000. Genau ist das Ergebnis 996, also nahe bei 1000."
@@ -113,3 +116,12 @@ blocks:
           - answer: 25000
             message: "Du hast 5000 mal 5 gerechnet. Es steht ein Geteiltzeichen da."
         hint: "4980 liegt nahe bei 5000."
+  - type: section
+    id: rueckblick
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: |
+          Du hast zwei Kapitel geschafft. Du kannst große Zahlen in der Stellenwerttafel lesen, schreiben, ordnen und
+          runden. Du rechnest schriftlich, nutzt Klammern, Vorrangregeln und Rechengesetze, und du fragst bei jedem
+          Ergebnis: Kann das stimmen?

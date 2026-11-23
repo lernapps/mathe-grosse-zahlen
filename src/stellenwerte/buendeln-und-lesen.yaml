@@ -39,8 +39,7 @@ blocks:
       - type: text
         text: |
           Jede Spalte der **Stellenwerttafel** hat einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
-          links wird der Wert jedes Mal zehnmal so groß. Zehn Plättchen einer Spalte passen nicht in die Spalte:
-          Du **bündelst** sie zu einem Plättchen in der nächsten Spalte links.
+          links wird der Wert jedes Mal zehnmal so groß. Zehn Plättchen einer Spalte **bündelst** du zu einem Plättchen in der nächsten Spalte links. In der fertigen Zahl steht dann in jeder Spalte eine Ziffer von 0 bis 9.
       - type: vue-component
         id: tafel-buendeln-demo
         component: Stellenwerttafel
@@ -61,7 +60,7 @@ blocks:
           Tafel. Die Zahl ändert sich dabei nicht: Sie ist 225.
       - type: definition
         term: Stellenwerttafel
-        explanation: In der Stellenwerttafel hat jede Spalte einen Stellenwert. Die Ziffer sagt, wie viele Plättchen in der Spalte liegen.
+        explanation: In der Stellenwerttafel hat jede Spalte einen Stellenwert. In jeder Spalte liegen Plättchen mit diesem Wert.
       - type: note
         title: Probiere es aus
         blocks:
@@ -146,7 +145,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: ordering
         id: tafel-ordnen
-        text: "Ordne die Zahlen, die in der Tafel liegen, von der kleinsten zur größten."
+        text: "Ordne die Zahlen der Größe nach: von der kleinsten zur größten."
         items:
           - "998"
           - "1089"

@@ -17,6 +17,8 @@ const props = defineProps<{
   resetLabel: string;
   /** Hint line below the buttons. */
   hint: string;
+  /** Line when the magnifier cannot go finer, with {from} and {to}. */
+  done: string;
 }>();
 
 const win = ref<Window>({ from: props.from, to: props.to });
@@ -49,14 +51,16 @@ function reset(): void {
         v-for="(s, i) in sections"
         :key="i"
         type="button"
-        :disabled="!zoomable"
+        :aria-disabled="!zoomable"
         :aria-label="fill(section, { from: group(s.from), to: group(s.to) })"
         @click="zoom(i)"
       >
         {{ group(s.from) }}
       </button>
     </div>
-    <p>{{ hint }}</p>
+    <p aria-live="polite">
+      {{ zoomable ? hint : fill(done, { from: group(win.from), to: group(win.to) }) }}
+    </p>
     <button type="button" @click="reset">{{ resetLabel }}</button>
   </div>
 </template>
@@ -71,6 +75,9 @@ function reset(): void {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+button[aria-disabled="true"] {
+  opacity: 0.6;
 }
 button {
   min-width: 2.75rem;

@@ -13,7 +13,7 @@ blocks:
           Größe nach ordnen. Du brauchst die Stellenwerttafel von den Seiten davor.
       - type: number
         id: strahl-einstieg
-        text: "Auf dem Zahlenstrahl von 0 bis 1000 sind die Striche 100 voneinander entfernt. Ein Pfeil steht genau auf dem Strich nach 300. Welche Zahl ist das?"
+        text: "Auf einem Zahlenstrahl heißen die Striche 0, 100, 200, 300 und so weiter. Ein Pfeil steht auf dem nächsten Strich nach dem Strich bei 300. Welche Zahl gehört zu diesem Strich?"
         answer: 400
         tolerance: 0
         explanation: "Die Striche zählen 0, 100, 200, 300, 400. Der Strich nach 300 gehört zu 400."
@@ -45,6 +45,7 @@ blocks:
           section: "Abschnitt von {from} bis {to} mit der Lupe ansehen"
           resetLabel: "Wieder von 0 bis 1000"
           hint: "Wähle einen Abschnitt. Die Lupe zeigt ihn zehnmal so fein."
+          done: "Du siehst jetzt {from} bis {to}. Feiner geht es nicht. Mit „Wieder von 0 bis 1000“ fängst du neu an."
         nojs: |
           Ein Zahlenstrahl von 0 bis 1000 mit zehn Abschnitten zu je 100. Die Lupe zeigt einen Abschnitt zehnmal so
           fein: Aus 300 bis 400 wird ein Zahlenstrahl mit den Strichen 300, 310, 320 und so weiter bis 400. Noch
@@ -62,7 +63,7 @@ blocks:
           - type: text
             text: |
               Beide Zahlen haben vier Stellen. Vergleiche von links: Die Tausender sind gleich (4). Bei den Hundertern
-              steht 0 gegen 7. Also gilt 4087 < 4780 und am Zahlenstrahl liegt 4087 links von 4780.
+              steht 0 gegen 7. Also gilt 4087 < 4780 und am Zahlenstrahl liegt 4087 links von 4780. Das Zeichen < ist ein Wort-Zeichen für „kleiner als“: Die Spitze zeigt auf die kleinere Zahl. Das Zeichen > heißt „größer als“.
   - type: section
     id: uebung
     title: Übung
@@ -108,7 +109,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/zahlen-vergleichen-ordnen/"
       - type: ordering
         id: zahlen-ordnen
-        text: "Ordne die Zahlen am Zahlenstrahl von links nach rechts: von der kleinsten zur größten."
+        text: "Ordne die Zahlen der Größe nach: von der kleinsten zur größten."
         items:
           - "999"
           - "1009"

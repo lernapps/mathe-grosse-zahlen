@@ -61,14 +61,14 @@ function reset(): void {
         <div class="sw-count">{{ counts[i] }}</div>
         <div class="sw-buttons">
           <button type="button" :aria-label="fill(more, { name })" @click="add(i, 1)">+</button>
-          <button type="button" :aria-label="fill(less, { name })" :disabled="counts[i] === 0" @click="add(i, -1)">
+          <button type="button" :aria-label="fill(less, { name })" :aria-disabled="counts[i] === 0" @click="add(i, -1)">
             −
           </button>
         </div>
       </div>
     </div>
     <div class="sw-actions">
-      <button type="button" :disabled="!bundleable" @click="doBundle">{{ bundleLabel }}</button>
+      <button type="button" :aria-disabled="!bundleable" @click="doBundle">{{ bundleLabel }}</button>
       <button type="button" @click="reset">{{ resetLabel }}</button>
     </div>
     <p aria-live="polite">{{ fill(result, { n: group(number), parts: parts || "0" }) }}</p>
@@ -130,6 +130,9 @@ function reset(): void {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
+}
+button[aria-disabled="true"] {
+  opacity: 0.6;
 }
 button {
   min-width: 2.75rem;

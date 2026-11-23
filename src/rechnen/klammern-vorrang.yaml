@@ -10,8 +10,7 @@ blocks:
       - type: text
         text: |
           Zwei Kinder rechnen 3 + 4 · 5. Das eine bekommt 35, das andere 23. Nach dieser Seite weißt du, wer recht hat,
-          und kannst Terme mit Klammern und Vorrangregeln richtig ausrechnen. Du baust auf dem schriftlichen
-          Rechnen von der Seite davor auf.
+          und kannst Terme mit Klammern und Vorrangregeln richtig ausrechnen. Du kennst schon Plus, Minus und Mal.
       - type: number
         id: vorrang-einstieg
         text: "Du kaufst im Kino 1 Getränk für 2 € und 3 Tickets zu je 4 €. Du rechnest 2 + 3 · 4. Was kostet alles zusammen, in Euro?"

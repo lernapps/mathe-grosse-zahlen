@@ -14,7 +14,7 @@ blocks:
           einer Spalte sind ein Plättchen der nächsten.
       - type: number
         id: tausender-in-million
-        text: "Tausend Tausender sind eine Million. Wie viele Tausender-Plättchen brauchst du, um sie zu einem Millionen-Plättchen zu bündeln?"
+        text: "Wie viele Tausender-Plättchen brauchst du, um sie zu einem Millionen-Plättchen zu bündeln?"
         answer: 1000
         tolerance: 0
         explanation: "Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million."
@@ -35,7 +35,7 @@ blocks:
         text: |
           Die Tafel wächst nach links. Die Spalten sind in **Dreierblöcken** geordnet: Einer, Tausender, Millionen und
           Milliarden. In jedem Block stehen Hunderter, Zehner und Einer. Beim Schreiben lässt du zwischen den
-          Blöcken eine kleine Lücke.
+          Blöcken eine kleine Lücke. Beim Vergleichen gilt: Mehr Stellen heißt größere Zahl.
       - type: figure
         image: images/tafel-milliarden.svg
         source: eigene Zeichnung
@@ -91,9 +91,9 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: true-false
         id: milliarde-tausend-millionen
-        text: "Eine Milliarde sind tausend Millionen."
-        answer: true
-        explanation: "Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde."
+        text: "Eine Milliarde sind hundert Millionen."
+        answer: false
+        explanation: "Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen."
         links:
           - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"

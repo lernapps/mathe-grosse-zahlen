@@ -59,6 +59,17 @@ blocks:
           - type: formula
             formula: '756 : 6 = 126 \quad \text{Probe:} \quad 126 \cdot 6 = 756'
   - type: section
+    id: beispiel-mal
+    title: Beispiel schriftlich malnehmen
+    blocks:
+      - type: example
+        title: "45 · 6"
+        blocks:
+          - type: text
+            text: |
+              Du rechnest von rechts. Einer: 5 · 6 = 30, schreibe 0, übertrage 3. Zehner: 4 · 6 = 24, dazu der Übertrag 3
+              ergibt 27. Ergebnis: 270.
+  - type: section
     id: uebung
     title: Übung
     blocks:

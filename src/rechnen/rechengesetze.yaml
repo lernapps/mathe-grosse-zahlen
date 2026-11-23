@@ -14,7 +14,7 @@ blocks:
           der Seite davor.
       - type: number
         id: gesetze-einstieg
-        text: "Rechne im Kopf: 25 · 7 · 4. Tipp: Welche zwei Zahlen ergeben zusammen eine runde Zahl?"
+        text: "Rechne im Kopf: 25 · 7 · 4."
         answer: 700
         tolerance: 0
         explanation: "Du darfst die Faktoren tauschen: 25 · 4 = 100, dann 100 · 7 = 700."
@@ -26,7 +26,7 @@ blocks:
             message: "Das ist nur 25 · 7. Der Faktor 4 fehlt noch."
           - answer: 36
             message: "Du hast addiert: 25 + 7 + 4. Hier steht mal."
-        hint: "25 · 4 ergibt eine runde Zahl."
+        hint: "Welche zwei Zahlen ergeben zusammen eine runde Zahl? 25 · 4 ergibt 100."
   - type: section
     id: darstellung
     title: Plättchen umlegen

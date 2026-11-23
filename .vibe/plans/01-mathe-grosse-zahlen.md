@@ -57,6 +57,12 @@ Lernende der Stufen 5–6 verstehen, wie das Zehnersystem große Zahlen ordnet, 
 - Quellen geöffnet: Karte mathematik.json; Regeln/Anweisung/Issue (öffentlich). Lehrplan: nicht nötig (Strang mit Karte). Zweitquellen (serlo.org u. ä.): nicht geprüft.
 
 
+## Review
+
+**Fachlicher Prüfer** (Subagent, hat nicht geschrieben): alle festen und generated-Aufgaben nachgerechnet (Skript über alle Bereiche), Schreibweisen per Skript. Behoben: Klammern-Beispiel widersprach dem Einstieg; falscher Hinweis „Hunderter und Zehner" (richtig Hunderter und Einer); Distraktor „1000 km" keine Rundung; Überträge im Bild in falschen Spalten; Zahlen in zwei SVGs mit falscher Lücke; „4 − 9 geht nicht auf"; Verteilungsgesetz nur für Summen formuliert; „Rest als Bündel" beim Teilen; Seitentitel „Milliarde"; „auf welchen/welchem Zehner". Offen: Einheiten km/€ als Alltagskontext bewusst beibehalten (Entscheidung: Runden braucht Größen als Kontext, Größenrechnen wird nicht erklärt); Ziel-IDs auf lernapps.net nicht per Netz geprüft; Komponenten-Optik nicht vom fachlichen Prüfer beurteilt.
+
+**Lernenden-Prüfer** (Subagent, Browser 360/1280 px, alle 9 Seiten, Tastatur): Behoben: Einstiegsfrage Zahlenstrahl missverständlich; Ordnen vor Erklärung (Regel „mehr Stellen = größer" und < > jetzt im Text); Definition „Ziffer sagt Plättchenzahl" falsch; fehlendes Beispiel für schriftliches Malnehmen (45 · 6); Probe beim Addieren nicht gelehrt; falsche Voraussetzungs-Sätze; Aufgaben, die die Lösung verraten (1000 Tausender, 25 · 7 · 4); Kapitelrückblick ergänzt; Glossar um Runden und Überschlag; Fokusverlust bei deaktivierten Knöpfen (jetzt aria-disabled); Lupen-Meldung bei feinster Stufe. Offen (bewusst nicht behoben): Beispiele werden in Übungen teils wiederholt (Rechnung gleich dem Beispiel) – Wiederholung gewollt, aber Zahlen könnten variieren; Stimmt/Stimmt-nicht hat 50 % Ratechance; Glossar kennt nicht alle Fachwörter (Term, Faktor, Produkt, Summe, Teiler); Division im Überschlag ohne Beispiel; Kapitel Rechnen nutzt große Zahlen kaum (nur dreistellig); keine Zehntausender-Spalte in der Demo-Tafel; Aufgabennummern „Nr. 56" springen (Laufzeit, nicht änderbar); Lösungsanzeige schreibt Zahlen mit Punkt (Laufzeit, Fund für alle).
+
 ## Explore
 
 <!--
