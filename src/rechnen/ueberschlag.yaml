@@ -51,7 +51,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Runde auf Hunderter: 600 − 400 = 200. Dein Ergebnis 1001 ist fünfmal so groß. Das kann nicht stimmen.
+              Runde auf Hunderter: 600 − 400 = 200. Dein Ergebnis 1001 ist etwa fünfmal so groß. Das kann nicht stimmen.
               Richtig ist 223.
   - type: section
     id: uebung

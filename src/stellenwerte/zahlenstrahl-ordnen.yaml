@@ -52,7 +52,7 @@ blocks:
           eine Lupe zeigt 340 bis 350 mit Einerschritten.
       - type: definition
         term: Zahlenstrahl
-        explanation: Der Zahlenstrahl beginnt bei 0. Gleiche Abstände bedeuten gleiche Unterschiede. Rechts liegt die größere Zahl.
+        explanation: Der Zahlenstrahl beginnt bei 0 und geht nach rechts weiter. Die Lupe zeigt nur einen Abschnitt davon. Gleiche Abstände bedeuten gleiche Unterschiede. Rechts liegt die größere Zahl.
   - type: section
     id: beispiel
     title: Beispiel
@@ -63,7 +63,7 @@ blocks:
           - type: text
             text: |
               Beide Zahlen haben vier Stellen. Vergleiche von links: Die Tausender sind gleich (4). Bei den Hundertern
-              steht 0 gegen 7. Also gilt 4087 < 4780 und am Zahlenstrahl liegt 4087 links von 4780. Das Zeichen < ist ein Wort-Zeichen für „kleiner als“: Die Spitze zeigt auf die kleinere Zahl. Das Zeichen > heißt „größer als“.
+              steht 0 gegen 7. Also gilt 4087 < 4780 und am Zahlenstrahl liegt 4087 links von 4780. Das Zeichen < heißt „kleiner als“: Die Spitze zeigt auf die kleinere Zahl. Das Zeichen > heißt „größer als“.
   - type: section
     id: uebung
     title: Übung

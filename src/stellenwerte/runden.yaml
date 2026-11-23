@@ -40,7 +40,7 @@ blocks:
         caption: "347 liegt rechts von der Mitte 345. Deshalb rundest du auf 350."
       - type: definition
         term: Runden
-        explanation: Runden heißt, eine Zahl durch die nächste volle Zahl einer Stelle zu ersetzen, zum Beispiel den nächsten Zehner.
+        explanation: Runden heißt, eine Zahl durch die nächstgelegene runde Zahl zu ersetzen, zum Beispiel durch den nächsten vollen Zehner. Liegt sie genau in der Mitte, rundest du auf.
   - type: section
     id: beispiel
     title: Beispiel
@@ -104,7 +104,7 @@ blocks:
             info: "Für die Planung reicht ein voller Zehner."
           - text: "auf 200 km"
             correct: false
-            info: "Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Du verschenkst 13 km, die für die Planung wichtig sein können."
+            info: "Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Das ist 13 km mehr als nötig."
           - text: "auf 0 km"
             correct: false
             info: "Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen."

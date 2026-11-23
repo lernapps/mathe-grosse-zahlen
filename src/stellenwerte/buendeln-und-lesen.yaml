@@ -16,13 +16,13 @@ blocks:
         text: "Welche Zahl kommt direkt nach 399?"
         answer: 400
         tolerance: 0
-        explanation: "Nach 399 kommt 400: Die 9 Einer werden mit einem weiteren Einer zu einem Zehner, die Zehner zu einem Hunderter."
+        explanation: "Nach 399 kommt 400: 9 Einer und 1 weiterer Einer sind ein Zehner, dann sind 10 Zehner ein Hunderter."
         links:
           - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 3100
-            message: "Du hast 1 an 399 angehängt. Zähle weiter: 399, 400."
+            message: "Du hast 3, 10 und 0 hintereinander geschrieben. Beim Weiterzählen werden aus 10 Einern 1 Zehner."
         hint: "Zähle um eins weiter."
       - type: number
         id: vorwissen-einmaleins

@@ -54,7 +54,7 @@ blocks:
         explanation: "Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3."
       - type: definition
         term: Verbindungsgesetz (Assoziativgesetz)
-        explanation: "Bei Plus und bei Mal darfst du zusammenfassen, wie du willst. Beispiel: (8 + 6) + 4 = 8 + (6 + 4) = 18."
+        explanation: "Bei Plus und bei Mal darfst du die Klammern anders setzen. Die Reihenfolge der Zahlen bleibt. Beispiele: (8 + 6) + 4 = 8 + (6 + 4) = 18 und (2 · 5) · 7 = 2 · (5 · 7) = 70."
       - type: definition
         term: Verteilungsgesetz (Distributivgesetz)
         explanation: "Ein Faktor darf auf eine Summe oder Differenz verteilt werden. Beispiel: 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36."
@@ -106,7 +106,7 @@ blocks:
             right: "(8 + 6) + 4 = 8 + (6 + 4)"
           - left: Verteilungsgesetz
             right: "3 · (10 + 2) = 3 · 10 + 3 · 2"
-        explanation: "Tauschen ändert die Reihenfolge, Zusammenfassen die Klammer, Verteilen verteilt einen Faktor auf eine Summe."
+        explanation: "Beim Vertauschen ändert sich die Reihenfolge, beim Verbinden die Klammer, beim Verteilen wird ein Faktor auf eine Summe verteilt."
         links:
           - title: Vorrangregeln und Rechengesetze (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/"
