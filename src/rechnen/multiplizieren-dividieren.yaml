@@ -43,8 +43,11 @@ blocks:
         caption: "23 · 14 = 200 + 30 + 80 + 12 = 322."
       - type: text
         text: |
-          Beim **Dividieren** fragst du: Wie oft passt der Teiler in die Zahl? Du teilst Stelle für Stelle von links
+          Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
           und notierst, was übrig bleibt. Ein Rest wird entbündelt: 1 Hunderter sind 10 Zehner und kommen zur nächsten Stelle dazu.
+      - type: definition
+        term: Produkt
+        explanation: "Das Produkt ist das Ergebnis einer Multiplikation. In 23 · 14 = 322 sind 23 und 14 die Faktoren und 322 ist das Produkt."
   - type: section
     id: beispiel
     title: Beispiel

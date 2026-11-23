@@ -4,6 +4,27 @@ description: "Natürliche Zahlen schriftlich addieren und subtrahieren: Jeder Ü
 competencies: [schriftliche-verfahren]
 blocks:
   - type: section
+    id: vorwissen
+    title: Kannst du das schon?
+    blocks:
+      - type: text
+        text: |
+          Dieses Kapitel setzt die Stellenwerttafel und Rechnen im Kopf voraus. Teste dich kurz. Wenn du unsicher bist,
+          lies zuerst den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte.
+      - type: number
+        id: vorwissen-kopf
+        text: "Rechne im Kopf: 8 + 7"
+        answer: 15
+        tolerance: 0
+        explanation: "8 + 7 = 15: Mit 2 kommst du auf 10, dann fehlen noch 5."
+        links:
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
+        mistakes:
+          - answer: 56
+            message: "Du hast 8 · 7 gerechnet. Hier steht plus."
+        hint: "Ergänze erst bis zur 10."
+  - type: section
     id: einstieg
     title: Was du hier kannst
     blocks:
@@ -46,6 +67,9 @@ blocks:
         text: |
           Beim **schriftlichen Subtrahieren** geht ein Bündel in die andere Richtung: Wenn in einer Spalte zu wenig
           liegt, entbündelst du ein Plättchen der Spalte links in zehn Plättchen.
+      - type: definition
+        term: Summe
+        explanation: "Die Summe ist das Ergebnis einer Addition. In 358 + 467 = 825 sind 358 und 467 die Summanden und 825 ist die Summe."
   - type: section
     id: beispiel
     title: Beispiel

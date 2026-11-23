@@ -4,6 +4,40 @@ description: "Mit Plättchen in der Stellenwerttafel bündeln und natürliche Za
 competencies: [natuerliche-zahlen]
 blocks:
   - type: section
+    id: vorwissen
+    title: Kannst du das schon?
+    blocks:
+      - type: text
+        text: |
+          Dieses Kapitel baut auf der Grundschule auf. Teste dich kurz. Wenn du unsicher bist, lies zuerst den Baustein
+          „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte, den du über die Links unter den Aufgaben findest.
+      - type: number
+        id: vorwissen-nachfolger
+        text: "Welche Zahl kommt direkt nach 399?"
+        answer: 400
+        tolerance: 0
+        explanation: "Nach 399 kommt 400: Die 9 Einer werden mit einem weiteren Einer zu einem Zehner, die Zehner zu einem Hunderter."
+        links:
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
+        mistakes:
+          - answer: 3100
+            message: "Du hast 1 an 399 angehängt. Zähle weiter: 399, 400."
+        hint: "Zähle um eins weiter."
+      - type: number
+        id: vorwissen-einmaleins
+        text: "Wie viel ist 7 · 8?"
+        answer: 56
+        tolerance: 0
+        explanation: "7 · 8 = 56. Du kannst es auch so rechnen: 7 · 8 = 7 · 10 − 7 · 2 = 70 − 14 = 56."
+        links:
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
+        mistakes:
+          - answer: 15
+            message: "Du hast addiert: 7 + 8. Hier steht mal."
+        hint: "Das kleine Einmaleins: 7 · 8."
+  - type: section
     id: einstieg
     title: Was du hier kannst
     blocks:
@@ -61,6 +95,9 @@ blocks:
       - type: definition
         term: Stellenwerttafel
         explanation: In der Stellenwerttafel hat jede Spalte einen Stellenwert. In jeder Spalte liegen Plättchen mit diesem Wert.
+      - type: definition
+        term: Stellenwert
+        explanation: "Der Stellenwert sagt, wie viel eine Ziffer in ihrer Spalte wert ist. In 2075 steht die 7 bei den Zehnern: Ihr Stellenwert ist 10, also bedeutet sie 7 · 10 = 70."
       - type: note
         title: Probiere es aus
         blocks:
