@@ -36,3 +36,8 @@ export function canZoom(window: Window): boolean {
 export function fill(text: string, values: Record<string, string | number>): string {
   return text.replace(/\{(\w+)\}/g, (_, key: string) => String(values[key] ?? ""));
 }
+
+/** Where a number lies in a window, from 0 (left end) to 1 (right end). */
+export function position(window: Window, n: number): number {
+  return (n - window.from) / (window.to - window.from);
+}

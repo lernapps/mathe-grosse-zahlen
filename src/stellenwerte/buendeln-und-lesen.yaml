@@ -26,20 +26,20 @@ blocks:
         hint: "Zähle um eins weiter."
       - type: number
         id: vorwissen-einmaleins
-        text: "Wie viel ist 7 · 8?"
-        answer: 56
+        text: "Wie viel ist 9 · 12?"
+        answer: 108
         tolerance: 0
-        explanation: "7 · 8 = 56. Du kannst es auch so rechnen: 7 · 8 = 7 · 10 − 7 · 2 = 70 − 14 = 56."
+        explanation: "9 · 12 = 108. Du kannst es so rechnen: 9 · 10 = 90, 9 · 2 = 18 und 90 + 18 = 108."
         links:
           - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
-          - answer: 15
-            message: "Du hast addiert: 7 + 8. Hier steht mal."
-        hint: "Das kleine Einmaleins: 7 · 8."
+          - answer: 21
+            message: "Du hast addiert: 9 + 12. Hier steht mal."
+        hint: "Zerlege 12 in 10 und 2."
   - type: section
     id: einstieg
-    title: Was du hier kannst
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |

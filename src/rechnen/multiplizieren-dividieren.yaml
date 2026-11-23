@@ -5,12 +5,17 @@ competencies: [schriftliche-verfahren]
 blocks:
   - type: section
     id: einstieg
-    title: Was du hier kannst
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
           Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
           prüfen. Du brauchst das kleine Einmaleins und das Bündeln aus der Stellenwerttafel.
+      - type: text
+        text: |
+          Eine Malaufgabe wie 4 · 12 kannst du dir als Rechteck aus Plättchen vorstellen: **Anzahl der Reihen mal
+          Anzahl der Plättchen in einer Reihe**. Das Rechteck hat dann 4 Reihen mit je 12 Plättchen. Alle Plättchen
+          zusammen sind das Ergebnis.
       - type: number
         id: mal-einstieg
         text: "Ein Rechteck aus Plättchen hat 4 Reihen mit je 12 Plättchen. Wie viele Plättchen sind das? Zerlege 12 in 10 + 2, wenn du magst."

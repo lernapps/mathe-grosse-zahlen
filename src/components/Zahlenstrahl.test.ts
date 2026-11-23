@@ -1,5 +1,5 @@
 import { expect, test } from "vite-plus/test";
-import { canZoom, fill, group, ticks, zoomIn } from "./Zahlenstrahl.ts";
+import { canZoom, fill, group, position, ticks, zoomIn } from "./Zahlenstrahl.ts";
 
 test("a window has eleven ticks with equal steps", () => {
   expect(ticks({ from: 0, to: 1000 })).toEqual([0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]);
@@ -31,4 +31,9 @@ test("large numbers have groups, negative ones the minus sign", () => {
 
 test("fill replaces named placeholders", () => {
   expect(fill("{a} bis {b}", { a: 1, b: 2 })).toBe("1 bis 2");
+});
+
+test("position says where a number lies in the window", () => {
+  expect(position({ from: 0, to: 1000 }, 250)).toBe(0.25);
+  expect(position({ from: 300, to: 400 }, 400)).toBe(1);
 });

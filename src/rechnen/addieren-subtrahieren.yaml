@@ -13,20 +13,20 @@ blocks:
           richtig hast und die Seiten davor kennst. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/) oder frag deine Lehrerin oder deinen Lehrer.
       - type: number
         id: vorwissen-kopf
-        text: "Rechne im Kopf: 8 + 7"
-        answer: 15
+        text: "Rechne im Kopf: 48 + 37"
+        answer: 85
         tolerance: 0
-        explanation: "8 + 7 = 15: Mit 2 kommst du auf 10, dann fehlen noch 5."
+        explanation: "48 + 37 = 85: Rechne 48 + 30 = 78, dann 78 + 7 = 85. Oder: Mit 2 kommst du auf 50, dann fehlen noch 35."
         links:
           - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
-          - answer: 56
-            message: "Du hast 8 · 7 gerechnet. Hier steht plus."
-        hint: "Ergänze erst bis zur 10."
+          - answer: 75
+            message: "Du hast die 10 vergessen, die beim Addieren der Einer (8 + 7 = 15) in die Zehnerspalte wandert."
+        hint: "Addiere erst die Zehner, dann die Einer."
   - type: section
     id: einstieg
-    title: Was du hier kannst
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -40,8 +40,8 @@ blocks:
         tolerance: 0
         explanation: "Zehn Einer werden zu einem Zehner. Fünf Einer bleiben in der Spalte."
         links:
-          - title: Schriftliche Rechenverfahren (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
         mistakes:
           - answer: 15
             message: "So viele Einer sind es zusammen. Gefragt sind die neuen Zehner-Plättchen."
@@ -143,13 +143,13 @@ blocks:
           - "Probe: 825 − 467 = 358"
         explanation: "Du rechnest von rechts nach links, weil jeder Übertrag nach links wandert. Die Probe kommt zuletzt."
         links:
-          - title: Schriftliche Rechenverfahren (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"
       - type: true-false
         id: sub-probe
         text: "Du rechnest 503 − 278 = 225. Die Probe 225 + 278 ergibt wieder 503. Dann stimmt dein Ergebnis."
         answer: true
         explanation: "Addieren und Subtrahieren sind Umkehrungen voneinander. Kommt bei der Probe die erste Zahl heraus, stimmt die Rechnung."
         links:
-          - title: Schriftliche Rechenverfahren (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/schriftliche-verfahren/"
+          - title: Natürliche Zahlen im Stellenwertsystem (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/"

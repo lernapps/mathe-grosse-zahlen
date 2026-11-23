@@ -5,7 +5,7 @@ competencies: [zahlen-vergleichen-ordnen]
 blocks:
   - type: section
     id: einstieg
-    title: Was du hier kannst
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -13,7 +13,7 @@ blocks:
           Größe nach ordnen. Du brauchst die Stellenwerttafel von den Seiten davor.
       - type: number
         id: strahl-einstieg
-        text: "Auf einem Zahlenstrahl heißen die Striche 0, 100, 200, 300 und so weiter. Ein Pfeil steht auf dem nächsten Strich nach dem Strich bei 300. Welche Zahl gehört zu diesem Strich?"
+        text: "Auf einem Zahlenstrahl heißen die Striche 0, 100, 200, 300 und so weiter. Welche Zahl gehört zum nächsten Strich nach dem Strich bei 300?"
         answer: 400
         tolerance: 0
         explanation: "Die Striche zählen 0, 100, 200, 300, 400. Der Strich nach 300 gehört zu 400."
@@ -33,8 +33,8 @@ blocks:
       - type: text
         text: |
           Am **Zahlenstrahl** hat jede Zahl ihren Ort. Je weiter rechts, desto größer. Mit der Lupe machst du aus einem
-          Abschnitt einen neuen Zahlenstrahl, zehnmal so fein. Wähle einen Abschnitt und schau, wie die Striche
-          sich ändern.
+          Abschnitt einen neuen Zahlenstrahl, zehnmal so fein. Drücke auf eine Zahl: Dann zeigt die Lupe den Abschnitt,
+          der dort beginnt, und unten siehst du ihn vergrößert.
       - type: vue-component
         id: strahl-lupe
         component: Zahlenstrahl
@@ -45,6 +45,7 @@ blocks:
           section: "Abschnitt von {from} bis {to} mit der Lupe ansehen"
           resetLabel: "Wieder von 0 bis 1000"
           hint: "Wähle einen Abschnitt. Die Lupe zeigt ihn zehnmal so fein."
+          lens: "Oben der Zahlenstrahl von {parentFrom} bis {parentTo}. Der Abschnitt von {from} bis {to} ist markiert und mit einer Lupe vergrößert. Unten sein Zahlenstrahl, zehnmal so fein."
           done: "Du siehst jetzt {from} bis {to}. Feiner geht es nicht. Mit „Wieder von 0 bis 1000“ fängst du neu an."
         nojs: |
           Ein Zahlenstrahl von 0 bis 1000 mit zehn Abschnitten zu je 100. Die Lupe zeigt einen Abschnitt zehnmal so
@@ -73,7 +74,7 @@ blocks:
         given:
           lo: { int: [1, 9] }
         task:
-          text: "Auf einem Zahlenstrahl mit Strichen im Abstand 100 liegt ein Pfeil genau in der Mitte zwischen {{lo}}00 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?"
+          text: "Auf einem Zahlenstrahl mit Strichen im Abstand 100 liegt eine Zahl genau in der Mitte zwischen {{lo}}00 und dem nächsten Strich. Welche Zahl ist das?"
         answer: { value: "lo * 100 + 50", compare: { number: { format: integer } } }
         mistakes:
           - value: "lo * 100 + 5"
@@ -84,7 +85,7 @@ blocks:
         given:
           lo: { int: [1, 9] }
         task:
-          text: "Auf einem Zahlenstrahl mit Strichen im Abstand 1000 liegt ein Pfeil genau in der Mitte zwischen {{lo}}000 und dem nächsten Strich. Welche Zahl zeigt der Pfeil?"
+          text: "Auf einem Zahlenstrahl mit Strichen im Abstand 1000 liegt eine Zahl genau in der Mitte zwischen {{lo}}000 und dem nächsten Strich. Welche Zahl ist das?"
         answer: { value: "lo * 1000 + 500", compare: { number: { format: integer } } }
         mistakes:
           - value: "lo * 1000 + 50"

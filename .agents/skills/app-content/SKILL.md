@@ -54,7 +54,7 @@ Weiterlesen-Link jeder Aufgabe: die Kartenseite des Bausteins (siehe Regeln unte
 Darstellungs-Konventionen (für Folge-Explainer #386, #389):
 - Stellenwerttafel: Spalten von rechts E, Z, H, T (Seite 1: vier Spalten; ab Seite 2 weitere in Dreierblöcken: Tausender, Million, Milliarde), Blockkopf beschriftet; Spaltenköpfe als Text (nicht nur Farbe).
 - Plättchen: runde Marke je Einheit der Spalte; zehn Plättchen einer Spalte werden „gebündelt“ zu einem Plättchen der nächsten Spalte (Komponente `Stellenwerttafel`: je Spalte Schaltflächen „+“/„−“, „Bündeln“, „Zurücksetzen“; Tastatur: Tab, Enter/Leertaste). Unterscheidung nicht nur durch Farbe: Ziffer im Plättchen.
-- Zahlenstrahl (Komponente `Zahlenstrahl`): Skala mit zehn gleich langen Abschnitten, beschriftete Striche, Lupe: Abschnittsknopf zeigt den Abschnitt zehnmal feiner, „Wieder von 0 bis 1000“ setzt zurück.
+- Zahlenstrahl (Komponente `Zahlenstrahl`): Skala mit zehn gleich langen Abschnitten, beschriftete Striche, Lupe: Ein Abschnittsknopf markiert den Abschnitt auf dem oberen Strahl (Lupen-Symbol darauf), gestrichelte Linien führen zum feineren Strahl darunter (zehnmal so fein); „Wieder von 0 bis 1000“ setzt zurück.
 - Alle Bilder: Textalternative, Kontrast WCAG AA, bedienbar mit Tastatur.
 Eigene SVGs (`src/images/`, Quelle „eigene Zeichnung“, CC0-1.0) und die Komponenten `Stellenwerttafel` und `Zahlenstrahl` (je `.vue`, `.ts`, `.test.ts`, mit `nojs`-Text). Keine fremden Bilder.
 
@@ -68,6 +68,6 @@ Lernlandkarte Mathematik, Issue #385, gemeinsame Regeln des Epics #402. Keine Sc
 
 ## Rules learned from mistakes
 
-- Keine Wikipedia- oder anderen Fremdlinks (regeln.md Abschnitt 4): „Weiterlesen“-Link jeder Aufgabe zeigt auf die Kartenseite des Bausteins `https://lernapps.net/apps/map/mathematik/c/<baustein-id>/` (Fehler der Musterseite).
+- Keine Wikipedia- oder anderen Fremdlinks (regeln.md Abschnitt 4): „Weiterlesen“-Link jeder Aufgabe zeigt auf die Kartenseite des Bausteins `https://lernapps.net/apps/map/mathematik/c/<baustein-id>/` (Fehler der Musterseite). Das Schema erlaubt in `links` nur https-Adressen, keine App-internen Links; der Mensch fand den Kartenlink wenig hilfreich (offen: besserer Weiterlesen-Weg im Werkzeug). Überschrift „Was du hier lernst“ (nicht „kann“) auf jeder Seite; Aufgaben ohne Bild sagen nie „ein Pfeil“ o. ä., sondern beschreiben alles im Text.
 
 - Seite `stellenwerte/buendeln-und-lesen` ist die Musterseite: Einstieg mit Ziel, Bild und leichter Aufgabe, `darstellung` mit Komponente, `beispiel`, `uebung` mit `generated` (Fehlertypen), `number`, `true-false`, `ordering`.

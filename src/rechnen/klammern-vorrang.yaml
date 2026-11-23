@@ -5,7 +5,7 @@ competencies: [grundrechenarten-rechengesetze]
 blocks:
   - type: section
     id: einstieg
-    title: Was du hier kannst
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |

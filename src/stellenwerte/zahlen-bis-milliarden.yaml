@@ -5,7 +5,7 @@ competencies: [natuerliche-zahlen]
 blocks:
   - type: section
     id: einstieg
-    title: Was du hier kannst
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -54,7 +54,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Lies Block für Block von links: „zwei Milliarden, einundfünfzig Millionen, dreitausendvierhundert“.
+              Die Zahl aus dem Schaubild oben ist 2 051 003 400. Lies sie Block für Block von links: „zwei Milliarden, einundfünfzig Millionen, dreitausendvierhundert“.
               Der Block der Tausender ist **003**: nur 3 Tausender. Die beiden Nullen davor halten die Plätze frei.
   - type: section
     id: uebung
