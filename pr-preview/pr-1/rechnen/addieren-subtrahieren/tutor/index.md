@@ -41,16 +41,9 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Natürliche Zahlen schriftlich addieren und subtrahieren: Jeder Übertrag ist ein Bündel, das in die nächste Spalte zieht.
 
-### Kannst du das schon?
-
-Dieses Kapitel setzt die Stellenwerttafel und Rechnen im Kopf voraus. Teste dich kurz. Du bist bereit, wenn du die Aufgabe
-richtig hast und die Seiten davor kennst. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/) oder frag deine Lehrerin oder deinen Lehrer.
-
-- Aufgabe `vorwissen-kopf` (unten)
-
 ### Was du hier lernst
 
-Nach dieser Seite kannst du Zahlen untereinander schreiben, spaltenweise addieren und subtrahieren und
+Wenn du große Zahlen nicht im Kopf addieren kannst, rechnest du Spalte für Spalte. Nach dieser Seite kannst du Zahlen untereinander schreiben, spaltenweise addieren und subtrahieren und
 dein Ergebnis mit einer Probe prüfen. Du brauchst die Stellenwerttafel: Zehn Plättchen einer Spalte sind
 ein Plättchen der Spalte links.
 
@@ -58,13 +51,13 @@ ein Plättchen der Spalte links.
 
 ### Tafel und Verfahren nebeneinander
 
-Beim **schriftlichen Addieren** schreibst du die Zahlen so untereinander, dass Einer unter Einer steht, Zehner
+Wenn die Zahlen zu groß für den Kopf sind, rechnest du schriftlich. Beim **schriftlichen Addieren** schreibst du die Zahlen so untereinander, dass Einer unter Einer steht, Zehner
 unter Zehner. Du rechnest von rechts nach links. Ein Übertrag ist ein Bündel: Zehn Plättchen werden zu einem
 Plättchen der Spalte links und werden dort mitgerechnet. Die Probe machst du mit der Umkehraufgabe: 825 − 467 muss wieder 358 ergeben.
 
 Bild: Schriftliche Addition 358 plus 467. Unter dem Strich stehen die Überträge 1 bei den Zehnern und 1 bei den Hundertern. Das Ergebnis ist 825. Bildunterschrift: 358 + 467: Einer 8 + 7 = 15, schreibe 5, übertrage 1. Zehner 5 + 6 + 1 = 12, schreibe 2, übertrage 1. Hunderter 3 + 4 + 1 = 8.
 
-Beim **schriftlichen Subtrahieren** geht ein Bündel in die andere Richtung: Wenn in einer Spalte zu wenig
+Auch beim Abziehen brauchst du ein Verfahren, wenn die Zahlen groß sind. Beim **schriftlichen Subtrahieren** geht ein Bündel in die andere Richtung: Wenn in einer Spalte zu wenig
 liegt, entbündelst du ein Plättchen der Spalte links in zehn Plättchen.
 
 - **Summe**: Die Summe ist das Ergebnis einer Addition. In 358 + 467 = 825 sind 358 und 467 die Summanden und 825 ist die Summe.
@@ -97,17 +90,6 @@ $225 + 278 = 503$
 - Aufgabe `add-schritte` (unten)
 
 - Aufgabe `sub-probe` (unten)
-
-### Aufgabe vorwissen-kopf
-
-- Aufgabe: Rechne im Kopf: 48 + 37
-- Antwortformat: eine Zahl eintippen
-- Lösung: 85
-- Erklärung: 48 + 37 = 85: Rechne 48 + 30 = 78, dann 78 + 7 = 85. Oder: Mit 2 kommst du auf 50, dann fehlen noch 35.
-- Tipp der App: Addiere erst die Zehner, dann die Einer.
-- Typische Fehler und was die App sagt:
-  - 75: Du hast die 10 vergessen, die beim Addieren der Einer (8 + 7 = 15) in die Zehnerspalte wandert.
-- Link: [../?via=tutor#vorwissen-kopf](../?via=tutor#vorwissen-kopf)
 
 ### Aufgabe spalte-einer
 

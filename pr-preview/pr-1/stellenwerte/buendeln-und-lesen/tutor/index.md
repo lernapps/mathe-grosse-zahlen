@@ -41,19 +41,11 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Mit Plättchen in der Stellenwerttafel bündeln und natürliche Zahlen lesen, schreiben und darstellen.
 
-### Kannst du das schon?
-
-Dieses Kapitel baut auf der Grundschule auf. Teste dich kurz. Du bist bereit, wenn du beide Aufgaben
-richtig hast. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/) oder frag deine Lehrerin oder deinen Lehrer.
-
-- Aufgabe `vorwissen-nachfolger` (unten)
-
-- Aufgabe `vorwissen-einmaleins` (unten)
-
 ### Was du hier lernst
 
-Nach dieser Seite kannst du eine Zahl in die Stellenwerttafel legen und eine Zahl aus der Tafel ablesen.
-Du brauchst nur das, was du aus der Grundschule kennst: Zahlen bis 1000 und ein bisschen darüber.
+Wenn du wissen willst, wie viel eine Zahl wie 2075 wert ist, musst du wissen, was jede Ziffer bedeutet. Die
+Stellenwerttafel ordnet das: Jede Spalte hat einen Wert. Nach dieser Seite kannst du eine Zahl in die Tafel
+legen und aus der Tafel ablesen.
 
 Bild: Eine Stellenwerttafel mit vier Spalten: Tausender, Hunderter, Zehner, Einer. Darin liegen 1, 2, 3 und 4 Plättchen. Die Zahl ist 1234. Bildunterschrift: In der Tafel liegen 1 Tausender, 2 Hunderter, 3 Zehner und 4 Einer. Das ist die Zahl 1234.
 
@@ -61,7 +53,7 @@ Bild: Eine Stellenwerttafel mit vier Spalten: Tausender, Hunderter, Zehner, Eine
 
 ### Plättchen legen und bündeln
 
-Jede Spalte der **Stellenwerttafel** hat einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
+Wenn du viele Plättchen hast, brauchst du Ordnung, sonst zählst du ewig. Darum hat jede Spalte der **Stellenwerttafel** einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
 links wird der Wert jedes Mal zehnmal so groß. Am Anfang liegen 12 Zehner: Das sind zu viele für eine Spalte. Drücke „Bündeln“. Zehn Plättchen einer Spalte **bündelst** du zu einem Plättchen in der nächsten Spalte links. In der fertigen Zahl steht dann in jeder Spalte eine Ziffer von 0 bis 9.
 
 Interaktiv: Eine Stellenwerttafel mit den Spalten Tausender, Hunderter, Zehner und Einer. Am Anfang liegen 1 Hunderter, 12 Zehner und 5 Einer. Mit „Bündeln“ werden zehn Plättchen einer Spalte zu einem Plättchen der Spalte links: 12 Zehner werden zu 1 Hunderter und 2 Zehnern. Danach liegen 2 Hunderter, 2 Zehner und 5 Einer in der Tafel. Die Zahl ändert sich dabei nicht: Sie ist 225.
@@ -98,28 +90,6 @@ $2 \cdot 1000 + 0 \cdot 100 + 7 \cdot 10 + 5 \cdot 1 = 2075$
 - Aufgabe `tafel-null` (unten)
 
 - Aufgabe `tafel-ordnen` (unten)
-
-### Aufgabe vorwissen-nachfolger
-
-- Aufgabe: Welche Zahl kommt direkt nach 399?
-- Antwortformat: eine Zahl eintippen
-- Lösung: 400
-- Erklärung: Nach 399 kommt 400: 9 Einer und 1 weiterer Einer sind ein Zehner, dann sind 10 Zehner ein Hunderter.
-- Tipp der App: Zähle um eins weiter.
-- Typische Fehler und was die App sagt:
-  - 3100: Du hast 3, 10 und 0 hintereinander geschrieben. Beim Weiterzählen werden aus 10 Einern 1 Zehner.
-- Link: [../?via=tutor#vorwissen-nachfolger](../?via=tutor#vorwissen-nachfolger)
-
-### Aufgabe vorwissen-einmaleins
-
-- Aufgabe: Wie viel ist 9 · 12?
-- Antwortformat: eine Zahl eintippen
-- Lösung: 108
-- Erklärung: 9 · 12 = 108. Du kannst es so rechnen: 9 · 10 = 90, 9 · 2 = 18 und 90 + 18 = 108.
-- Tipp der App: Zerlege 12 in 10 und 2.
-- Typische Fehler und was die App sagt:
-  - 21: Du hast addiert: 9 + 12. Hier steht mal.
-- Link: [../?via=tutor#vorwissen-einmaleins](../?via=tutor#vorwissen-einmaleins)
 
 ### Aufgabe tafel-einstieg
 

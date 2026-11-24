@@ -50,7 +50,7 @@ und kannst Terme mit Klammern und Vorrangregeln richtig ausrechnen. Du kennst sc
 
 ### Die Reihenfolge
 
-Die Reihenfolge steht fest:
+Damit alle bei einer Rechnung dasselbe Ergebnis bekommen, steht die Reihenfolge fest:
 1. Zuerst rechnest du, was in **Klammern** steht.
 2. Dann kommt **Punkt vor Strich**: mal und geteilt vor plus und minus.
 3. Gleichwertiges rechnest du von links nach rechts.

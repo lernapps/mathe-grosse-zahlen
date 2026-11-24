@@ -43,14 +43,14 @@ Natürliche Zahlen am Zahlenstrahl ablesen, vergleichen und der Größe nach ord
 
 ### Was du hier lernst
 
-Nach dieser Seite kannst du Zahlen am Zahlenstrahl ablesen, mit den Zeichen &lt; und > vergleichen und der
+Wenn du wissen willst, welche von zwei Zahlen größer ist oder wo eine Zahl liegt, hilft dir der Zahlenstrahl. Nach dieser Seite kannst du Zahlen am Zahlenstrahl ablesen, mit den Zeichen &lt; und > vergleichen und der
 Größe nach ordnen. Du brauchst die Stellenwerttafel von den Seiten davor.
 
 - Aufgabe `strahl-einstieg` (unten)
 
 ### Mit der Lupe genauer schauen
 
-Am **Zahlenstrahl** hat jede Zahl ihren Ort. Je weiter rechts, desto größer. Mit der Lupe machst du aus einem
+Wenn du Zahlen vergleichen willst, hilft ein Bild: Am **Zahlenstrahl** hat jede Zahl ihren Ort. Je weiter rechts, desto größer. Liegen Zahlen dicht beieinander, brauchst du mehr Striche. Mit der Lupe machst du aus einem
 Abschnitt einen neuen Zahlenstrahl, zehnmal so fein. Drücke auf eine Zahl: Dann zeigt die Lupe den Abschnitt,
 der dort beginnt, und unten siehst du ihn vergrößert.
 

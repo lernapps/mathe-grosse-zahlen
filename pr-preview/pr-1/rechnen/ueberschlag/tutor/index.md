@@ -50,7 +50,7 @@ Ein Taschenrechner zeigt 4987 + 3012 = 17 999. Kann das stimmen? Nach dieser S
 
 ### Erst grob, dann genau
 
-Beim **Überschlag** rundest du die Zahlen so, dass du im Kopf rechnen kannst, und rechnest mit den
+Wenn du wissen willst, ob ein Ergebnis stimmen kann, brauchst du nur die ungefähre Größe. Beim **Überschlag** rundest du die Zahlen so, dass du im Kopf rechnen kannst, und rechnest mit den
 gerundeten Zahlen. Das Ergebnis ist nicht genau, aber es zeigt dir die Größenordnung. Liegt dein genaues Ergebnis weit
 davon entfernt, hast du dich verrechnet.
 

@@ -43,7 +43,7 @@ Natürliche Zahlen schriftlich multiplizieren und dividieren, mit dem Rechteckmo
 
 ### Was du hier lernst
 
-Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
+Wenn du wissen willst, wie viele Plättchen in einem großen Rechteck liegen, musst du malnehmen, und bei großen Zahlen hilft ein Verfahren. Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
 prüfen. Du brauchst das kleine Einmaleins und das Bündeln aus der Stellenwerttafel.
 
 Eine Malaufgabe wie 4 · 12 kannst du dir als Rechteck aus Plättchen vorstellen: **Anzahl der Reihen mal
@@ -54,13 +54,13 @@ zusammen sind das Ergebnis.
 
 ### Das Rechteck zerlegen
 
-Beim **Multiplizieren** zerlegst du die Zahlen in Stellenwerte. Das Rechteck zeigt 23 · 14: Seiten 20 und 3,
+Wenn die Zahlen zu groß für das Einmaleins sind, zerlegst du sie. Beim **Multiplizieren** zerlegst du die Zahlen in Stellenwerte. Das Rechteck zeigt 23 · 14: Seiten 20 und 3,
 10 und 4. Die vier Teile rechnest du einzeln und addierst sie. Das schriftliche Verfahren macht genau das
 in Spalten.
 
 Bild: Ein Rechteck mit den Seiten 23 und 14, zerlegt in vier Teile: 20 mal 10 gleich 200, 3 mal 10 gleich 30, 20 mal 4 gleich 80 und 3 mal 4 gleich 12. Zusammen 322. Bildunterschrift: 23 · 14 = 200 + 30 + 80 + 12 = 322.
 
-Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
+Wenn du Plättchen gleichmäßig verteilen willst, teilst du. Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
 und notierst, was übrig bleibt. Ein Rest wird entbündelt: 1 Hunderter sind 10 Zehner und kommen zur nächsten Stelle dazu.
 
 - **Produkt**: Das Produkt ist das Ergebnis einer Multiplikation. In 23 · 14 = 322 sind 23 und 14 die Faktoren und 322 ist das Produkt.

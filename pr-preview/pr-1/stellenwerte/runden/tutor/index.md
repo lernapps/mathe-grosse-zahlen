@@ -50,7 +50,7 @@ eine Zahl auf eine Stelle runden und entscheiden, wie genau eine Zahl sein muss.
 
 ### Die Mitte entscheidet
 
-Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Schau auf die Ziffer rechts
+Wenn du nicht jede Einerziffer brauchst, rundest du. Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Schau auf die Ziffer rechts
 von der Stelle, auf die du rundest: Bei 0, 1, 2, 3, 4 rundest du **ab**, bei 5, 6, 7, 8, 9 rundest du **auf**.
 
 Bild: Zahlenstrahl von 340 bis 350. Die Mitte ist 345. Die Zahl 347 liegt rechts von der Mitte, also näher an 350 als an 340. Bildunterschrift: 347 liegt rechts von der Mitte 345. Deshalb rundest du auf 350.
