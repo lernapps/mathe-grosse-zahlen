@@ -146,7 +146,7 @@ Nr. | t | e | Lösung | F1
 47 | 44 | 9 | 450 | 440
 48 | 70 | 8 | 710 | 700
 49 | 12 | 7 | 130 | 120
-50 | 99 | 8 | 1.000 | 990
+50 | 99 | 8 | 1000 | 990
 51 | 81 | 8 | 820 | 810
 52 | 34 | 7 | 350 | 340
 53 | 70 | 6 | 710 | 700
@@ -251,7 +251,7 @@ Nr. | t | e | Lösung | F1
 
 - Aufgabe: Runde 2450 auf Hunderter.
 - Antwortformat: eine Zahl eintippen
-- Lösung: 2.500
+- Lösung: 2500
 - Erklärung: Die Ziffer rechts von der Hunderterstelle ist 5. Bei 5 rundest du auf: 2500.
 - Tipp der App: Welche Ziffer steht rechts von der Hunderterstelle?
 - Typische Fehler und was die App sagt:
