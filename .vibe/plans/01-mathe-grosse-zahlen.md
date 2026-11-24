@@ -69,6 +69,8 @@ Lernende der Stufen 5–6 verstehen, wie das Zehnersystem große Zahlen ordnet, 
 
 **Rückmeldung des Menschen zur Vorschau (8 Notizen), umgesetzt:** Selbsttests schwerer (9 · 12, 48 + 37); Überschrift „Was du hier lernst“; Beispiel Milliarden verweist auf das Schaubild; „Pfeil“ aus den Zahlenstrahl-Aufgaben entfernt (kein Bild dazu); Lupe sichtbar gemacht (Lupen-Symbol, markierter Abschnitt, Linien zum feineren Strahl); Mal-Aufgabe als Rechteck „Reihen mal Plättchen je Reihe“ eingeführt. Weiterlesen-Link: `links:` an allen Aufgaben entfernt (Schema verlangt sie nicht, `lernapps check` besteht; Entscheidung des Orchestrators).
 
+**Neue Runde (regeln.md 7 Punkt 6, 9 Punkte 7–9; app-templates 0.19.0, tooling 0.18.6):** `lernapps update` als eigener Commit (zwei Commits, weil lint-staged beim Wechsel von `.claude/skills/*` von Dateien zu Links an „beyond a symbolic link“ scheitert; Links vorübergehend zur Seite gelegt, kein `--no-verify`). (a) Abschnitte „Kannst du das schon?“ entfernt, keine Recap-Seite, weil die Voraussetzungen (Grundschule) in keinem Karten-Baustein stehen und `recap` eine Karten-ID braucht. (b) Einstiege und erste Sätze der Abschnitte beginnen mit dem Anlass. (c) Buttons in Laufzeit-Gestaltung; Lupe blendet Abschnittsknöpfe auf der feinsten Stufe und „Wieder von 0 bis 1000“ ohne Zoom aus; Bündeln und Zurücksetzen deaktiviert, mit Zeile als Grund. Offen: Lernenden-Prüfer über die geänderten Seiten.
+
 ## Explore
 
 <!--
