@@ -53,7 +53,7 @@ und kannst Terme mit Klammern und Vorrangregeln richtig ausrechnen. Du kennst sc
 Damit alle bei einer Rechnung dasselbe Ergebnis bekommen, steht die Reihenfolge fest:
 1. Zuerst rechnest du, was in **Klammern** steht.
 2. Dann kommt **Punkt vor Strich**: mal und geteilt vor plus und minus.
-3. Gleichwertiges rechnest du von links nach rechts.
+3. Stehen nur Plus und Minus (oder nur Mal und Geteilt) nebeneinander, hilft Punkt vor Strich nicht. Dann rechnest du von links nach rechts.
 
 $3 + 4 \cdot 5 = 3 + 20 = 23$
 

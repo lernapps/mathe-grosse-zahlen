@@ -50,7 +50,7 @@ eine Zahl auf eine Stelle runden und entscheiden, wie genau eine Zahl sein muss.
 
 ### Die Mitte entscheidet
 
-Wenn du nicht jede Einerziffer brauchst, rundest du. Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Schau auf die Ziffer rechts
+Wenn du nicht jede Einerziffer brauchst, rundest du. Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Wenn eine Zahl zwischen zwei runden Zahlen liegt, entscheidet, welche näher ist. Schau auf die Ziffer rechts
 von der Stelle, auf die du rundest: Bei 0, 1, 2, 3, 4 rundest du **ab**, bei 5, 6, 7, 8, 9 rundest du **auf**.
 
 Bild: Zahlenstrahl von 340 bis 350. Die Mitte ist 345. Die Zahl 347 liegt rechts von der Mitte, also näher an 350 als an 340. Bildunterschrift: 347 liegt rechts von der Mitte 345. Deshalb rundest du auf 350.
@@ -261,11 +261,11 @@ Nr. | t | e | Lösung | F1
 
 ### Aufgabe runden-genauigkeit
 
-- Aufgabe: Eine Lehrerin plant einen Bus für die Klassenfahrt. Der Ort ist 187 km entfernt. Wie rundest du sinnvoll?
+- Aufgabe: Eine Lehrerin plant einen Bus für die Klassenfahrt. Der Ort ist 187 km entfernt. Sie braucht die Strecke auf einen vollen Zehner genau. Wie rundest du?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ auf 190 km – Für die Planung reicht ein voller Zehner.
-  - ✗ auf 200 km – Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Das ist 13 km mehr als nötig.
+  - ✗ auf 200 km – Das ist die Rundung auf Hunderter. Gefragt war ein voller Zehner.
   - ✗ auf 0 km – Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen.
 - Lösung: auf 190 km
 - Erklärung: Du rundest so, dass die Zahl noch zum Zweck passt: nicht ungenauer als nötig, nicht genauer als sinnvoll.

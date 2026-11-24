@@ -53,7 +53,7 @@ ein Plättchen der Spalte links.
 
 Wenn die Zahlen zu groß für den Kopf sind, rechnest du schriftlich. Beim **schriftlichen Addieren** schreibst du die Zahlen so untereinander, dass Einer unter Einer steht, Zehner
 unter Zehner. Du rechnest von rechts nach links. Ein Übertrag ist ein Bündel: Zehn Plättchen werden zu einem
-Plättchen der Spalte links und werden dort mitgerechnet. Die Probe machst du mit der Umkehraufgabe: 825 − 467 muss wieder 358 ergeben.
+Plättchen der Spalte links und werden dort mitgerechnet. Damit du sicher bist, dass du dich nicht verrechnet hast, machst du die Probe mit der Umkehraufgabe: 825 − 467 muss wieder 358 ergeben.
 
 Bild: Schriftliche Addition 358 plus 467. Unter dem Strich stehen die Überträge 1 bei den Zehnern und 1 bei den Hundertern. Das Ergebnis ist 825. Bildunterschrift: 358 + 467: Einer 8 + 7 = 15, schreibe 5, übertrage 1. Zehner 5 + 6 + 1 = 12, schreibe 2, übertrage 1. Hunderter 3 + 4 + 1 = 8.
 

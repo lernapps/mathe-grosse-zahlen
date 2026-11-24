@@ -55,7 +55,7 @@ Wenn eine Rechnung unbequem aussieht, darfst du die Zahlen manchmal umstellen. D
 
 Bild: Zwei Plättchenbilder: links 3 Reihen mit je 4 Plättchen, rechts 4 Reihen mit je 3 Plättchen. Beide zeigen 12 Plättchen: 3 mal 4 ist gleich 4 mal 3. Bildunterschrift: Dreht man das Plättchenbild, bleibt die Zahl der Plättchen gleich: 3 · 4 = 4 · 3.
 
-Wenn du bei drei Zahlen frei wählen willst, womit du anfängst, hilft das **Verbindungsgesetz**: Es erlaubt, Klammern anders zu setzen. Wenn ein Faktor auf eine unbequeme Summe trifft, hilft das **Verteilungsgesetz**: Es erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
+Wenn du bei drei Zahlen frei wählen willst, womit du anfängst, hilft das **Verbindungsgesetz**: Es erlaubt, Klammern anders zu setzen. Wenn du 7 · 12 im Kopf rechnen willst, zerlegst du 12 in 10 + 2. Das erlaubt das **Verteilungsgesetz**: Es erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
 
 Bild: Ein Plättchenbild mit 7 Reihen zu je 12 Plättchen. Eine gestrichelte Linie trennt 10 Plättchen je Reihe links von 2 Plättchen je Reihe rechts: 7 mal 12 ist 7 mal 10 plus 7 mal 2, also 70 plus 14 gleich 84. Bildunterschrift: 7 · 12 = 7 · 10 + 7 · 2 = 70 + 14 = 84.
 
