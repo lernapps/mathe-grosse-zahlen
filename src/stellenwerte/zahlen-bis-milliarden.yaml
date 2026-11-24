@@ -9,8 +9,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Zeitungen nennen große Zahlen: Einwohner, Entfernungen, Preise. Nach dieser Seite kannst du solche Zahlen
-          lesen, schreiben und in die Stellenwerttafel eintragen. Du baust auf der Seite davor auf: Zehn Plättchen
+          Zeitungen nennen große Zahlen: Einwohner, Entfernungen, Preise. Wenn du wissen willst, wie groß eine
+          Einwohnerzahl ist, musst du sie lesen können. Nach dieser Seite kannst du solche Zahlen lesen, schreiben und in die Stellenwerttafel eintragen. Du baust auf der Seite davor auf: Zehn Plättchen
           einer Spalte sind ein Plättchen der nächsten.
       - type: number
         id: tausender-in-million
@@ -30,7 +30,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Tafel wächst nach links. Die Spalten sind in **Dreierblöcken** geordnet: Einer, Tausender, Millionen und
+          Damit auch sehr große Zahlen lesbar bleiben, wächst die Tafel nach links. Die Spalten sind in **Dreierblöcken** geordnet: Einer, Tausender, Millionen und
           Milliarden. In jedem Block stehen Hunderter, Zehner und Einer. Beim Schreiben lässt du zwischen den
           Blöcken eine kleine Lücke. Beim Vergleichen gilt: Mehr Stellen heißt größere Zahl.
       - type: figure

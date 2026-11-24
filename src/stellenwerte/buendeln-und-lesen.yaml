@@ -4,41 +4,14 @@ description: "Mit Plättchen in der Stellenwerttafel bündeln und natürliche Za
 competencies: [natuerliche-zahlen]
 blocks:
   - type: section
-    id: vorwissen
-    title: Kannst du das schon?
-    blocks:
-      - type: text
-        text: |
-          Dieses Kapitel baut auf der Grundschule auf. Teste dich kurz. Du bist bereit, wenn du beide Aufgaben
-          richtig hast. Sonst übe zuerst den [Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/) oder frag deine Lehrerin oder deinen Lehrer.
-      - type: number
-        id: vorwissen-nachfolger
-        text: "Welche Zahl kommt direkt nach 399?"
-        answer: 400
-        tolerance: 0
-        explanation: "Nach 399 kommt 400: 9 Einer und 1 weiterer Einer sind ein Zehner, dann sind 10 Zehner ein Hunderter."
-        mistakes:
-          - answer: 3100
-            message: "Du hast 3, 10 und 0 hintereinander geschrieben. Beim Weiterzählen werden aus 10 Einern 1 Zehner."
-        hint: "Zähle um eins weiter."
-      - type: number
-        id: vorwissen-einmaleins
-        text: "Wie viel ist 9 · 12?"
-        answer: 108
-        tolerance: 0
-        explanation: "9 · 12 = 108. Du kannst es so rechnen: 9 · 10 = 90, 9 · 2 = 18 und 90 + 18 = 108."
-        mistakes:
-          - answer: 21
-            message: "Du hast addiert: 9 + 12. Hier steht mal."
-        hint: "Zerlege 12 in 10 und 2."
-  - type: section
     id: einstieg
     title: Was du hier lernst
     blocks:
       - type: text
         text: |
-          Nach dieser Seite kannst du eine Zahl in die Stellenwerttafel legen und eine Zahl aus der Tafel ablesen.
-          Du brauchst nur das, was du aus der Grundschule kennst: Zahlen bis 1000 und ein bisschen darüber.
+          Wenn du wissen willst, wie viel eine Zahl wie 2075 wert ist, musst du wissen, was jede Ziffer bedeutet. Die
+          Stellenwerttafel ordnet das: Jede Spalte hat einen Wert. Nach dieser Seite kannst du eine Zahl in die Tafel
+          legen und aus der Tafel ablesen.
       - type: figure
         image: images/stellenwerttafel-1234.svg
         source: eigene Zeichnung
@@ -63,7 +36,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Jede Spalte der **Stellenwerttafel** hat einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
+          Wenn du viele Plättchen hast, brauchst du Ordnung, sonst zählst du ewig. Darum hat jede Spalte der **Stellenwerttafel** einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
           links wird der Wert jedes Mal zehnmal so groß. Am Anfang liegen 12 Zehner: Das sind zu viele für eine Spalte. Drücke „Bündeln“. Zehn Plättchen einer Spalte **bündelst** du zu einem Plättchen in der nächsten Spalte links. In der fertigen Zahl steht dann in jeder Spalte eine Ziffer von 0 bis 9.
       - type: vue-component
         id: tafel-buendeln-demo
@@ -76,6 +49,7 @@ blocks:
           less: "Ein {name}-Plättchen weniger"
           bundleLabel: "Bündeln"
           resetLabel: "Zurücksetzen"
+          nothingToBundle: "Es gibt nichts zu bündeln: Keine Spalte hat zehn Plättchen oder mehr."
           result: "Die Plättchen zeigen die Zahl {n}. Das sind: {parts}."
           part: "{count} {name}"
         nojs: |

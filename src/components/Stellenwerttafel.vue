@@ -20,6 +20,8 @@ const props = defineProps<{
   bundleLabel: string;
   /** Label of the button that sets the start state back. */
   resetLabel: string;
+  /** Line shown while no column has ten plates, so that "Bündeln" has nothing to do. */
+  nothingToBundle: string;
   /** Sentence below the table, with {n} for the number and {parts} for the plates per column in words. */
   result: string;
   /** Sentence for a column with plates, with {count} and {name}. */
@@ -28,6 +30,7 @@ const props = defineProps<{
 
 const counts = ref<number[]>(start(props.names.length, props.plates));
 const number = computed(() => value(counts.value));
+const changed = computed(() => counts.value.join() !== start(props.names.length, props.plates).join());
 const bundleable = computed(() => canBundle(counts.value));
 const parts = computed(() =>
   counts.value
@@ -61,7 +64,13 @@ function reset(): void {
         <div class="sw-count">{{ counts[i] }}</div>
         <div class="sw-buttons">
           <button type="button" :aria-label="fill(more, { name })" @click="add(i, 1)">+</button>
-          <button type="button" :aria-label="fill(less, { name })" :aria-disabled="counts[i] === 0" @click="add(i, -1)">
+          <button
+            type="button"
+            class="secondary"
+            :aria-label="fill(less, { name })"
+            :aria-disabled="counts[i] === 0"
+            @click="add(i, -1)"
+          >
             −
           </button>
         </div>
@@ -69,8 +78,9 @@ function reset(): void {
     </div>
     <div class="sw-actions">
       <button type="button" :aria-disabled="!bundleable" @click="doBundle">{{ bundleLabel }}</button>
-      <button type="button" @click="reset">{{ resetLabel }}</button>
+      <button type="button" class="secondary" :aria-disabled="!changed" @click="reset">{{ resetLabel }}</button>
     </div>
+    <p v-if="!bundleable" class="sw-note">{{ nothingToBundle }}</p>
     <p aria-live="polite">{{ fill(result, { n: group(number), parts: parts || "0" }) }}</p>
   </div>
 </template>
@@ -119,6 +129,9 @@ function reset(): void {
   color: var(--page-on-accent);
   font-size: 0.65rem;
 }
+.sw-note {
+  color: var(--page-muted);
+}
 .sw-count {
   font-size: 1.25rem;
   font-weight: bold;
@@ -131,11 +144,27 @@ function reset(): void {
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
-button[aria-disabled="true"] {
-  opacity: 0.6;
-}
 button {
+  font: inherit;
   min-width: 2.75rem;
   min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-accent);
+  color: var(--page-on-accent);
+  cursor: pointer;
+}
+button.secondary {
+  background: transparent;
+  color: var(--page-accent);
+}
+button[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.6;
+}
+button:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
 }
 </style>

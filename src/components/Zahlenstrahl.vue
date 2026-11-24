@@ -107,12 +107,11 @@ function reset(): void {
         </text>
       </g>
     </svg>
-    <div class="zs-sections">
+    <div v-if="zoomable" class="zs-sections">
       <button
         v-for="(s, i) in sections"
         :key="i"
         type="button"
-        :aria-disabled="!zoomable"
         :aria-label="fill(section, { from: group(s.from), to: group(s.to) })"
         @click="zoom(i)"
       >
@@ -122,7 +121,7 @@ function reset(): void {
     <p aria-live="polite">
       {{ zoomable ? hint : fill(done, { from: group(win.from), to: group(win.to) }) }}
     </p>
-    <button type="button" :aria-disabled="parents.length === 0" @click="reset">{{ resetLabel }}</button>
+    <button v-if="parents.length > 0" type="button" class="secondary" @click="reset">{{ resetLabel }}</button>
   </div>
 </template>
 
@@ -159,11 +158,27 @@ function reset(): void {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-button[aria-disabled="true"] {
-  opacity: 0.6;
-}
 button {
+  font: inherit;
   min-width: 2.75rem;
   min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-accent);
+  color: var(--page-on-accent);
+  cursor: pointer;
+}
+button.secondary {
+  background: transparent;
+  color: var(--page-accent);
+}
+button[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.6;
+}
+button:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
 }
 </style>

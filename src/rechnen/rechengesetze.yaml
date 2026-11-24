@@ -30,7 +30,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Das **Vertauschungsgesetz** zeigt das Bild: 3 Reihen mit je 4 Plättchen sind genauso viele wie 4 Reihen mit je 3.
+          Wenn eine Rechnung unbequem aussieht, darfst du die Zahlen manchmal umstellen. Das **Vertauschungsgesetz** zeigt das Bild: 3 Reihen mit je 4 Plättchen sind genauso viele wie 4 Reihen mit je 3.
       - type: figure
         image: images/plaettchen-tauschen.svg
         source: eigene Zeichnung
@@ -39,7 +39,7 @@ blocks:
         caption: "Dreht man das Plättchenbild, bleibt die Zahl der Plättchen gleich: 3 · 4 = 4 · 3."
       - type: text
         text: |
-          Das **Verbindungsgesetz** erlaubt, Klammern anders zu setzen. Das **Verteilungsgesetz** erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
+          Wenn du bei drei Zahlen frei wählen willst, womit du anfängst, hilft das **Verbindungsgesetz**: Es erlaubt, Klammern anders zu setzen. Wenn ein Faktor auf eine unbequeme Summe trifft, hilft das **Verteilungsgesetz**: Es erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
       - type: figure
         image: images/plaettchen-verteilen.svg
         source: eigene Zeichnung

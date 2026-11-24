@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
+          Wenn du wissen willst, wie viele Plättchen in einem großen Rechteck liegen, musst du malnehmen, und bei großen Zahlen hilft ein Verfahren. Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
           prüfen. Du brauchst das kleine Einmaleins und das Bündeln aus der Stellenwerttafel.
       - type: text
         text: |
@@ -34,7 +34,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Beim **Multiplizieren** zerlegst du die Zahlen in Stellenwerte. Das Rechteck zeigt 23 · 14: Seiten 20 und 3,
+          Wenn die Zahlen zu groß für das Einmaleins sind, zerlegst du sie. Beim **Multiplizieren** zerlegst du die Zahlen in Stellenwerte. Das Rechteck zeigt 23 · 14: Seiten 20 und 3,
           10 und 4. Die vier Teile rechnest du einzeln und addierst sie. Das schriftliche Verfahren macht genau das
           in Spalten.
       - type: figure
@@ -45,7 +45,7 @@ blocks:
         caption: "23 · 14 = 200 + 30 + 80 + 12 = 322."
       - type: text
         text: |
-          Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
+          Wenn du Plättchen gleichmäßig verteilen willst, teilst du. Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
           und notierst, was übrig bleibt. Ein Rest wird entbündelt: 1 Hunderter sind 10 Zehner und kommen zur nächsten Stelle dazu.
       - type: definition
         term: Produkt
