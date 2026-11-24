@@ -3,7 +3,7 @@
 // the upper line is the scale before, with the chosen section and a magnifying glass on it, and lines lead from the
 // section to the full width of the finer scale below. Its logic is in Zahlenstrahl.ts.
 // Operation with the keyboard: Tab to a button, Enter or Space presses it.
-import { computed, ref } from "vue";
+import { computed, nextTick, ref } from "vue";
 import { canZoom, fill, group, position, ticks, zoomIn, type Window } from "./Zahlenstrahl.ts";
 
 const props = defineProps<{
@@ -51,10 +51,17 @@ const lensX = computed(() =>
   parent.value ? (xAt(parent.value, win.value.from) + xAt(parent.value, win.value.to)) / 2 : 0,
 );
 
-function zoom(index: number): void {
+const sectionBox = ref<HTMLElement | null>(null);
+const resetButton = ref<HTMLButtonElement | null>(null);
+
+async function zoom(index: number): Promise<void> {
   if (!zoomable.value) return;
   parents.value = [...parents.value, win.value];
   win.value = zoomIn(win.value, index);
+  // keep the keyboard focus: on the same position, or on "back" when the section buttons are gone
+  await nextTick();
+  const buttons = sectionBox.value?.querySelectorAll("button");
+  (buttons && buttons.length > 0 ? buttons[index] : resetButton.value)?.focus();
 }
 function reset(): void {
   parents.value = [];
@@ -107,7 +114,7 @@ function reset(): void {
         </text>
       </g>
     </svg>
-    <div v-if="zoomable" class="zs-sections">
+    <div v-if="zoomable" ref="sectionBox" class="zs-sections">
       <button
         v-for="(s, i) in sections"
         :key="i"
@@ -121,7 +128,9 @@ function reset(): void {
     <p aria-live="polite">
       {{ zoomable ? hint : fill(done, { from: group(win.from), to: group(win.to) }) }}
     </p>
-    <button v-if="parents.length > 0" type="button" class="secondary" @click="reset">{{ resetLabel }}</button>
+    <button v-if="parents.length > 0" ref="resetButton" type="button" class="secondary" @click="reset">
+      {{ resetLabel }}
+    </button>
   </div>
 </template>
 

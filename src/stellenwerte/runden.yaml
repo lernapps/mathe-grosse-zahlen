@@ -27,7 +27,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du nicht jede Einerziffer brauchst, rundest du. Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Schau auf die Ziffer rechts
+          Wenn du nicht jede Einerziffer brauchst, rundest du. Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Wenn eine Zahl zwischen zwei runden Zahlen liegt, entscheidet, welche näher ist. Schau auf die Ziffer rechts
           von der Stelle, auf die du rundest: Bei 0, 1, 2, 3, 4 rundest du **ab**, bei 5, 6, 7, 8, 9 rundest du **auf**.
       - type: figure
         image: images/runden-strahl.svg
@@ -91,14 +91,14 @@ blocks:
         hint: "Welche Ziffer steht rechts von der Hunderterstelle?"
       - type: single-choice
         id: runden-genauigkeit
-        text: "Eine Lehrerin plant einen Bus für die Klassenfahrt. Der Ort ist 187 km entfernt. Wie rundest du sinnvoll?"
+        text: "Eine Lehrerin plant einen Bus für die Klassenfahrt. Der Ort ist 187 km entfernt. Sie braucht die Strecke auf einen vollen Zehner genau. Wie rundest du?"
         options:
           - text: "auf 190 km"
             correct: true
             info: "Für die Planung reicht ein voller Zehner."
           - text: "auf 200 km"
             correct: false
-            info: "Das ist die Rundung auf Hunderter. Sie ist gröber als nötig: Das ist 13 km mehr als nötig."
+            info: "Das ist die Rundung auf Hunderter. Gefragt war ein voller Zehner."
           - text: "auf 0 km"
             correct: false
             info: "Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen."

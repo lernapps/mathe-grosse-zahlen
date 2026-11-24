@@ -52,6 +52,7 @@ function reset(): void {
 
 <template>
   <div class="stellenwerttafel">
+    <p class="sw-result" aria-live="polite">{{ fill(result, { n: group(number), parts: parts || "0" }) }}</p>
     <div class="sw-columns">
       <div v-for="(name, i) in names" :key="name" class="sw-column">
         <div class="sw-head">
@@ -67,8 +68,9 @@ function reset(): void {
           <button
             type="button"
             class="secondary"
+            :class="{ 'sw-hidden': counts[i] === 0 }"
             :aria-label="fill(less, { name })"
-            :aria-disabled="counts[i] === 0"
+            :tabindex="counts[i] === 0 ? -1 : 0"
             @click="add(i, -1)"
           >
             −
@@ -81,7 +83,6 @@ function reset(): void {
       <button type="button" class="secondary" :aria-disabled="!changed" @click="reset">{{ resetLabel }}</button>
     </div>
     <p v-if="!bundleable" class="sw-note">{{ nothingToBundle }}</p>
-    <p aria-live="polite">{{ fill(result, { n: group(number), parts: parts || "0" }) }}</p>
   </div>
 </template>
 
@@ -128,6 +129,12 @@ function reset(): void {
   background: var(--page-accent);
   color: var(--page-on-accent);
   font-size: 0.65rem;
+}
+.sw-hidden {
+  visibility: hidden;
+}
+.sw-result {
+  font-weight: bold;
 }
 .sw-note {
   color: var(--page-muted);

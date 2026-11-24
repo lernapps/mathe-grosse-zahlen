@@ -39,7 +39,7 @@ blocks:
         caption: "Dreht man das Plättchenbild, bleibt die Zahl der Plättchen gleich: 3 · 4 = 4 · 3."
       - type: text
         text: |
-          Wenn du bei drei Zahlen frei wählen willst, womit du anfängst, hilft das **Verbindungsgesetz**: Es erlaubt, Klammern anders zu setzen. Wenn ein Faktor auf eine unbequeme Summe trifft, hilft das **Verteilungsgesetz**: Es erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
+          Wenn du bei drei Zahlen frei wählen willst, womit du anfängst, hilft das **Verbindungsgesetz**: Es erlaubt, Klammern anders zu setzen. Wenn du 7 · 12 im Kopf rechnen willst, zerlegst du 12 in 10 + 2. Das erlaubt das **Verteilungsgesetz**: Es erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
       - type: figure
         image: images/plaettchen-verteilen.svg
         source: eigene Zeichnung
