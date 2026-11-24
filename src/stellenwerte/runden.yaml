@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Runden
+description: "Zahlen sinnvoll runden und die Genauigkeit passend zur Aufgabe wählen."
+competencies: [runden]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Eine Zeitung schreibt: „Die Strecke ist etwa 350 km lang.“ Genau sind es 347 km. Du baust auf der Stellenwerttafel auf. Nach dieser Seite kannst du
+          eine Zahl auf eine Stelle runden und entscheiden, wie genau eine Zahl sein muss.
+      - type: number
+        id: runden-einstieg
+        text: "Eine Strecke ist 347 km lang. Welchem vollen Zehner liegt sie am nächsten?"
+        answer: 350
+        tolerance: 0
+        explanation: "347 liegt zwischen 340 und 350. Bis 350 sind es 3, bis 340 sind es 7. Also ist 350 näher."
+        mistakes:
+          - answer: 340
+            message: "340 ist zwar ein voller Zehner, aber 7 weit weg. Bis 350 sind es nur 3."
+        hint: "Zwischen welchen zwei vollen Zehnern liegt 347? Zu welchem ist der Weg kürzer?"
+  - type: section
+    id: darstellung
+    title: Die Mitte entscheidet
+    blocks:
+      - type: text
+        text: |
+          Wenn du nicht jede Einerziffer brauchst, rundest du. Beim **Runden** gehst du zum nächsten vollen Zehner, Hunderter oder Tausender. Wenn eine Zahl zwischen zwei runden Zahlen liegt, entscheidet, welche näher ist. Schau auf die Ziffer rechts
+          von der Stelle, auf die du rundest: Bei 0, 1, 2, 3, 4 rundest du **ab**, bei 5, 6, 7, 8, 9 rundest du **auf**.
+      - type: figure
+        image: images/runden-strahl.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Zahlenstrahl von 340 bis 350. Die Mitte ist 345. Die Zahl 347 liegt rechts von der Mitte, also näher an 350 als an 340."
+        caption: "347 liegt rechts von der Mitte 345. Deshalb rundest du auf 350."
+      - type: definition
+        term: Runden
+        explanation: Runden heißt, eine Zahl durch die nächstgelegene runde Zahl zu ersetzen, zum Beispiel durch den nächsten vollen Zehner. Liegt sie genau in der Mitte, rundest du auf.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Auf welche Stelle runden?
+        blocks:
+          - type: text
+            text: |
+              Ein Ort hat 48 237 Einwohner. Eine Zeitung rundet auf Tausender: 48 000. Eine Schulbehörde braucht es genauer
+              und rundet auf Hunderter: 48 200. Wie genau eine Zahl sein muss, hängt von der Aufgabe ab.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: runden-auf
+        given:
+          t: { int: [10, 99] }
+          e: { int: [6, 9] }
+        task:
+          text: "Runde {{t}}{{e}} auf Zehner."
+        answer: { value: "t * 10 + 10", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "t * 10"
+            message: "Du hast abgerundet. Die Einerziffer ist 5 oder mehr, also rundest du auf."
+        hint: "Schau auf die Einerziffer: Ab 5 wird aufgerundet."
+      - type: generated
+        id: runden-ab
+        given:
+          t: { int: [10, 99] }
+          e: { int: [1, 4] }
+        task:
+          text: "Runde {{t}}{{e}} auf Zehner."
+        answer: { value: "t * 10", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "t * 10 + 10"
+            message: "Du hast aufgerundet. Die Einerziffer ist kleiner als 5, also rundest du ab."
+        hint: "Schau auf die Einerziffer: Bei 1 bis 4 wird abgerundet."
+      - type: number
+        id: runden-fuenf
+        text: "Runde 2450 auf Hunderter."
+        answer: 2500
+        tolerance: 0
+        explanation: "Die Ziffer rechts von der Hunderterstelle ist 5. Bei 5 rundest du auf: 2500."
+        mistakes:
+          - answer: 2400
+            message: "Du hast abgerundet. Bei einer 5 rechts von der Stelle rundest du auf."
+          - answer: 2000
+            message: "Du hast auf Tausender gerundet. Gefragt war Hunderter."
+        hint: "Welche Ziffer steht rechts von der Hunderterstelle?"
+      - type: single-choice
+        id: runden-genauigkeit
+        text: "Eine Lehrerin plant einen Bus für die Klassenfahrt. Der Ort ist 187 km entfernt. Sie braucht die Strecke auf einen vollen Zehner genau. Wie rundest du?"
+        options:
+          - text: "auf 190 km"
+            correct: true
+            info: "Für die Planung reicht ein voller Zehner."
+          - text: "auf 200 km"
+            correct: false
+            info: "Das ist die Rundung auf Hunderter. Gefragt war ein voller Zehner."
+          - text: "auf 0 km"
+            correct: false
+            info: "Das ist die Rundung auf Tausender. Sie ist viel zu grob: Mit 0 km lässt sich keine Fahrt planen."
+        explanation: "Du rundest so, dass die Zahl noch zum Zweck passt: nicht ungenauer als nötig, nicht genauer als sinnvoll."

@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Zahlen bis zu den Milliarden
+description: "Große Zahlen in der Stellenwerttafel lesen und schreiben: Dreierblöcke bis zu den Milliarden."
+competencies: [natuerliche-zahlen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Zeitungen nennen große Zahlen: Einwohner, Entfernungen, Preise. Wenn du wissen willst, wie groß eine
+          Einwohnerzahl ist, musst du sie lesen können. Nach dieser Seite kannst du solche Zahlen lesen, schreiben und in die Stellenwerttafel eintragen. Du baust auf der Seite davor auf: Zehn Plättchen
+          einer Spalte sind ein Plättchen der nächsten.
+      - type: number
+        id: tausender-in-million
+        text: "Wie viele Tausender-Plättchen brauchst du, um sie zu einem Millionen-Plättchen zu bündeln?"
+        answer: 1000
+        tolerance: 0
+        explanation: "Eine Million ist tausendmal so viel wie Tausend: 1000 · 1000. Du bündelst also 1000 Tausender zu 1 Million."
+        mistakes:
+          - answer: 10
+            message: "Zehn Plättchen bündelst du zum Nachbarn. Von Tausend bis zur Million sind es drei Spalten, jedes Mal mal zehn."
+          - answer: 100
+            message: "Hundert Tausender sind erst Hunderttausend. Für eine Million fehlt noch eine Spalte: Zehn Hunderttausender werden zu einer Million."
+        hint: "Wie viele Tausender passen in 1 000 000?"
+  - type: section
+    id: darstellung
+    title: Die Tafel in Dreierblöcken
+    blocks:
+      - type: text
+        text: |
+          Damit auch sehr große Zahlen lesbar bleiben, wächst die Tafel nach links. Die Spalten sind in **Dreierblöcken** geordnet: Einer, Tausender, Millionen und
+          Milliarden. In jedem Block stehen Hunderter, Zehner und Einer. Beim Schreiben lässt du zwischen den
+          Blöcken eine kleine Lücke. Beim Vergleichen gilt: Mehr Stellen heißt größere Zahl.
+      - type: figure
+        image: images/tafel-milliarden.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Stellenwerttafel mit zwölf Spalten in vier Dreierblöcken: Milliarden, Millionen, Tausender, Einer. Eingetragen ist 2 Milliarden 51 Millionen 3 Tausend 400, also 2 051 003 400."
+        caption: "Die Zahl in der Tafel: 2 Milliarden 51 Millionen 3 Tausend 400. Vorn schreibst du keine Nullen: Die Zahl beginnt bei der ersten Ziffer, die nicht 0 ist. Leere Spalten nach der ersten Ziffer bekommen eine 0."
+      - type: definition
+        term: Milliarde
+        explanation: Eine Milliarde sind tausend Millionen. Sie wird mit 1 000 000 000 geschrieben, also mit neun Nullen.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Eine Zahl mit zehn Stellen lesen
+        blocks:
+          - type: text
+            text: |
+              Die Zahl aus dem Schaubild oben ist 2 051 003 400. Lies sie Block für Block von links: „zwei Milliarden, einundfünfzig Millionen, dreitausendvierhundert“.
+              Der Block der Tausender ist **003**: nur 3 Tausender. Die beiden Nullen davor halten die Plätze frei.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: zahl-schreiben
+        given:
+          a: { int: [2, 9] }
+          b: { int: [11, 98] }
+          c: { int: [1, 9] }
+        task:
+          text: "Schreibe als Zahl: {{a}} Millionen, {{b}} Tausender und {{c}} Einer."
+        answer: { value: "a * 1000000 + b * 1000 + c", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a * 1000 + b * 10 + c"
+            message: "Du hast die Zahlen nur hintereinander geschrieben. Jeder Block hat drei Stellen: Fehlende Stellen füllst du mit Nullen auf."
+        hint: "Schreibe erst die Blöcke: Millionen, Tausender, Einer. Jeder Block nach den Millionen hat drei Stellen."
+      - type: matching
+        id: zahlwoerter
+        text: "Ordne zu: Zahl in Worten und Zahl in Ziffern."
+        pairs:
+          - left: eine Million
+            right: "1 000 000"
+          - left: zehn Millionen
+            right: "10 000 000"
+          - left: eine Milliarde
+            right: "1 000 000 000"
+        distractors:
+          - "100 000 000"
+        explanation: "Eine Million hat sechs Nullen, eine Milliarde neun. Zehn Millionen hat sieben Nullen."
+      - type: true-false
+        id: milliarde-tausend-millionen
+        text: "Eine Milliarde sind hundert Millionen."
+        answer: false
+        explanation: "Von Block zu Block wird der Wert tausendmal so groß: Tausend, Million, Milliarde. Eine Milliarde sind tausend Millionen."
+      - type: ordering
+        id: einwohner-ordnen
+        text: "Ordne die Einwohnerzahlen der erfundenen Orte von der kleinsten zur größten."
+        items:
+          - "48\u202f200"
+          - "995\u202f000"
+          - "1\u202f250\u202f000"
+          - "8\u202f200\u202f000"
+        explanation: "Vergleiche zuerst die Anzahl der Stellen: Mehr Stellen heißt größere Zahl. Bei gleich vielen Stellen vergleichst du von links."

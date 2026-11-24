@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Schriftlich multiplizieren und dividieren
+description: "Natürliche Zahlen schriftlich multiplizieren und dividieren, mit dem Rechteckmodell und der Probe."
+competencies: [schriftliche-verfahren]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, wie viele Plättchen in einem großen Rechteck liegen, musst du malnehmen, und bei großen Zahlen hilft ein Verfahren. Nach dieser Seite kannst du Zahlen schriftlich malnehmen und teilen und das Ergebnis mit der Umkehraufgabe
+          prüfen. Du brauchst das kleine Einmaleins und das Bündeln aus der Stellenwerttafel.
+      - type: text
+        text: |
+          Eine Malaufgabe wie 4 · 12 kannst du dir als Rechteck aus Plättchen vorstellen: **Anzahl der Reihen mal
+          Anzahl der Plättchen in einer Reihe**. Das Rechteck hat dann 4 Reihen mit je 12 Plättchen. Alle Plättchen
+          zusammen sind das Ergebnis.
+      - type: number
+        id: mal-einstieg
+        text: "Ein Rechteck aus Plättchen hat 4 Reihen mit je 12 Plättchen. Wie viele Plättchen sind das? Zerlege 12 in 10 + 2, wenn du magst."
+        answer: 48
+        tolerance: 0
+        explanation: "4 · 10 = 40 und 4 · 2 = 8. Zusammen sind das 48 Plättchen."
+        mistakes:
+          - answer: 16
+            message: "Du hast addiert: 4 + 12. Mit 4 Reihen zu je 12 Plättchen rechnest du mal."
+          - answer: 42
+            message: "Du hast nur die Zehner mit 4 malgenommen und die Einer abgeschrieben. Auch die 2 Einer musst du mit 4 malnehmen."
+        hint: "4 · 10 und 4 · 2: Was ergibt zusammen?"
+  - type: section
+    id: darstellung
+    title: Das Rechteck zerlegen
+    blocks:
+      - type: text
+        text: |
+          Wenn die Zahlen zu groß für das Einmaleins sind, zerlegst du sie. Beim **Multiplizieren** zerlegst du die Zahlen in Stellenwerte. Das Rechteck zeigt 23 · 14: Seiten 20 und 3,
+          10 und 4. Die vier Teile rechnest du einzeln und addierst sie. Das schriftliche Verfahren macht genau das
+          in Spalten.
+      - type: figure
+        image: images/rechteck-23-mal-14.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Ein Rechteck mit den Seiten 23 und 14, zerlegt in vier Teile: 20 mal 10 gleich 200, 3 mal 10 gleich 30, 20 mal 4 gleich 80 und 3 mal 4 gleich 12. Zusammen 322."
+        caption: "23 · 14 = 200 + 30 + 80 + 12 = 322."
+      - type: text
+        text: |
+          Wenn du Plättchen gleichmäßig verteilen willst, teilst du. Beim **Dividieren** fragst du: Wie oft passt die Zahl, durch die du teilst, in die andere Zahl? Du teilst Stelle für Stelle von links
+          und notierst, was übrig bleibt. Ein Rest wird entbündelt: 1 Hunderter sind 10 Zehner und kommen zur nächsten Stelle dazu.
+      - type: definition
+        term: Produkt
+        explanation: "Das Produkt ist das Ergebnis einer Multiplikation. In 23 · 14 = 322 sind 23 und 14 die Faktoren und 322 ist das Produkt."
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: "756 : 6"
+        blocks:
+          - type: text
+            text: |
+              Damit du siehst, wie das Teilen Stelle für Stelle läuft: 7 Hunderter : 6 = 1 Rest 1. Der Rest 1 Hunderter sind 10 Zehner, dazu 5 Zehner: 15 Zehner : 6 = 2 Rest 3.
+              3 Zehner sind 30 Einer, dazu 6 Einer: 36 : 6 = 6. Ergebnis: 126.
+          - type: formula
+            formula: '756 : 6 = 126 \quad \text{Probe:} \quad 126 \cdot 6 = 756'
+  - type: section
+    id: beispiel-mal
+    title: Beispiel schriftlich malnehmen
+    blocks:
+      - type: example
+        title: "45 · 6"
+        blocks:
+          - type: text
+            text: |
+              Wenn das Rechteck zu groß zum Zeichnen ist, rechnest du dasselbe in Spalten. Du rechnest von rechts. Einer: 5 · 6 = 30, schreibe 0, übertrage 3. Zehner: 4 · 6 = 24, dazu der Übertrag 3
+              ergibt 27. Ergebnis: 270.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: mal-schriftlich
+        given:
+          x: { int: [2, 9] }
+          y: { int: [3, 9] }
+          b: { int: [3, 9] }
+        task:
+          text: "Rechne schriftlich: {{x}}{{y}} · {{b}}"
+        answer: { value: "(10 * x + y) * b", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "10 * x + y * b"
+            message: "Du hast nur die Einer mit {{b}} malgenommen. Auch die Zehner musst du mit {{b}} malnehmen."
+          - value: "10 * x + y + b"
+            message: "Du hast addiert statt multipliziert."
+        hint: "Zerlege die Zahl in Zehner und Einer: Beide Teile mit {{b}} malnehmen, dann addieren."
+      - type: generated
+        id: geteilt-schriftlich
+        given:
+          d1: { int: [1, 9] }
+          d2: { int: [0, 9] }
+          d3: { int: [0, 9] }
+          b: { oneOf: [2, 4, 5] }
+        where: ["decimals((100 * d1 + 10 * d2 + d3) / b) == 0"]
+        task:
+          text: "Rechne schriftlich: {{d1}}{{d2}}{{d3}} : {{b}}"
+        answer: { value: "(100 * d1 + 10 * d2 + d3) / b", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "(100 * d1 + 10 * d2 + d3) * b"
+            message: "Du hast multipliziert statt geteilt. Teilen heißt: Wie oft passt {{b}} hinein?"
+        hint: "Teile Stelle für Stelle von links. Prüfe mit der Umkehraufgabe: Ergebnis mal {{b}}."
+      - type: true-false
+        id: geteilt-probe
+        text: "Du rechnest 756 : 6 = 126. Die Probe 126 · 6 ergibt 756. Das Ergebnis stimmt."
+        answer: true
+        explanation: "Malnehmen und Teilen sind Umkehrungen voneinander. Kommt bei der Probe die Ausgangszahl heraus, stimmt die Rechnung."
+      - type: number
+        id: mal-rechteck
+        text: "Rechne mit dem Rechteckmodell: 23 · 14. Wie viel ergeben die vier Teile zusammen?"
+        answer: 322
+        tolerance: 0
+        explanation: "200 + 30 + 80 + 12 = 322."
+        mistakes:
+          - answer: 37
+            message: "Du hast 23 + 14 gerechnet. Gefragt ist das Produkt."
+          - answer: 242
+            message: "Dir fehlt ein Teilrechteck. Es gibt vier Teile: 200, 30, 80 und 12."
+        hint: "Rechne die vier Teile einzeln: 20 · 10, 3 · 10, 20 · 4, 3 · 4."

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Große Zahlen in der Stellenwerttafel
+summary: Du liest, schreibst, ordnest und rundest große Zahlen mit der Stellenwerttafel und dem Zahlenstrahl.
+pages: [buendeln-und-lesen, zahlen-bis-milliarden, zahlenstrahl-ordnen, runden]
+selfAssessment:
+  pages:
+    - exercises:
+        - /stellenwerte/buendeln-und-lesen/#tafel-lesen
+        - /stellenwerte/buendeln-und-lesen/#tafel-mit-null
+        - /stellenwerte/zahlen-bis-milliarden/#zahl-schreiben
+        - /stellenwerte/zahlen-bis-milliarden/#zahlwoerter
+    - exercises:
+        - /stellenwerte/zahlenstrahl-ordnen/#strahl-mitte-hunderter
+        - /stellenwerte/zahlenstrahl-ordnen/#zahlen-ordnen
+        - /stellenwerte/runden/#runden-auf
+        - /stellenwerte/runden/#runden-ab

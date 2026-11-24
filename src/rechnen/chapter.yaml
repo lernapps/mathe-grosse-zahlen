@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Schriftlich rechnen, geschickt rechnen, überschlagen
+summary: Du rechnest schriftlich und siehst dabei die Stellenwerttafel vor dir, nutzt Rechengesetze und prüfst Ergebnisse mit einem Überschlag.
+pages: [addieren-subtrahieren, multiplizieren-dividieren, klammern-vorrang, rechengesetze, ueberschlag]
+selfAssessment:
+  pages:
+    - exercises:
+        - /rechnen/addieren-subtrahieren/#add-schriftlich
+        - /rechnen/addieren-subtrahieren/#sub-schriftlich
+        - /rechnen/multiplizieren-dividieren/#mal-schriftlich
+        - /rechnen/multiplizieren-dividieren/#geteilt-schriftlich
+    - exercises:
+        - /rechnen/klammern-vorrang/#punkt-vor-strich
+        - /rechnen/klammern-vorrang/#klammer-zuerst
+        - /rechnen/rechengesetze/#geschickt-vertauschen
+        - /rechnen/rechengesetze/#geschickt-verteilen
+    - exercises:
+        - /rechnen/ueberschlag/#ueberschlag-summe
+        - /rechnen/ueberschlag/#kann-das-stimmen

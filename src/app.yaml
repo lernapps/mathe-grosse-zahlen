@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: mathematik/arithmetik
+title: Große Zahlen und Rechnen
+intro: Du lernst, wie das Zehnersystem große Zahlen ordnet, und rechnest mit natürlichen Zahlen sicher, geschickt und kontrolliert.
+languages: [de]
+chapters: [stellenwerte, rechnen]

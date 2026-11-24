@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Klammern und Vorrangregeln
+description: "Klammern und die Vorrangregeln beachten: Punkt vor Strich, Klammern zuerst."
+competencies: [grundrechenarten-rechengesetze]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Zwei Kinder rechnen 3 + 4 · 5. Das eine bekommt 35, das andere 23. Nach dieser Seite weißt du, wer recht hat,
+          und kannst Terme mit Klammern und Vorrangregeln richtig ausrechnen. Du kennst schon Plus, Minus und Mal.
+      - type: number
+        id: vorrang-einstieg
+        text: "Du kaufst im Kino 1 Getränk für 2 € und 3 Tickets zu je 4 €. Du rechnest 2 + 3 · 4. Was kostet alles zusammen, in Euro?"
+        answer: 14
+        tolerance: 0
+        explanation: "Die Tickets kosten 3 · 4 = 12 €. Dazu kommen 2 € für das Getränk: 14 €."
+        mistakes:
+          - answer: 20
+            message: "Du hast von links nach rechts gerechnet: (2 + 3) · 4. Aber nur die Tickets kosten 4 € das Stück. Malnehmen kommt vor Addieren."
+        hint: "Wie viel kosten die Tickets? Was kommt danach dazu?"
+  - type: section
+    id: regel
+    title: Die Reihenfolge
+    blocks:
+      - type: text
+        text: |
+          Damit alle bei einer Rechnung dasselbe Ergebnis bekommen, steht die Reihenfolge fest:
+          1. Zuerst rechnest du, was in **Klammern** steht.
+          2. Dann kommt **Punkt vor Strich**: mal und geteilt vor plus und minus.
+          3. Stehen nur Plus und Minus (oder nur Mal und Geteilt) nebeneinander, hilft Punkt vor Strich nicht. Dann rechnest du von links nach rechts.
+      - type: formula
+        formula: '3 + 4 \cdot 5 = 3 + 20 = 23'
+      - type: definition
+        term: Term
+        explanation: "Ein Term ist eine Rechnung ohne Gleichheitszeichen und Ergebnis, zum Beispiel 3 + 4 · 5. Wenn du ihn ausrechnest, bekommst du eine Zahl: hier 23."
+      - type: definition
+        term: Klammer
+        explanation: "Eine Klammer zeigt, was du zuerst rechnest. In (3 + 4) · 5 rechnest du erst 3 + 4 = 7, dann 7 · 5 = 35."
+      - type: definition
+        term: Vorrangregeln
+        explanation: "Die Vorrangregeln sagen, in welcher Reihenfolge du einen Term ausrechnest: erst Klammern, dann Punkt vor Strich. Stehen gleichwertige Rechenarten nebeneinander, rechnest du von links nach rechts. Bei 2 + 3 · 4 rechnest du also erst 3 · 4 = 12 und dann 2 + 12 = 14."
+      - type: definition
+        term: Punkt vor Strich
+        explanation: Mal- und Geteiltzeichen („Punktrechnung“) binden stärker als Plus und Minus („Strichrechnung“). Klammern gehen vor.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: 3 + 4 · 5 und (3 + 4) · 5
+        blocks:
+          - type: formula
+            formula: '3 + 4 \cdot 5 = 3 + 20 = 23'
+          - type: formula
+            formula: '(3 + 4) \cdot 5 = 7 \cdot 5 = 35'
+          - type: text
+            text: |
+              Das Kind mit 23 hat recht. Das Kind mit 35 hat von links nach rechts gerechnet, also (3 + 4) · 5.
+              Das ist eine andere Aufgabe: Die Klammer ändert die Reihenfolge.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: punkt-vor-strich
+        given:
+          a: { int: [2, 9] }
+          b: { int: [2, 9] }
+          c: { int: [2, 9] }
+        task:
+          text: "Rechne: {{a}} + {{b}} · {{c}}"
+        answer: { value: "a + b * c", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "(a + b) * c"
+            message: "Du hast von links nach rechts gerechnet. Mal kommt vor plus: erst {{b}} · {{c}}."
+        hint: "Welche Rechenart bindet stärker? Rechne die zuerst."
+      - type: generated
+        id: klammer-zuerst
+        given:
+          a: { int: [2, 9] }
+          b: { int: [2, 9] }
+          c: { int: [2, 9] }
+        task:
+          text: "Rechne: ({{a}} + {{b}}) · {{c}}"
+        answer: { value: "(a + b) * c", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a + b * c"
+            message: "Du hast die Klammer nicht zuerst gerechnet. Was in der Klammer steht, kommt immer zuerst."
+        hint: "Rechne zuerst, was in der Klammer steht."
+      - type: generated
+        id: minus-links-nach-rechts
+        given:
+          a: { int: [20, 40] }
+          b: { int: [2, 9] }
+          c: { int: [2, 9] }
+        task:
+          text: "Rechne: {{a}} − {{b}} + {{c}}"
+        answer: { value: "a - b + c", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a - (b + c)"
+            message: "Plus und minus sind gleichwertig. Du rechnest von links nach rechts: erst {{a}} − {{b}}, dann plus {{c}}."
+        hint: "Bei gleichwertigen Rechenarten gilt: von links nach rechts."
+      - type: true-false
+        id: vorrang-richtig
+        text: "3 + 4 · 5 = 35"
+        answer: false
+        explanation: "Punkt vor Strich: erst 4 · 5 = 20, dann 3 + 20 = 23. 35 ergibt nur (3 + 4) · 5."

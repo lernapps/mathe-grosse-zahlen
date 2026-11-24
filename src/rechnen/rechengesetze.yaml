@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Rechengesetze und geschickt rechnen
+description: "Vertauschen, Zusammenfassen und Verteilen: Rechengesetze an Plättchenbildern und für vorteilhaftes Rechnen."
+competencies: [grundrechenarten-rechengesetze]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Manche Aufgaben kannst du im Kopf lösen, wenn du die Reihenfolge geschickt änderst. Nach dieser Seite
+          kennst du drei Rechengesetze und nutzt sie für vorteilhaftes Rechnen. Du brauchst die Vorrangregeln von
+          der Seite davor.
+      - type: number
+        id: gesetze-einstieg
+        text: "Rechne im Kopf: 25 · 7 · 4."
+        answer: 700
+        tolerance: 0
+        explanation: "Du darfst die Faktoren tauschen: 25 · 4 = 100, dann 100 · 7 = 700."
+        mistakes:
+          - answer: 175
+            message: "Das ist nur 25 · 7. Der Faktor 4 fehlt noch."
+          - answer: 36
+            message: "Du hast addiert: 25 + 7 + 4. Hier steht mal."
+        hint: "Welche zwei Zahlen ergeben zusammen eine runde Zahl? 25 · 4 ergibt 100."
+  - type: section
+    id: darstellung
+    title: Plättchen umlegen
+    blocks:
+      - type: text
+        text: |
+          Wenn eine Rechnung unbequem aussieht, darfst du die Zahlen manchmal umstellen. Das **Vertauschungsgesetz** zeigt das Bild: 3 Reihen mit je 4 Plättchen sind genauso viele wie 4 Reihen mit je 3.
+      - type: figure
+        image: images/plaettchen-tauschen.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Zwei Plättchenbilder: links 3 Reihen mit je 4 Plättchen, rechts 4 Reihen mit je 3 Plättchen. Beide zeigen 12 Plättchen: 3 mal 4 ist gleich 4 mal 3."
+        caption: "Dreht man das Plättchenbild, bleibt die Zahl der Plättchen gleich: 3 · 4 = 4 · 3."
+      - type: text
+        text: |
+          Wenn du bei drei Zahlen frei wählen willst, womit du anfängst, hilft das **Verbindungsgesetz**: Es erlaubt, Klammern anders zu setzen. Wenn du 7 · 12 im Kopf rechnen willst, zerlegst du 12 in 10 + 2. Das erlaubt das **Verteilungsgesetz**: Es erlaubt, einen Faktor auf eine Summe oder Differenz zu verteilen. Das zweite Bild zeigt es.
+      - type: figure
+        image: images/plaettchen-verteilen.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Ein Plättchenbild mit 7 Reihen zu je 12 Plättchen. Eine gestrichelte Linie trennt 10 Plättchen je Reihe links von 2 Plättchen je Reihe rechts: 7 mal 12 ist 7 mal 10 plus 7 mal 2, also 70 plus 14 gleich 84."
+        caption: "7 · 12 = 7 · 10 + 7 · 2 = 70 + 14 = 84."
+      - type: definition
+        term: Vertauschungsgesetz (Kommutativgesetz)
+        explanation: "Bei Plus und bei Mal darfst du die Zahlen tauschen, das Ergebnis bleibt gleich. Beispiel: 7 + 5 = 5 + 7 und 3 · 4 = 4 · 3. Bei Minus und Geteilt gilt das nicht."
+      - type: definition
+        term: Verbindungsgesetz (Assoziativgesetz)
+        explanation: "Bei Plus und bei Mal darfst du die Klammern anders setzen. Die Reihenfolge der Zahlen bleibt. Beispiele: (8 + 6) + 4 = 8 + (6 + 4) = 18 und (2 · 5) · 7 = 2 · (5 · 7) = 70."
+      - type: definition
+        term: Verteilungsgesetz (Distributivgesetz)
+        explanation: "Ein Faktor darf auf eine Summe oder Differenz verteilt werden. Beispiel: 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36."
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: 6 · 99 geschickt rechnen
+        blocks:
+          - type: text
+            text: |
+              99 ist fast 100. Du schreibst 99 = 100 − 1 und verteilst die 6.
+          - type: formula
+            formula: '6 \cdot 99 = 6 \cdot 100 - 6 \cdot 1 = 600 - 6 = 594'
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: geschickt-vertauschen
+        given:
+          k: { int: [3, 19] }
+        task:
+          text: "Rechne geschickt: 25 · {{k}} · 4"
+        answer: { value: "100 * k", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "25 * k + 4"
+            message: "Hier steht überall mal. Tausche so, dass 25 · 4 = 100 zuerst kommt."
+        hint: "Tausche die Faktoren: 25 · 4 ergibt eine runde Zahl."
+      - type: generated
+        id: geschickt-verteilen
+        given:
+          a: { int: [3, 9] }
+        task:
+          text: "Rechne geschickt: {{a}} · 99. Schreibe 99 als 100 − 1."
+        answer: { value: "99 * a", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "100 * a"
+            message: "Du hast 100 statt 99 genommen. Du musst noch {{a}} · 1 abziehen."
+        hint: "{{a}} · 99 = {{a}} · 100 − {{a}} · 1."
+      - type: matching
+        id: gesetze-zuordnen
+        text: "Ordne jedem Gesetz ein Beispiel zu."
+        pairs:
+          - left: Vertauschungsgesetz
+            right: "7 + 5 = 5 + 7"
+          - left: Verbindungsgesetz
+            right: "(8 + 6) + 4 = 8 + (6 + 4)"
+          - left: Verteilungsgesetz
+            right: "3 · (10 + 2) = 3 · 10 + 3 · 2"
+        explanation: "Beim Vertauschen ändert sich die Reihenfolge, beim Verbinden die Klammer, beim Verteilen wird ein Faktor auf eine Summe verteilt."
+      - type: true-false
+        id: minus-tauschen
+        text: "Beim Minus darf man die Zahlen genauso tauschen wie beim Plus: 9 − 4 = 4 − 9."
+        answer: false
+        explanation: "Das Vertauschungsgesetz gilt nur für Plus und Mal. 9 − 4 = 5, aber 4 − 9 kannst du mit diesen Zahlen nicht rechnen: 4 ist kleiner als 9."

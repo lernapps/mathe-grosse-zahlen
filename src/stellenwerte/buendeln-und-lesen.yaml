@@ -1,0 +1,153 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Bündeln und Zahlen lesen
+description: "Mit Plättchen in der Stellenwerttafel bündeln und natürliche Zahlen lesen, schreiben und darstellen."
+competencies: [natuerliche-zahlen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, wie viel eine Zahl wie 2075 wert ist, musst du wissen, was jede Ziffer bedeutet. Die
+          Stellenwerttafel ordnet das: Jede Spalte hat einen Wert. Nach dieser Seite kannst du eine Zahl in die Tafel
+          legen und aus der Tafel ablesen.
+      - type: figure
+        image: images/stellenwerttafel-1234.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: "Eine Stellenwerttafel mit vier Spalten: Tausender, Hunderter, Zehner, Einer. Darin liegen 1, 2, 3 und 4 Plättchen. Die Zahl ist 1234."
+        caption: "In der Tafel liegen 1 Tausender, 2 Hunderter, 3 Zehner und 4 Einer. Das ist die Zahl 1234."
+      - type: number
+        id: tafel-einstieg
+        text: "In einer Stellenwerttafel liegen 2 Zehner-Plättchen und 7 Einer-Plättchen. Welche Zahl ist das?"
+        answer: 27
+        tolerance: 0
+        explanation: "Zwei Zehner sind 20, dazu kommen 7 Einer. Zusammen ergibt das 27."
+        mistakes:
+          - answer: 9
+            message: "Du hast die Plättchen gezählt oder 2 und 7 addiert. Ein Zehner-Plättchen zählt aber 10."
+          - answer: 72
+            message: "Du hast die Ziffern vertauscht. Die Einer stehen ganz rechts, die Zehner links davon."
+        hint: "Wie viel ist ein Zehner-Plättchen wert?"
+  - type: section
+    id: darstellung
+    title: Plättchen legen und bündeln
+    blocks:
+      - type: text
+        text: |
+          Wenn du viele Plättchen hast, brauchst du Ordnung, sonst zählst du ewig. Darum hat jede Spalte der **Stellenwerttafel** einen Wert: Einer, Zehner, Hunderter, Tausender. Von rechts nach
+          links wird der Wert jedes Mal zehnmal so groß. Am Anfang liegen 12 Zehner: Das sind zu viele für eine Spalte. Drücke „Bündeln“. Zehn Plättchen einer Spalte **bündelst** du zu einem Plättchen in der nächsten Spalte links. In der fertigen Zahl steht dann in jeder Spalte eine Ziffer von 0 bis 9.
+      - type: vue-component
+        id: tafel-buendeln-demo
+        component: Stellenwerttafel
+        props:
+          names: [Tausender, Hunderter, Zehner, Einer]
+          shorts: [T, H, Z, E]
+          plates: [0, 1, 12, 5]
+          more: "Ein {name}-Plättchen mehr"
+          less: "Ein {name}-Plättchen weniger"
+          bundleLabel: "Bündeln"
+          resetLabel: "Zurücksetzen"
+          nothingToBundle: "Es gibt nichts zu bündeln: Keine Spalte hat zehn Plättchen oder mehr."
+          result: "Die Plättchen zeigen die Zahl {n}. Das sind: {parts}."
+          part: "{count} {name}"
+        nojs: |
+          Eine Stellenwerttafel mit den Spalten Tausender, Hunderter, Zehner und Einer. Am Anfang liegen 1 Hunderter,
+          12 Zehner und 5 Einer. Mit „Bündeln“ werden zehn Plättchen einer Spalte zu einem Plättchen der Spalte links:
+          12 Zehner werden zu 1 Hunderter und 2 Zehnern. Danach liegen 2 Hunderter, 2 Zehner und 5 Einer in der
+          Tafel. Die Zahl ändert sich dabei nicht: Sie ist 225.
+      - type: definition
+        term: Stellenwerttafel
+        explanation: In der Stellenwerttafel hat jede Spalte einen Stellenwert. In jeder Spalte liegen Plättchen mit diesem Wert.
+      - type: definition
+        term: Stellenwert
+        explanation: "Der Stellenwert sagt, wie viel eine Ziffer in ihrer Spalte wert ist. In 2075 steht die 7 bei den Zehnern: Ihr Stellenwert ist 10, also bedeutet sie 7 · 10 = 70."
+      - type: definition
+        term: Bündeln
+        explanation: "Bündeln heißt, zehn Plättchen einer Spalte durch ein Plättchen der Spalte links zu ersetzen. Aus 12 Zehnern werden 1 Hunderter und 2 Zehner."
+      - type: note
+        title: Probiere es aus
+        blocks:
+          - type: text
+            text: |
+              Lege 12 Zehner-Plättchen und drücke „Bündeln“. Was passiert mit der Zahl? Und was passiert, wenn
+              du in einer Spalte kein Plättchen legst?
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Die Zahl 2075 lesen
+        blocks:
+          - type: text
+            text: |
+              In der Tafel liegen 2 Tausender, kein Hunderter, 7 Zehner und 5 Einer. In der Spalte der Hunderter
+              steht eine **0**: Dort liegt kein Plättchen. Die Null hält den Platz frei. Ohne sie würde aus
+              2075 die Zahl 275.
+          - type: formula
+            formula: '2 \cdot 1000 + 0 \cdot 100 + 7 \cdot 10 + 5 \cdot 1 = 2075'
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: tafel-lesen
+        given:
+          a: { int: [1, 9] }
+          b: { int: [1, 9] }
+          c: { int: [1, 9] }
+          d: { int: [1, 9] }
+        where: ["a != d"]
+        task:
+          text: "In der Tafel liegen {{a}} Tausender-, {{b}} Hunderter-, {{c}} Zehner- und {{d}} Einer-Plättchen. Welche Zahl ist das?"
+        answer: { value: "1000 * a + 100 * b + 10 * c + d", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "1000 * d + 100 * c + 10 * b + a"
+            message: "Du hast die Reihenfolge umgedreht. Die Tausender stehen ganz links, die Einer ganz rechts."
+          - value: "a + b + c + d"
+            message: "Du hast die Plättchen gezählt. Ein Plättchen zählt aber so viel wie sein Stellenwert."
+        hint: "Schreibe die Ziffern von links nach rechts: erst Tausender, dann Hunderter, Zehner, Einer."
+        steps:
+          - '$1000 \cdot {{a}} + 100 \cdot {{b}} + 10 \cdot {{c}} + {{d}} = {{answer}}$'
+      - type: generated
+        id: tafel-mit-null
+        given:
+          a: { int: [1, 9] }
+          c: { int: [1, 9] }
+          d: { int: [1, 9] }
+        task:
+          text: "In der Tafel liegen {{a}} Tausender-, kein Hunderter-, {{c}} Zehner- und {{d}} Einer-Plättchen. Welche Zahl ist das?"
+        answer: { value: "1000 * a + 10 * c + d", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "100 * a + 10 * c + d"
+            message: "Du hast die Null ausgelassen. Dann rutschen die Tausender in die Hunderter-Spalte. Die Null hält den Platz frei."
+        hint: "Wie viele Ziffern hat die Zahl? Die leere Spalte bekommt eine 0."
+        steps:
+          - '$1000 \cdot {{a}} + 0 \cdot 100 + 10 \cdot {{c}} + {{d}} = {{answer}}$'
+      - type: number
+        id: tafel-buendeln
+        text: "In der Tafel liegen 14 Einer-Plättchen und sonst nichts. Du bündelst so weit wie möglich. Wie viele Zehner-Plättchen liegen danach in der Tafel?"
+        answer: 1
+        tolerance: 0
+        explanation: "Zehn Einer werden zu 1 Zehner. Vier Einer bleiben übrig. Die Zahl bleibt 14."
+        mistakes:
+          - answer: 14
+            message: "So viele Einer liegen am Anfang. Gefragt sind die Zehner nach dem Bündeln."
+          - answer: 4
+            message: "Vier Einer bleiben übrig. Gefragt sind die neuen Zehner-Plättchen."
+        hint: "Zehn Einer-Plättchen ergeben ein Zehner-Plättchen."
+      - type: true-false
+        id: tafel-null
+        text: "Die Zahlen 2075 und 275 unterscheiden sich nur durch die Null. Die Null kann man deshalb weglassen."
+        answer: false
+        explanation: "Die Null hält die Hunderter-Spalte frei. Ohne sie rutschen die Ziffern nach rechts und die Zahl wird viel kleiner: 275 ist nicht 2075."
+      - type: ordering
+        id: tafel-ordnen
+        text: "Ordne die Zahlen der Größe nach: von der kleinsten zur größten."
+        items:
+          - "998"
+          - "1089"
+          - "1809"
+          - "8190"
+        explanation: "Vergleiche zuerst die Tausender, dann die Hunderter: 998 hat keinen Tausender, 1089 hat 0 Hunderter, 1809 hat 8 Hunderter, 8190 hat 8 Tausender."
